@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RssScraper", "RssScraper\RssScraper.csproj", "{1087B9DA-3B27-4D82-A332-202ABE280EF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\Latino\Latino\Latino.csproj", "{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\..\Latino\Latino\Latino.csproj", "{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
