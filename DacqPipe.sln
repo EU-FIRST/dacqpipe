@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacqPipe", "DacqPipe\DacqPipe.csproj", "{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\Latino\Latino\Latino.csproj", "{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoWorkflows", "..\Latino\LatinoWorkflows\LatinoWorkflows.csproj", "{EDE88AFF-1053-4175-B91C-4E683426706A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFA3AB32-D56A-4544-BCF2-CBC51B57550B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
