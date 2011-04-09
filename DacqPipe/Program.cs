@@ -14,14 +14,14 @@ using System;
 using System.IO;
 using System.Threading;
 using System.Web;
+using System.Net;
+using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 using Latino;
 using Latino.Workflows;
 using Latino.Workflows.TextMining;
 using Latino.Workflows.Persistance;
 using Latino.Web;
-using System.Net;
-using System.Runtime.InteropServices;
-using System.Text.RegularExpressions;
 using Latino.Persistance;
 
 namespace Dacq
@@ -30,29 +30,6 @@ namespace Dacq
     {
         static void Main(string[] args)
         {
-
-            //Document doc = new Document("Name", "This is some text.");
-            //doc.AddAnnotation(new Annotation(0, 3, "token"));
-            //StringWriter sw = new StringWriter();
-            //doc.MakeHtmlPage(sw);
-            //File.WriteAllText("c:\\users\\administrator\\desktop\\test.html", sw.ToString());
-
-            //return;
-            // settings
-
-
-            //HttpWebRequest r = (HttpWebRequest)HttpWebRequest.Create("http://kt.ijs.si");
-            //Console.WriteLine(r.ServicePoint.Address);
-            //Console.WriteLine(r.ServicePoint.ConnectionLimit);
-            //r.ServicePoint.ConnectionLimit = 100000;
-            //HttpWebRequest r2 = (HttpWebRequest)HttpWebRequest.Create("http://ailab.ijs.si");
-            //Console.WriteLine(r2.ServicePoint.Address);
-            //Console.WriteLine(r2.ServicePoint.ConnectionLimit);
-            //Console.WriteLine(r.ServicePoint.CurrentConnections);
-            //return;
-
-
-
             Logger rootLogger = Logger.GetRootLogger();
             rootLogger.LocalLevel = Logger.Level.Debug;
             rootLogger.LocalOutputType = Logger.OutputType.Console | Logger.OutputType.Writer;

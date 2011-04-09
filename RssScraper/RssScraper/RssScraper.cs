@@ -22,15 +22,16 @@ namespace RssScraper
                 "www.netvibes.com",
                 "www.google.com/ig/add",
                 "my.msn.com/addtomymsn",
-                "www.google.com/reader"
+                "www.google.com/reader",
+                "www.live.com"
             };
 
         private string[] mRegexList = new string[] { 
                 @"href=[""'](?<rssUrl>[^""']*\.rss)[""']",
                 @"href=[""'](?<rssUrl>[^""']*\.xml)[""']",
                 @"href=[""'](?<rssUrl>[^""']*\.rdf)[""']",
-                @"href=[""'](?<rssUrl>[^""']*[/\.]rss[^""']*)[""']",
-                @"href=[""'](?<rssUrl>[^""']*[/\.]feed[^""']*)[""']"
+                @"href=[""'](?<rssUrl>[^""']*rss[^""']*)[""']",
+                @"href=[""'](?<rssUrl>[^""']*feed[^""']*)[""']"
             };
 
         // crude way to test RSS XML

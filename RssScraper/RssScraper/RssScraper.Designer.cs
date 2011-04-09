@@ -57,6 +57,7 @@ namespace RssScraper
             this.miFeedburnerFormat = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep2 = new System.Windows.Forms.ToolStripSeparator();
             this.miExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExclude9 = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,7 +187,8 @@ namespace RssScraper
             this.miExclude5,
             this.miExclude6,
             this.miExclude7,
-            this.miExclude8});
+            this.miExclude8,
+            this.miExclude9});
             this.miExclude.Name = "miExclude";
             this.miExclude.Size = new System.Drawing.Size(152, 24);
             this.miExclude.Text = "Exclude";
@@ -318,6 +320,14 @@ namespace RssScraper
             this.miExit.Text = "Exit";
             this.miExit.Click += new System.EventHandler(this.miExit_Click);
             // 
+            // miExclude9
+            // 
+            this.miExclude9.Checked = true;
+            this.miExclude9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miExclude9.Name = "miExclude9";
+            this.miExclude9.Size = new System.Drawing.Size(290, 24);
+            this.miExclude9.Text = "Exclude www.live.com";
+            // 
             // frmRssScraper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -368,6 +378,7 @@ namespace RssScraper
         private System.Windows.Forms.ToolStripMenuItem miExclude7;
         private System.Windows.Forms.ToolStripMenuItem miExclude8;
         private System.Windows.Forms.ToolStripMenuItem miFeedburnerFormat;
+        private System.Windows.Forms.ToolStripMenuItem miExclude9;
     }
 }
 
