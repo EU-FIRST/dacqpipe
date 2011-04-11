@@ -36,16 +36,14 @@ namespace Dacq
             rootLogger.LocalWriter = new StreamWriter("c:\\work\\dacqpipe\\log.txt");
             const string SOURCES_FILE_NAME = "c:\\work\\dacqpipe\\rsssources\\RssSourcesBig.txt";
             const string DB_CONNECTION_STRING = "Provider=SQLNCLI10;Server=(local);Database=DacqPipeTmp;Trusted_Connection=Yes";
-            //rootLogger.LocalWriter = new StreamWriter(@"E:\Users\miha\Work\DacqPipeBig\log.txt");
-            //const string SOURCES_FILE_NAME = @"E:\Users\miha\Work\DacqPipeBig\RssSourcesBig.txt";
-            //const string DB_CONNECTION_STRING = "Provider=SQLNCLI10;Server=(local);Database=DacqPipeBig;Trusted_Connection=Yes";
-            //const string PROCESSOR_AFFINITY = "111111";
+            //rootLogger.LocalWriter = new StreamWriter(@"E:\Users\miha\Work\DacqPipeBig_3\log.txt");
+            //const string SOURCES_FILE_NAME = @"E:\Users\miha\Work\DacqPipeBig_3\RssSourcesBig.txt";
+            //const string DB_CONNECTION_STRING = "Provider=SQLNCLI10;Server=(local);Database=DacqPipeBig_3;Trusted_Connection=Yes";
             const int SLEEP_BETWEEN_INITS = 0;
             const int NUM_WRITERS = 10;
             const int SLEEP_BETWEEN_POLLS = 15 * 60 * 1000; // 15 minutes
             // init logging and history
             Logger logger = Logger.GetLogger("Latino.Workflows.Dacq");        
-            //WorkflowUtils.SetProcessorAffinity(PROCESSOR_AFFINITY);
             bool exit = false;
             Console.CancelKeyPress += delegate(object sender, ConsoleCancelEventArgs e)
             {
@@ -66,6 +64,7 @@ namespace Dacq
             // initialize RSS feed components
             int j = 0;
             RssFeedComponent rssComp = null;
+            Set<string> sites = new Set<string>();
             foreach (string _url in sources)
             {
                 string url = _url.Trim();
@@ -78,12 +77,14 @@ namespace Dacq
                         historyDatabase.ConnectionString = DB_CONNECTION_STRING;
                         historyDatabase.Connect();
                         string siteId = m.Result("${siteId}").Trim();
+                        if (sites.Contains(siteId)) { logger.Warn("Main", "Duplicated site identifier ({0}).", siteId); }
+                        sites.Add(siteId);
                         rssComp = new RssFeedComponent(siteId);
                         rssComp.TimeBetweenPolls = SLEEP_BETWEEN_POLLS;
                         rssComp.IncludeRssXml = true;
                         rssComp.HistoryDatabase = historyDatabase;
                         rssComp.LoadHistory();
-                        //rssComp.IncludeRawData = true;                      
+                        rssComp.IncludeRawData = true;                      
                         rssComp.Subscribe(writers[j % NUM_WRITERS]);
                         rssComponents.Add(rssComp);
                         j++;
