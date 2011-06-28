@@ -2,14 +2,15 @@ using System;
 using System.Windows.Forms;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Web;
 using Latino;
 using Latino.Web;
 
 namespace RssScraper
 {
-    public partial class frmRssScraper : Form
+    public partial class RssScraperForm : Form
     {
-        public frmRssScraper()
+        public RssScraperForm()
         {
             InitializeComponent();
         }
@@ -17,13 +18,15 @@ namespace RssScraper
         private string[] mExcludeList = new string[] { 
                 "fusion.google.com",
                 "add.my.yahoo.com",
+                "my.yahoo.com/add", 
                 "www.bloglines.com",
                 "www.newsgator.com",
                 "www.netvibes.com",
                 "www.google.com/ig/add",
                 "my.msn.com/addtomymsn",
                 "www.google.com/reader",
-                "www.live.com"
+                "www.live.com",
+                "www.addthis.com"
             };
 
         private string[] mRegexList = new string[] { 
@@ -34,11 +37,14 @@ namespace RssScraper
                 @"href=[""'](?<rssUrl>[^""']*feed[^""']*)[""']"
             };
 
-        // crude way to test RSS XML
-        private bool TestRssXml(string rssXml, out bool itemsFound)
+        private bool TestRssXml(string rssXml)
         {
-            itemsFound = rssXml.Contains("<item");
-            return rssXml.Contains("<channel");
+            return rssXml.Contains("<item") || rssXml.Contains("<channel");
+        }
+
+        private bool TestAtomXml(string atomXml)
+        {
+            return atomXml.Contains("<entry") || atomXml.Contains("<feed");
         }
 
         private void TryInvoke(ThreadStart method)
@@ -80,6 +86,7 @@ namespace RssScraper
                         Match m = r.Match(html);
                         while (m.Success)
                         {
+                            string message = "RSS feed NOT detected.";
                             string url = m.Result("${rssUrl}").Trim();
                             url = new Uri(baseUrl, url).ToString();
                             string urlLower = url.ToLower();
@@ -96,44 +103,38 @@ namespace RssScraper
                                 if (miTestLinks.Checked)
                                 {
                                     string xml = null;
-                                    try
+                                    try { xml = WebUtils.GetWebPageDetectEncoding(url); } catch { }
+                                    bool rssXmlFound = xml != null && TestRssXml(xml);
+                                    if (rssXmlFound) { message = "RSS feed detected."; }
+                                    // convert Atom to RSS
+                                    if (xml != null && miConvertAtomToRss.Checked && !rssXmlFound && TestAtomXml(xml))
                                     {
-                                        xml = WebUtils.GetWebPageDetectEncoding(url);
+                                        url = "http://www.devtacular.com/utilities/atomtorss/?url=" + HttpUtility.HtmlEncode(url);
+                                        xml = null;
+                                        try { xml = WebUtils.GetWebPageDetectEncoding(url); }
+                                        catch { }
+                                        rssXmlFound = xml != null && TestRssXml(xml);
+                                        if (rssXmlFound) { message = "RSS feed detected after converting from Atom."; }
                                     }
-                                    catch
+                                    else // try the format=xml trick
                                     {
-                                    }
-                                    bool itemsFound = false;
-                                    bool channelFound = xml != null && TestRssXml(xml, out itemsFound);
-                                    if (miFeedburnerFormat.Checked && !channelFound && !itemsFound)
-                                    {
-                                        string newUrl = url + (url.Contains("?") ? "&" : "?") + "format=xml";
-                                        try
+                                        if (miFeedburnerFormat.Checked && !rssXmlFound)
                                         {
-                                            xml = WebUtils.GetWebPageDetectEncoding(newUrl);
+                                            string newUrl = url + (url.Contains("?") ? "&" : "?") + "format=xml";
+                                            try { xml = WebUtils.GetWebPageDetectEncoding(newUrl); } catch { }
+                                            rssXmlFound = xml != null && TestRssXml(xml);
+                                            if (rssXmlFound) 
+                                            {
+                                                message = "RSS feed detected after applying the format=xml trick.";
+                                                url = newUrl; 
+                                            }
                                         }
-                                        catch
-                                        {
-                                        }
-                                        itemsFound = false;
-                                        channelFound = xml != null && TestRssXml(xml, out itemsFound);
-                                        if (channelFound || itemsFound) { url = newUrl; }
                                     }
-                                    if (miRemoveNonRss.Checked && !channelFound && !itemsFound) { Invoke(new ThreadStart(delegate() { txtLinks.Text += "#"; removed = true; })); } 
+                                    if (miRemoveNonRss.Checked && !rssXmlFound) { Invoke(new ThreadStart(delegate() { txtLinks.Text += "#"; removed = true; })); } 
                                     Invoke(new ThreadStart(delegate() { txtLinks.Text += url + "\r\n"; }));    
                                     if (miOutputTestResult.Checked)
                                     {
-                                        Invoke(new ThreadStart(delegate() { txtLinks.Text += "# "; })); 
-                                        if (!channelFound && !itemsFound)
-                                        {
-                                            Invoke(new ThreadStart(delegate() { txtLinks.Text += "This is most probably not an RSS feed. "; })); // *** is it ATOM?
-                                        }
-                                        else
-                                        {
-                                            if (channelFound) { Invoke(new ThreadStart(delegate() { txtLinks.Text += "Channel found. "; })); }
-                                            if (itemsFound) { Invoke(new ThreadStart(delegate() { txtLinks.Text += "Items found. "; })); } 
-                                        }
-                                        Invoke(new ThreadStart(delegate() { txtLinks.Text += "\r\n"; })); 
+                                        Invoke(new ThreadStart(delegate() { txtLinks.Text += "# " + message + "\r\n"; }));                                           
                                     }
                                 }
                                 else

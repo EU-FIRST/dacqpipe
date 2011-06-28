@@ -1,6 +1,6 @@
 namespace RssScraper
 {
-    partial class frmRssScraper
+    partial class RssScraperForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@ namespace RssScraper
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRssScraper));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RssScraperForm));
             this.btnGo = new System.Windows.Forms.Button();
             this.txtUrl = new System.Windows.Forms.TextBox();
             this.txtLinks = new System.Windows.Forms.TextBox();
@@ -43,12 +43,16 @@ namespace RssScraper
             this.miExclude = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude1 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExclude2b = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude3 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude4 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude5 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude6 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude7 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExclude9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.miSep0 = new System.Windows.Forms.ToolStripSeparator();
+            this.miConvertAtomToRss = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep1 = new System.Windows.Forms.ToolStripSeparator();
             this.miTestLinks = new System.Windows.Forms.ToolStripMenuItem();
             this.miOutputTestResult = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,7 +61,7 @@ namespace RssScraper
             this.miFeedburnerFormat = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep2 = new System.Windows.Forms.ToolStripSeparator();
             this.miExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.miExclude9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExclude10 = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -112,6 +116,8 @@ namespace RssScraper
             this.miSettings.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miInclude,
             this.miExclude,
+            this.miSep0,
+            this.miConvertAtomToRss,
             this.miSep1,
             this.miTestLinks,
             this.miSep2,
@@ -129,7 +135,7 @@ namespace RssScraper
             this.miInclude4,
             this.miInclude5});
             this.miInclude.Name = "miInclude";
-            this.miInclude.Size = new System.Drawing.Size(152, 24);
+            this.miInclude.Size = new System.Drawing.Size(208, 24);
             this.miInclude.Text = "Include";
             // 
             // miInclude1
@@ -182,15 +188,17 @@ namespace RssScraper
             this.miExclude.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.miExclude1,
             this.miExclude2,
+            this.miExclude2b,
             this.miExclude3,
             this.miExclude4,
             this.miExclude5,
             this.miExclude6,
             this.miExclude7,
             this.miExclude8,
-            this.miExclude9});
+            this.miExclude9,
+            this.miExclude10});
             this.miExclude.Name = "miExclude";
-            this.miExclude.Size = new System.Drawing.Size(152, 24);
+            this.miExclude.Size = new System.Drawing.Size(208, 24);
             this.miExclude.Text = "Exclude";
             // 
             // miExclude1
@@ -210,6 +218,14 @@ namespace RssScraper
             this.miExclude2.Size = new System.Drawing.Size(290, 24);
             this.miExclude2.Text = "Exclude add.my.yahoo.com";
             this.miExclude2.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
+            // miExclude2b
+            // 
+            this.miExclude2b.Checked = true;
+            this.miExclude2b.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miExclude2b.Name = "miExclude2b";
+            this.miExclude2b.Size = new System.Drawing.Size(290, 24);
+            this.miExclude2b.Text = "Exclude my.yahoo.com/add";
             // 
             // miExclude3
             // 
@@ -260,10 +276,32 @@ namespace RssScraper
             this.miExclude8.Size = new System.Drawing.Size(290, 24);
             this.miExclude8.Text = "Exclude www.google.com/reader";
             // 
+            // miExclude9
+            // 
+            this.miExclude9.Checked = true;
+            this.miExclude9.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miExclude9.Name = "miExclude9";
+            this.miExclude9.Size = new System.Drawing.Size(290, 24);
+            this.miExclude9.Text = "Exclude www.live.com";
+            // 
+            // miSep0
+            // 
+            this.miSep0.Name = "miSep0";
+            this.miSep0.Size = new System.Drawing.Size(205, 6);
+            // 
+            // miConvertAtomToRss
+            // 
+            this.miConvertAtomToRss.Checked = true;
+            this.miConvertAtomToRss.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miConvertAtomToRss.Name = "miConvertAtomToRss";
+            this.miConvertAtomToRss.Size = new System.Drawing.Size(208, 24);
+            this.miConvertAtomToRss.Text = "Convert Atom to RSS";
+            this.miConvertAtomToRss.Click += new System.EventHandler(this.MenuItem_Click);
+            // 
             // miSep1
             // 
             this.miSep1.Name = "miSep1";
-            this.miSep1.Size = new System.Drawing.Size(149, 6);
+            this.miSep1.Size = new System.Drawing.Size(205, 6);
             // 
             // miTestLinks
             // 
@@ -275,7 +313,7 @@ namespace RssScraper
             this.miRemoveNonRss,
             this.miFeedburnerFormat});
             this.miTestLinks.Name = "miTestLinks";
-            this.miTestLinks.Size = new System.Drawing.Size(152, 24);
+            this.miTestLinks.Size = new System.Drawing.Size(208, 24);
             this.miTestLinks.Text = "Test Links";
             this.miTestLinks.Click += new System.EventHandler(this.MenuItem_Click);
             // 
@@ -311,22 +349,22 @@ namespace RssScraper
             // miSep2
             // 
             this.miSep2.Name = "miSep2";
-            this.miSep2.Size = new System.Drawing.Size(149, 6);
+            this.miSep2.Size = new System.Drawing.Size(205, 6);
             // 
             // miExit
             // 
             this.miExit.Name = "miExit";
-            this.miExit.Size = new System.Drawing.Size(152, 24);
+            this.miExit.Size = new System.Drawing.Size(208, 24);
             this.miExit.Text = "Exit";
             this.miExit.Click += new System.EventHandler(this.miExit_Click);
             // 
-            // miExclude9
+            // miExclude10
             // 
-            this.miExclude9.Checked = true;
-            this.miExclude9.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.miExclude9.Name = "miExclude9";
-            this.miExclude9.Size = new System.Drawing.Size(290, 24);
-            this.miExclude9.Text = "Exclude www.live.com";
+            this.miExclude10.Checked = true;
+            this.miExclude10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miExclude10.Name = "miExclude10";
+            this.miExclude10.Size = new System.Drawing.Size(290, 24);
+            this.miExclude10.Text = "Exclude www.addthis.com";
             // 
             // frmRssScraper
             // 
@@ -379,6 +417,10 @@ namespace RssScraper
         private System.Windows.Forms.ToolStripMenuItem miExclude8;
         private System.Windows.Forms.ToolStripMenuItem miFeedburnerFormat;
         private System.Windows.Forms.ToolStripMenuItem miExclude9;
+        private System.Windows.Forms.ToolStripSeparator miSep0;
+        private System.Windows.Forms.ToolStripMenuItem miConvertAtomToRss;
+        private System.Windows.Forms.ToolStripMenuItem miExclude2b;
+        private System.Windows.Forms.ToolStripMenuItem miExclude10;
     }
 }
 

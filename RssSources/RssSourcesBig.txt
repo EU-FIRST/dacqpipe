@@ -1,3 +1,7 @@
+############################
+#   Sites added 5.4.2011   #
+############################
+
 Site: abcnews
 # Site: http://abcnews.go.com/
 # RSS list: http://abcnews.go.com/Site/page?id=3520115
@@ -1535,7 +1539,11 @@ Site: prime-tass
 # Site: http://www.prime-tass.com
 http://www.prime-tass.com/rss/engnews_rss.xml
 
-# *** RSS Scraper modified at this point (relaxed regular expressions to find even more links) ***
+############################
+#   Sites added 9.4.2011   #
+############################
+
+# *** RSS Scraper modified (relaxed regular expressions to find even more links) ***
 
 Site: ouest-france
 # Site: http://www.ouest-france.fr
@@ -2435,7 +2443,7 @@ http://news.google.com/news?ned=us&topic=t&output=rss
 http://news.google.com/news?ned=us&topic=m&output=rss
 http://news.google.com/news?ned=us&topic=s&output=rss
 http://news.google.com/news?ned=us&topic=e&output=rss
-#http://news.google.com/news?q=lemurs&output=rss <--- excluded manually
+#http://news.google.com/news?q=lemurs&output=rss (excluded manually)
 #http://www.google.com/help/reader/feeds.html
 #http://www.google.com/search?q=feed+readers
 
@@ -2443,92 +2451,854 @@ Site: news.yahoo
 # Site: http://news.yahoo.com
 # RSS list: http://news.yahoo.com/rss
 #http://news.yahoo.com/page/rss
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAbTxA4gEA;_ylu=X3oDMTE3bzFkM2sxBHBvcwMyBHNlYwN5bl9wcm9tb3NfZnJlZV9odG1sBHNsawNpbWFnZQ--/SIG=11dus0oj2/**http://rss.news.yahoo.com/rss/topstories
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAbzxA4gEA;_ylu=X3oDMTE3YzQ3bTV2BHBvcwM0BHNlYwN5bl9wcm9tb3NfZnJlZV9odG1sBHNsawNpbWFnZQ--/SIG=11grotmqv/**http://rss.news.yahoo.com/rss/yahoonewsroom
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAcTxA4gEA;_ylu=X3oDMTE3aXRlcGJnBHBvcwM2BHNlYwN5bl9wcm9tb3NfZnJlZV9odG1sBHNsawNpbWFnZQ--/SIG=1155jnqjm/**http://rss.news.yahoo.com/rss/us
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAczxA4gEA;_ylu=X3oDMTE3Z3BydmlpBHBvcwM4BHNlYwN5bl9wcm9tb3NfZnJlZV9odG1sBHNsawNpbWFnZQ--/SIG=118aorc2e/**http://rss.news.yahoo.com/rss/crime
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAdTxA4gEA;_ylu=X3oDMTE4bG1vb2ZwBHBvcwMxMARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11c7oe7j6/**http://rss.news.yahoo.com/rss/terrorism
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAdzxA4gEA;_ylu=X3oDMTE4Y2RkZjgxBHBvcwMxMgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11cru98iq/**http://rss.news.yahoo.com/rss/education
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAeTxA4gEA;_ylu=X3oDMTE4ZmRrNGo0BHBvcwMxNARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bcecbj1/**http://rss.news.yahoo.com/rss/religion
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAezxA4gEA;_ylu=X3oDMTE4aGFhMDRjBHBvcwMxNgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=118k01l60/**http://rss.news.yahoo.com/rss/world
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAfTxA4gEA;_ylu=X3oDMTE4czRkZHZmBHBvcwMxOARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11aqmqhah/**http://rss.news.yahoo.com/rss/mideast
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAfzxA4gEA;_ylu=X3oDMTE4bzJraGg1BHBvcwMyMARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1179lvs0m/**http://rss.news.yahoo.com/rss/iraq
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAgTxA4gEA;_ylu=X3oDMTE4ZmkyZDg0BHBvcwMyMgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=115b5pah5/**http://rss.news.yahoo.com/rss/un
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAgzxA4gEA;_ylu=X3oDMTE4dWdsYmw3BHBvcwMyNARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=119qih620/**http://rss.news.yahoo.com/rss/africa
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAhTxA4gEA;_ylu=X3oDMTE4NzBwaXRlBHBvcwMyNgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1170ssrhu/**http://rss.news.yahoo.com/rss/asia
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAhzxA4gEA;_ylu=X3oDMTE4bWYzaGpvBHBvcwMyOARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11ahtvn0i/**http://rss.news.yahoo.com/rss/britain
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAiTxA4gEA;_ylu=X3oDMTE4ZmRjbWVtBHBvcwMzMARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=118qku7f1/**http://rss.news.yahoo.com/rss/china
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAizxA4gEA;_ylu=X3oDMTE4aWdhZmEzBHBvcwMzMgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11997d1q0/**http://rss.news.yahoo.com/rss/europe
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAjTxA4gEA;_ylu=X3oDMTE4bjduajg2BHBvcwMzNARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11822bi90/**http://rss.news.yahoo.com/rss/india
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAjzxA4gEA;_ylu=X3oDMTE4MWhiMHZhBHBvcwMzNgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=117672o40/**http://rss.news.yahoo.com/rss/iran
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAkTxA4gEA;_ylu=X3oDMTE4aGs4Zm9pBHBvcwMzOARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=118nqvv03/**http://rss.news.yahoo.com/rss/japan
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAkzxA4gEA;_ylu=X3oDMTE4ZTBrY2YzBHBvcwM0MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1180fplbj/**http://rss.news.yahoo.com/rss/latam
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAlTxA4gEA;_ylu=X3oDMTE4YmdjbDQxBHBvcwM0MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=119m744ck/**http://rss.news.yahoo.com/rss/mexico
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAlzxA4gEA;_ylu=X3oDMTE4dW1hcnNjBHBvcwM0NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=119shgdnk/**http://rss.news.yahoo.com/rss/nkorea
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAmTxA4gEA;_ylu=X3oDMTE4bjB2N2drBHBvcwM0NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11aj43e77/**http://rss.news.yahoo.com/rss/oceania
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAmzxA4gEA;_ylu=X3oDMTE4aXJjbmNpBHBvcwM0OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1193cg8e4/**http://rss.news.yahoo.com/rss/russia
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAnTxA4gEA;_ylu=X3oDMTE4NDIyYzVpBHBvcwM1MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11b66t5a9/**http://rss.news.yahoo.com/rss/politics
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAnzxA4gEA;_ylu=X3oDMTE4Ympvb3JtBHBvcwM1MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=118rpv4h5/**http://rss.news.yahoo.com/rss/obama
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAoTxA4gEA;_ylu=X3oDMTE4c2ptM2ppBHBvcwM1NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11djdru36/**http://rss.news.yahoo.com/rss/usmilitary
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAozxA4gEA;_ylu=X3oDMTE4cG9nOWwwBHBvcwM1NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11dpf3d8g/**http://rss.news.yahoo.com/rss/uscongress
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAApTxA4gEA;_ylu=X3oDMTE4MnBlb252BHBvcwM1OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11cir3dso/**http://rss.news.yahoo.com/rss/democrats
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAApzxA4gEA;_ylu=X3oDMTE4YTFndGF2BHBvcwM2MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1163bb84a/**http://rss.news.yahoo.com/rss/gop
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAqTxA4gEA;_ylu=X3oDMTE4MDFnZW5yBHBvcwM2MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bhghr82/**http://rss.news.yahoo.com/rss/business
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAqzxA4gEA;_ylu=X3oDMTE4NzVvcTN2BHBvcwM2NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1197amukd/**http://rss.news.yahoo.com/rss/stocks
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAArTxA4gEA;_ylu=X3oDMTE4MGUxZjlxBHBvcwM2NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11ajp62ur/**http://rss.news.yahoo.com/rss/economy
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAArzxA4gEA;_ylu=X3oDMTE4NmUyb3FiBHBvcwM2OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11a25j2gv/**http://rss.news.yahoo.com/rss/eurobiz
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAsTxA4gEA;_ylu=X3oDMTE4b3EwOTRnBHBvcwM3MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bpe5do1/**http://rss.news.yahoo.com/rss/earnings
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAszxA4gEA;_ylu=X3oDMTE4dHEycm5lBHBvcwM3MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11ighjki7/**http://rss.news.yahoo.com/rss/personalfinance
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAtTxA4gEA;_ylu=X3oDMTE4c2NsY2kyBHBvcwM3NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=117epdvt7/**http://rss.news.yahoo.com/rss/tech
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAtzxA4gEA;_ylu=X3oDMTE4MHRoOWw4BHBvcwM3NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bgvc1me/**http://rss.news.yahoo.com/rss/techblog
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAuTxA4gEA;_ylu=X3oDMTE4bzl2ZTV2BHBvcwM3OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bkus219/**http://rss.news.yahoo.com/rss/internet
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAuzxA4gEA;_ylu=X3oDMTE4bG5rajMxBHBvcwM4MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11f0juapu/**http://rss.news.yahoo.com/rss/personaltech
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAvTxA4gEA;_ylu=X3oDMTE4YmJlaTJsBHBvcwM4MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=1180usec7/**http://rss.news.yahoo.com/rss/linux
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAvzxA4gEA;_ylu=X3oDMTE4dDNqYmszBHBvcwM4NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bm53lel/**http://rss.news.yahoo.com/rss/wireless
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAwTxA4gEA;_ylu=X3oDMTE4OXBuYzBpBHBvcwM4NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11dct7ecu/**http://rss.news.yahoo.com/rss/enterprise
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAwzxA4gEA;_ylu=X3oDMTE4aGJjaGozBHBvcwM4OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bf3ejba/**http://rss.news.yahoo.com/rss/software
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAxTxA4gEA;_ylu=X3oDMTE4M20zZmtlBHBvcwM5MARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11g7r1cku/**http://rss.news.yahoo.com/rss/applecomputer
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAxzxA4gEA;_ylu=X3oDMTE4YmtwdnVrBHBvcwM5MgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11bftug36/**http://rss.news.yahoo.com/rss/security
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAyTxA4gEA;_ylu=X3oDMTE4ZnNlZ3VyBHBvcwM5NARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11a14kqq4/**http://rss.news.yahoo.com/rss/rssblog
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAyzxA4gEA;_ylu=X3oDMTE4Z3Rmbms4BHBvcwM5NgRzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11g5dgrgb/**http://rss.news.yahoo.com/rss/semiconductor
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAzTxA4gEA;_ylu=X3oDMTE4ZnBzbjM2BHBvcwM5OARzZWMDeW5fcHJvbW9zX2ZyZWVfaHRtbARzbGsDaW1hZ2U-/SIG=11dlu5l9e/**http://rss.news.yahoo.com/rss/videogames
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAzzxA4gEA;_ylu=X3oDMTE5NzFodHNkBHBvcwMxMDAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11fgcb6bh/**http://rss.news.yahoo.com/rss/digitalmusic
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA0TxA4gEA;_ylu=X3oDMTE5Y2w5cjhtBHBvcwMxMDIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=119tbnt30/**http://rss.news.yahoo.com/rss/search
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA0zxA4gEA;_ylu=X3oDMTE5NmVtYXE5BHBvcwMxMDQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11gi7j86p/**http://rss.news.yahoo.com/rss/entertainment
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA1TxA4gEA;_ylu=X3oDMTE5bnJ1azB1BHBvcwMxMDYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11c721tmo/**http://rss.news.yahoo.com/rss/celebrity
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA1zxA4gEA;_ylu=X3oDMTE5Z2VoajgxBHBvcwMxMDgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=119hh0pao/**http://rss.news.yahoo.com/rss/movies
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA2TxA4gEA;_ylu=X3oDMTE5bHF0dGRwBHBvcwMxMTAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=115homs4a/**http://rss.news.yahoo.com/rss/tv
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA2zxA4gEA;_ylu=X3oDMTE5aW8wMTlqBHBvcwMxMTIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=118mstq60/**http://rss.news.yahoo.com/rss/music
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA3TxA4gEA;_ylu=X3oDMTE5dHR2MHZxBHBvcwMxMTQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11ap90ifc/**http://rss.news.yahoo.com/rss/fashion
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA3zxA4gEA;_ylu=X3oDMTE5ajhkM2l2BHBvcwMxMTYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11d8ne9a4/**http://rss.news.yahoo.com/rss/enindustry
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA4TxA4gEA;_ylu=X3oDMTE5dG1xc205BHBvcwMxMTgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=117gh78po/**http://rss.news.yahoo.com/rss/arts
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA4zxA4gEA;_ylu=X3oDMTE5M2c4bXBoBHBvcwMxMjAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=119ml41hf/**http://rss.news.yahoo.com/rss/health
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA5TxA4gEA;_ylu=X3oDMTE5OWRrMG8xBHBvcwMxMjIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11d801n8j/**http://rss.news.yahoo.com/rss/weightloss
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA5zxA4gEA;_ylu=X3oDMTE5Ym83bTN2BHBvcwMxMjQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11feb3lnj/**http://rss.news.yahoo.com/rss/sexualhealth
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA6TxA4gEA;_ylu=X3oDMTE5ZGo1ZzJlBHBvcwMxMjYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=117jcl9mk/**http://rss.news.yahoo.com/rss/meds
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA6zxA4gEA;_ylu=X3oDMTE5ajE2dWs3BHBvcwMxMjgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11c2e36ej/**http://rss.news.yahoo.com/rss/parenting
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA7TxA4gEA;_ylu=X3oDMTE5cDJncjFyBHBvcwMxMzAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11a0o24hh/**http://rss.news.yahoo.com/rss/seniors
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA7zxA4gEA;_ylu=X3oDMTE5bnF2aTBrBHBvcwMxMzIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11bklql9u/**http://rss.news.yahoo.com/rss/diseases
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA8TxA4gEA;_ylu=X3oDMTE5dTBpY2ZzBHBvcwMxMzQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=117b9hub2/**http://rss.news.yahoo.com/rss/aids
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA8zxA4gEA;_ylu=X3oDMTE5OG5lOG1hBHBvcwMxMzYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=119bl7isl/**http://rss.news.yahoo.com/rss/cancer
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA9TxA4gEA;_ylu=X3oDMTE5cHE1NHNnBHBvcwMxMzgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11a82ko30/**http://rss.news.yahoo.com/rss/science
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA9zxA4gEA;_ylu=X3oDMTE5c21zcWoxBHBvcwMxNDAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11aqtn6ea/**http://rss.news.yahoo.com/rss/weather
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA.TxA4gEA;_ylu=X3oDMTE5Ym9yZ3B1BHBvcwMxNDIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=118k9r5gs/**http://rss.news.yahoo.com/rss/space
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA.zxA4gEA;_ylu=X3oDMTE5bWQxNW1vBHBvcwMxNDQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=117jln6vu/**http://rss.news.yahoo.com/rss/pets
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA_TxA4gEA;_ylu=X3oDMTE5aThwbzExBHBvcwMxNDYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11ab4tf6e/**http://rss.news.yahoo.com/rss/fossils
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAA_zxA4gEA;_ylu=X3oDMTE5cGtkZGc0BHBvcwMxNDgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11afejud3/**http://rss.news.yahoo.com/rss/biotech
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAAT1A4gEA;_ylu=X3oDMTE5ZnMwbXZhBHBvcwMxNTAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11992sntp/**http://rss.news.yahoo.com/rss/energy
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAAz1A4gEA;_ylu=X3oDMTE5OXNpbG5sBHBvcwMxNTIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11evghdku/**http://rss.news.yahoo.com/rss/environment
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAABT1A4gEA;_ylu=X3oDMTE5ZWlwcTc3BHBvcwMxNTQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=1171mhq4m/**http://rss.news.yahoo.com/rss/oped
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAABz1A4gEA;_ylu=X3oDMTE5bXBuY2t0BHBvcwMxNTYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11iuvs07c/**http://rss.news.yahoo.com/rss/politicsopinion
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAACT1A4gEA;_ylu=X3oDMTE5Z2UyZXAzBHBvcwMxNTgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11gmfra89/**http://rss.news.yahoo.com/rss/buscommentary
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAACz1A4gEA;_ylu=X3oDMTE5NzMwb25rBHBvcwMxNjAEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=119scesif/**http://rss.news.yahoo.com/rss/sports
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAADT1A4gEA;_ylu=X3oDMTE5OTdpNmxkBHBvcwMxNjIEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11e5k90o8/**http://rss.news.yahoo.com/rss/oddlyenough
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAADz1A4gEA;_ylu=X3oDMTE5aWp0cWxwBHBvcwMxNjQEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=118h8n42p/**http://rss.news.yahoo.com/rss/obits
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAET1A4gEA;_ylu=X3oDMTE5NTZqMnRzBHBvcwMxNjYEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11e25ip1e/**http://rss.news.yahoo.com/rss/mostemailed
-http://us.lrd.yahoo.com/_ylt=A0wNdO2CmKBN.sAAEz1A4gEA;_ylu=X3oDMTE5ODJ0MzM1BHBvcwMxNjgEc2VjA3luX3Byb21vc19mcmVlX2h0bWwEc2xrA2ltYWdl/SIG=11dagb4kh/**http://rss.news.yahoo.com/rss/mostviewed
+http://rss.news.yahoo.com/rss/topstories
+http://rss.news.yahoo.com/rss/yahoonewsroom
+http://rss.news.yahoo.com/rss/us
+http://rss.news.yahoo.com/rss/crime
+http://rss.news.yahoo.com/rss/terrorism
+http://rss.news.yahoo.com/rss/education
+http://rss.news.yahoo.com/rss/religion
+http://rss.news.yahoo.com/rss/world
+http://rss.news.yahoo.com/rss/mideast
+http://rss.news.yahoo.com/rss/iraq
+http://rss.news.yahoo.com/rss/un
+http://rss.news.yahoo.com/rss/africa
+http://rss.news.yahoo.com/rss/asia
+http://rss.news.yahoo.com/rss/britain
+http://rss.news.yahoo.com/rss/china
+http://rss.news.yahoo.com/rss/europe
+http://rss.news.yahoo.com/rss/india
+http://rss.news.yahoo.com/rss/iran
+http://rss.news.yahoo.com/rss/japan
+http://rss.news.yahoo.com/rss/latam
+http://rss.news.yahoo.com/rss/mexico
+http://rss.news.yahoo.com/rss/nkorea
+http://rss.news.yahoo.com/rss/oceania
+http://rss.news.yahoo.com/rss/russia
+http://rss.news.yahoo.com/rss/politics
+http://rss.news.yahoo.com/rss/obama
+http://rss.news.yahoo.com/rss/usmilitary
+http://rss.news.yahoo.com/rss/uscongress
+http://rss.news.yahoo.com/rss/democrats
+http://rss.news.yahoo.com/rss/gop
+http://rss.news.yahoo.com/rss/business
+http://rss.news.yahoo.com/rss/stocks
+http://rss.news.yahoo.com/rss/economy
+http://rss.news.yahoo.com/rss/eurobiz
+http://rss.news.yahoo.com/rss/earnings
+http://rss.news.yahoo.com/rss/personalfinance
+http://rss.news.yahoo.com/rss/tech
+http://rss.news.yahoo.com/rss/techblog
+http://rss.news.yahoo.com/rss/internet
+http://rss.news.yahoo.com/rss/personaltech
+http://rss.news.yahoo.com/rss/linux
+http://rss.news.yahoo.com/rss/wireless
+http://rss.news.yahoo.com/rss/enterprise
+http://rss.news.yahoo.com/rss/software
+http://rss.news.yahoo.com/rss/applecomputer
+http://rss.news.yahoo.com/rss/security
+http://rss.news.yahoo.com/rss/rssblog
+http://rss.news.yahoo.com/rss/semiconductor
+http://rss.news.yahoo.com/rss/videogames
+http://rss.news.yahoo.com/rss/digitalmusic
+http://rss.news.yahoo.com/rss/search
+http://rss.news.yahoo.com/rss/entertainment
+http://rss.news.yahoo.com/rss/celebrity
+http://rss.news.yahoo.com/rss/movies
+http://rss.news.yahoo.com/rss/tv
+http://rss.news.yahoo.com/rss/music
+http://rss.news.yahoo.com/rss/fashion
+http://rss.news.yahoo.com/rss/enindustry
+http://rss.news.yahoo.com/rss/arts
+http://rss.news.yahoo.com/rss/health
+http://rss.news.yahoo.com/rss/weightloss
+http://rss.news.yahoo.com/rss/sexualhealth
+http://rss.news.yahoo.com/rss/meds
+http://rss.news.yahoo.com/rss/parenting
+http://rss.news.yahoo.com/rss/seniors
+http://rss.news.yahoo.com/rss/diseases
+http://rss.news.yahoo.com/rss/aids
+http://rss.news.yahoo.com/rss/cancer
+http://rss.news.yahoo.com/rss/science
+http://rss.news.yahoo.com/rss/weather
+http://rss.news.yahoo.com/rss/space
+http://rss.news.yahoo.com/rss/pets
+http://rss.news.yahoo.com/rss/fossils
+http://rss.news.yahoo.com/rss/biotech
+http://rss.news.yahoo.com/rss/energy
+http://rss.news.yahoo.com/rss/environment
+http://rss.news.yahoo.com/rss/oped
+http://rss.news.yahoo.com/rss/politicsopinion
+http://rss.news.yahoo.com/rss/buscommentary
+http://rss.news.yahoo.com/rss/sports
+http://rss.news.yahoo.com/rss/oddlyenough
+http://rss.news.yahoo.com/rss/obits
+http://rss.news.yahoo.com/rss/mostemailed
+http://rss.news.yahoo.com/rss/mostviewed
 #http://news.yahoo.com/rss;_ylt=A0wNdO2CmKBN.sAATD1A4gEA;_ylu=X3oDMTBsa3NwcDZrBHBvcwMxNQRzZWMDYm4Ec2xrA3Jzcw--
 
 Site: economistsview
 # Site: http://economistsview.typepad.com/
 http://feeds.feedburner.com/EconomistsView
+
+#############################
+#   Sites added 27.6.2011   #
+#############################
+
+Site: investmentpostcards
+# Site: http://www.investmentpostcards.com/
+http://feeds.feedburner.com/wordpress/VYxj?format=xml
+
+Site: calculatedriskblog
+# Site: http://www.calculatedriskblog.com/
+# *** Converted from Atom to RSS  
+http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2ffeeds.feedburner.com%2fCalculatedRisk
+
+Site: baselinescenario
+# Site: http://baselinescenario.com/
+http://feeds.feedburner.com/BaselineScenario?format=xml
+
+Site: jessescrossroadscafe
+# Site: http://jessescrossroadscafe.blogspot.com/
+http://feeds.feedburner.com/JessesCafeAmericain?format=xml
+
+Site: brontecapital
+# Site: http://brontecapital.blogspot.com
+# *** Converted from Atom to RSS  
+http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2ffeeds.feedburner.com%2fbrontecapital
+
+Site: abnormalreturns
+# Site: http://www.abnormalreturns.com/
+http://feeds2.feedburner.com/abnormalreturns
+
+Site: mishsglobaleconomictrendanalysis
+# Site: http://globaleconomicanalysis.blogspot.com/
+http://feeds2.feedburner.com/MishsGlobalEconomicTrendAnalysis
+
+Site: psy-fiblog
+# Site: http://www.psyfitec.com/
+http://feeds.feedburner.com/ThePsy-fiBlog?format=xml
+
+Site: market-ticker
+# Site: http://market-ticker.org/
+http://market-ticker.org/akcs-www?rss=Market-Ticker
+
+Site: nakedcapitalism
+# Site: http://www.nakedcapitalism.com/
+http://www.nakedcapitalism.com/feed/rss
+
+Site: paul.kedrosky
+# Site: http://paul.kedrosky.com/
+http://feeds.feedburner.com/InfectiousGreed
+
+Site: econbrowser
+# Site: http://www.econbrowser.com/
+http://www.econbrowser.com/index.rdf
+
+Site: gregmankiw
+# Site: http://gregmankiw.blogspot.com/
+http://gregmankiw.blogspot.com/feeds/posts/default?alt=rss
+
+Site: interfluidity
+# Site: http://www.interfluidity.com/
+http://www.interfluidity.com/feed
+
+Site: marginalrevolution
+# Site: http://www.marginalrevolution.com/
+http://feeds.feedburner.com/marginalrevolution/feed
+
+Site: mjperry
+# Site: http://mjperry.blogspot.com/
+http://mjperry.blogspot.com/feeds/posts/default?alt=rss
+
+Site: capitalspectator
+# Site: http://www.capitalspectator.com/
+http://www.capitalspectator.com/index.xml
+
+Site: financialarmageddon
+# Site: http://www.financialarmageddon.com/
+# *** Converted from Atom to RSS 
+http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2fwww.financialarmageddon.com%2fatom.xml
+
+Site: telegraph
+# Site: http://www.telegraph.co.uk/
+# RSS list: http://www.telegraph.co.uk/ 
+http://www.telegraph.co.uk/rss
+http://www.telegraph.co.uk/news/rss
+http://www.telegraph.co.uk/sport/rss
+http://www.telegraph.co.uk/finance/rss
+http://www.telegraph.co.uk/comment/rss
+http://www.telegraph.co.uk/culture/rss
+http://www.telegraph.co.uk/travel/rss
+http://www.telegraph.co.uk/lifestyle/rss
+http://www.telegraph.co.uk/technology/rss
+
+#Site: scmp
+# Site: http://www.scmp.com/
+# *** Protected against RSS Scraper
+
+Site: theglobeandmail
+# Site: http://www.theglobeandmail.com/
+http://www.theglobeandmail.com/?service=rss
+
+Site: guardian
+# Site: http://www.guardian.co.uk/
+http://feeds.guardian.co.uk/theguardian/rss
+
+Site: haaretz
+# Site: http://www.haaretz.com/
+http://www.haaretz.com/cmlink/haaretz-com-headlines-rss-1.263335?localLinksEnabled=false
+
+Site: hollywoodreporter
+# Site: http://www.hollywoodreporter.com/
+# RSS list: http://www.hollywoodreporter.com/rss
+#http://www.hollywoodreporter.com/rss
+#http://feeds.feedburner.com/asiareviewsRSS
+#http://www.hollywoodreporter.com/live-feed/true-blood-premiere-ep-alan-205729
+#http://www.hollywoodreporter.com/live-feed/true-blood-premiere-10-things-205727
+#http://www.hollywoodreporter.com/live-feed/true-blood-ep-reveals-how-205699
+http://feeds.feedburner.com/thr/news
+http://feeds.feedburner.com/thr/film
+http://feeds.feedburner.com/thr/television
+http://feeds.feedburner.com/thr/style
+http://feeds.feedburner.com/thr/international
+http://feeds.feedburner.com/thr/music
+http://feeds.feedburner.com/TheHollywoodReporter-Technology
+http://feeds.feedburner.com/thr/awards
+http://feeds.feedburner.com/thr/business
+http://feeds.feedburner.com/HollywoodReporterAsia
+http://feeds.feedburner.com/thr/labor
+http://feeds.feedburner.com/thr/boxoffice
+http://feeds.feedburner.com/thr/reviews/allreviews
+http://feeds.feedburner.com/thr/reviews/film
+http://feeds.feedburner.com/thr/reviews/tv
+http://feeds.feedburner.com/thr/reviews/music
+http://feeds.feedburner.com/thr/reviews/theater
+http://feeds.feedburner.com/live_feed
+http://feeds.feedburner.com/thr/riskybusiness
+http://feeds.feedburner.com/THRComicCon
+http://feeds.feedburner.com/THREsquire
+http://feeds.feedburner.com/HollywoodReporter-TheRace
+http://feed.hollywoodreporter.com/thr/IdolWorship
+http://feed.hollywoodreporter.com/thr/BastardMachine
+#http://www.hollywoodreporter.com/blogs/live-feed
+#http://feedproxy.google.com/~r/feedburner/SexyBeast/~3/EWqAJ-QdENw/thriller-jacket-sells-for-1-8m.html
+#http://feedproxy.google.com/~r/feedburner/SexyBeast/~3/8gqx0yVHjkI/cars-2-zooms-to-weekend-win.html
+#http://feedproxy.google.com/~r/feedburner/SexyBeast/~3/EYLRHJrP7fQ/eco-terrorism-documentary-incites-debate.html
+#http://feedproxy.google.com/~r/feedburner/SexyBeast/~3/9pml0jg36DE/kelsey-and-camille-grammer-s-custody-battle-who-gets-the-kids.html
+#http://feeds.adweek.com/~r/adweek/featured-articles/~3/KpYiixgV2dM/inside-campaign-ad-machine-132898
+#http://feeds.adweek.com/~r/adweek/featured-articles/~3/KuQFWsnpE1k/upfront-hits-high-noon-132902
+#http://feeds.adweek.com/~r/adweek/featured-articles/~3/OlWVaUQIkp8/pg-does-dan-wieden-s-bidding-132903
+#http://feeds.adweek.com/~r/adweek/featured-articles/~3/rHiBhZs8JFw/can-time-out-s-tony-elliott-weather-storm-132910
+#http://feedproxy.google.com/~r/thr/huffingtonpost/~3/o8zmNodmlwI/beyonce-glastonbury-performance_n_884903.html
+#http://feedproxy.google.com/~r/thr/huffingtonpost/~3/yNRpOIRzmao/shia-labeouf-talks-transformers-spielberg_n_884947.html
+#http://feedproxy.google.com/~r/thr/huffingtonpost/~3/jMQDlOeNuFg/mariah-careys-baby-monroe-photo_n_884955.html
+#http://feedproxy.google.com/~r/thr/huffingtonpost/~3/dUv8LJFmFns/johnny-knoxvilles-ryan-dunn_n_884952.html
+#http://nymag.com/daily/entertainment/2011/06/neil_patrick_harris_is_engaged.html?mid=partnerfeed
+#http://nymag.com/daily/entertainment/2011/06/long-gestating_trent_reznor_hb.html?mid=partnerfeed
+#http://nymag.com/daily/entertainment/2011/06/green_lantern_is_probably_gett.html?mid=partnerfeed
+#http://nymag.com/daily/entertainment/2011/06/weisv.html?mid=partnerfeed
+#http://www.hollywoodreporter.com/live-feed/chris-wallace-fires-back-at-205720
+#http://www.hollywoodreporter.com/live-feed/weeds-premiere-ep-says-season-205744
+
+Site: hurriyet
+# Site: http://www.hurriyet.com.tr/english/
+http://www.hurriyetdailynews.com/rss.php
+
+Site: independent
+# Site: http://www.independent.co.uk
+# RSS list: http://www.independent.co.uk/service/rss-feeds-775086.html
+http://rss.feedsportal.com/c/266/f/3533/index.rss
+http://rss.feedsportal.com/c/266/f/3792/index.rss
+http://rss.feedsportal.com/c/266/f/3800/index.rss
+http://rss.feedsportal.com/c/266/f/3795/index.rss
+http://rss.feedsportal.com/c/266/f/464881/index.rss
+http://rss.feedsportal.com/c/266/f/3797/index.rss
+http://rss.feedsportal.com/c/266/f/3834/index.rss
+http://rss.feedsportal.com/c/266/f/3847/index.rss
+#http://www.independent.co.uk/service/rss
+#http://digg.com/submit?phase=2&amp;url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://del.icio.us/post?url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://www.facebook.com/sharer.php?u=http://www.independent.co.uk/service/rss-feeds-775086.html
+#http://reddit.independent.co.uk/submit?url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://www.google.com/bookmarks/mark?op=add&bkmk=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://www.stumbleupon.com/submit?url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://cgi.fark.com/cgi/fark/submit.pl?url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://www.newsvine.com/_tools/seed&save?u=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://uk.buzz.yahoo.com/buzz?publisherurn=theindepende_417&targetUrl=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://www.bebo.com/c/share?Url=http://www.independent.co.uk/service/rss-feeds-775086.html&amp;title=RSS feeds - Service - Independent.co.uk
+#http://twitter.com/home?status=RSS feeds http://www.independent.co.uk/news/a775086.html
+#http://www.independent.co.uk/service/rss-feeds-775086.html?service=Print
+#http://www.independent.co.uk/service/rss-feeds-775086.html?action=Email
+http://www.independent.co.uk/news/rss
+http://www.independent.co.uk/news/uk/rss
+http://www.independent.co.uk/news/world/rss
+http://www.independent.co.uk/news/business/rss
+http://www.independent.co.uk/news/people/rss
+http://www.independent.co.uk/news/science/rss
+http://www.independent.co.uk/news/media/rss
+http://www.independent.co.uk/news/education/rss
+http://www.independent.co.uk/news/obituaries/rss
+http://www.independent.co.uk/opinion/rss
+http://www.independent.co.uk/opinion/leading-articles/rss
+http://www.independent.co.uk/opinion/commentators/rss
+http://www.independent.co.uk/opinion/columnists/rss
+http://www.independent.co.uk/opinion/letters/rss
+#http://www.independent.co.uk/extras/big-question/rss
+http://www.independent.co.uk/environment/rss
+http://www.independent.co.uk/environment/climate-change/rss
+http://www.independent.co.uk/environment/green-living/rss
+http://www.independent.co.uk/environment/nature/rss
+http://www.independent.co.uk/sport/rss
+http://www.independent.co.uk/sport/general/athletics/rss
+http://www.independent.co.uk/sport/football/rss
+http://www.independent.co.uk/sport/golf/rss
+http://www.independent.co.uk/sport/motor-racing/rss
+http://www.independent.co.uk/sport/racing/rss
+http://www.independent.co.uk/sport/rugby/rugby-union/rss
+http://www.independent.co.uk/sport/general/others/rss
+http://www.independent.co.uk/life-style/rss
+http://www.independent.co.uk/life-style/fashion/rss
+http://www.independent.co.uk/life-style/food-and-drink/rss
+http://www.independent.co.uk/life-style/health-and-wellbeing/rss
+http://www.independent.co.uk/life-style/house-and-home/rss
+http://www.independent.co.uk/life-style/gadgets-and-tech/rss
+http://www.independent.co.uk/life-style/motoring/rss
+#http://www.independent.co.uk/life-style/pets/rss
+http://www.independent.co.uk/life-style/love-sex/rss
+http://www.independent.co.uk/arts-entertainment/rss
+http://www.independent.co.uk/arts-entertainment/art/rss
+http://www.independent.co.uk/arts-entertainment/architecture/rss
+http://www.independent.co.uk/arts-entertainment/classical/rss
+http://www.independent.co.uk/arts-entertainment/films/rss
+http://www.independent.co.uk/arts-entertainment/tv/rss
+http://www.independent.co.uk/arts-entertainment/theatre-dance/rss
+http://www.independent.co.uk/arts-entertainment/comedy/rss
+#http://www.independent.co.uk/arts-entertainment/interviews/rss
+http://www.independent.co.uk/travel/rss
+http://www.independent.co.uk/travel/news-and-advice/rss
+http://www.independent.co.uk/travel/48-hours-in/rss
+http://www.independent.co.uk/travel/africa/rss
+http://www.independent.co.uk/travel/americas/rss
+http://www.independent.co.uk/travel/asia/rss
+http://www.independent.co.uk/travel/ausandpacific/rss
+http://www.independent.co.uk/travel/europe/rss
+http://www.independent.co.uk/travel/middle-east/rss
+http://www.independent.co.uk/travel/uk/rss
+http://www.independent.co.uk/travel/skiing/rss
+http://www.independent.co.uk/money/rss
+http://www.independent.co.uk/money/spend-save/rss
+http://www.independent.co.uk/money/loans-credit/rss
+http://www.independent.co.uk/money/mortgages/rss
+http://www.independent.co.uk/money/pensions/rss
+http://www.independent.co.uk/money/insurance/rss
+http://www.independent.co.uk/money/tax/rss
+#http://www.independent.co.uk/service/rss-feeds-775086.html
+#http://www.independent.co.uk/service/list-of-rss-feeds-775086.html
+
+Site: https://www.theice.com/homepage.jhtml
+# Site: https://www.theice.com/homepage.jhtml
+# RSS list: https://www.theice.com/rss.jhtml
+https://www.theice.com/notices/FuturesCanadaMemberNoticesRSS.shtml
+https://www.theice.com/notices/FuturesEuropeCircularsRSS.shtml
+https://www.theice.com/notices/FuturesUSExchangeNoticesRSS.shtml
+https://www.theice.com/notices/FuturesUSMemberNoticesRSS.shtml
+https://www.theice.com/notices/ClearCanadaClearingNoticesRSS.shtml
+https://www.theice.com/notices/ClearEuropeCircularsRSS.shtml
+https://www.theice.com/notices/ClearUSClearingNoticesRSS.shtml
+https://www.theice.com/notices/ICETrustCircularsRSS.shtml
+https://www.theice.com/notices/OTCAdvisoryNoticesRSS.shtml
+#https://www.theice.com/rss.jhtml
+#http://ir.theice.com/confirm.cfm?destination=/rss.cfm
+#https://www.theice.com/marketdata/wcereports/DailyCashPricesRSSServlet
+#https://www.theice.com/marketdata/wcereports/DailyBestBidPricesRSSServlet
+
+#Site: investors
+# Site: http://www.investors.com/default.aspx
+#http://feeds.feedburner.com/InvestingRss?format=xml
+# TODO: add more
+
+Site: itar-tass
+# Site: http://www.itar-tass.com/en/
+http://www.itar-tass.com/en/rss/all.xml
+
+Site: kyodonews
+# Site: http://english.kyodonews.jp
+# RSS list: http://english.kyodonews.jp/rss/
+http://english.kyodonews.jp/rss/news.xml
+http://english.kyodonews.jp/rss/news_politics.xml
+http://english.kyodonews.jp/rss/news_business.xml
+http://english.kyodonews.jp/rss/news_crime_society.xml
+http://english.kyodonews.jp/rss/news_sports.xml
+http://english.kyodonews.jp/rss/news_asia.xml
+http://english.kyodonews.jp/rss/news_extertainment_culture.xml
+http://english.kyodonews.jp/rss/news_travel_city_life.xml
+http://english.kyodonews.jp/rss/news_snapshot.xml
+http://english.kyodonews.jp/rss/news_feature.xml
+http://english.kyodonews.jp/rss/photos.xml
+http://english.kyodonews.jp/rss/photos_japan_quake.xml
+http://english.kyodonews.jp/rss/photos_japanese_pop_culture.xml
+http://english.kyodonews.jp/rss/photos_n_korea_island_attack.xml
+http://english.kyodonews.jp/rss/podcast_story01.xml
+http://english.kyodonews.jp/rss/podcast_story02.xml
+#https://english.kyodonews.jp/loginform.php?ur=http://english.kyodonews.jp/rss/
+#http://english.kyodonews.jp/rss/
+
+Site: latimes
+# Site: http://www.latimes.com/
+# RSS list: http://www.latimes.com/about/rss/
+http://www.latimes.com//about/rss/rss2.0.xml
+http://www.latimes.com/includes/icu/required/mrss.xml
+http://latimesblogs.latimes.com/movies/rss.xml
+http://latimesblogs.latimes.com/awards/rss.xml
+http://latimesblogs.latimes.com/brandx/rss.xml
+http://latimesblogs.latimes.com/dodgers/rss.xml
+#http://www.devtacular.com/utilities/atomtorss/?url=http://lakersblog.latimes.com/lakersblog/atom.xml
+http://www.devtacular.com/utilities/atomtorss/?url=http://latimesblogs.latimes.com/california-politics/atom.xml
+#http://www.latimes.com/about/rss/
+#http://ad.doubleclick.net/jump/trb.latimes/about;rs=D08734_70033;rs=D08734_72078;rs=D08734_72414;;ptype=sf;rg=ur;ref=latimescom;pos=T;sz=1x1,728x90;tile=1;u=http://www.latimes.com/about/rss/;ord=66591961?
+#http://www.latimes.com/about/rss/#rssfaq
+http://pipes.yahoo.com/pipes/pipe.run?_id=5dc8a87340794a992d374f7389268bc3&_render=rss
+#http://www.download.com/RSS-Readers/3150-9227_4-0.html
+#http://www.google.com/search?sourceid=navclient&ie=UTF-8&rlz=1T5GGLL_enUS257US257&q=rss+readers
+#http://ad.doubleclick.net/jump/trb.latimes/about;rs=D08734_70033;rs=D08734_72078;rs=D08734_72414;;ptype=sf;rg=ur;ref=latimescom;pos=1;sz=234x60;tile=2;u=http://www.latimes.com/about/rss/;ord=66591961?
+http://feeds.latimes.com/latimes/news
+http://feeds.latimes.com/MostEmailed
+http://feeds.latimes.com/latimes/news/local
+http://feeds.latimes.com/latimes/news/local/politics/cal/
+http://feeds.latimes.com/latimes/news/local/orange/
+http://projects.latimes.com/wardead/feeds/deaths/
+http://projects.latimes.com/index/feeds/projects/
+http://feeds.latimes.com/latimes/news/nationworld/nation
+http://feeds.latimes.com/latimes/news/politics/
+http://feeds.latimes.com/latimes/business
+#http://feeds.latimes.com/latimes/business/investing
+http://feeds.latimes.com/latimes/news/education
+http://feeds.latimes.com/latimes/news/science/environment
+http://feeds.latimes.com/latimes/features/religion
+http://feeds.latimes.com/latimes/news/science
+http://feeds.latimes.com/latimes/technology
+http://feeds.latimes.com/latimes/news/nationworld/world
+http://feeds.latimes.com/latimes/africa
+http://feeds.latimes.com/latimes/asia
+http://feeds.latimes.com/latimes/europe
+http://feeds.latimes.com/latimes/latinamerica
+http://feeds.latimes.com/latimes/middleeast
+http://feeds2.feedburner.com/latimes/news/opinion/commentary/
+http://feeds.latimes.com/LosAngelesTimes-SandyBanks
+http://feeds.latimes.com/MeghanDaum/
+http://feeds.latimes.com/JonahGoldberg/
+http://feeds.latimes.com/PatrickGoldstein/
+http://feeds.latimes.com/ConsumerConfidential
+http://feeds.latimes.com/SteveLopez/
+#http://feeds.feedburner.com/PattMorrison
+http://feeds.latimes.com/TomPetruno/
+http://feeds.latimes.com/BillPlaschke/
+http://feeds.latimes.com/GeorgeSkelton/
+http://feeds.feedburner.com/latimes/entertainment/news/arts
+http://feeds.feedburner.com/PatrickGoldstein/
+http://feeds.feedburner.com/entertainment/business/
+http://feeds.feedburner.com/CultureMonster
+http://feeds.feedburner.com/latimes/entertainment/news/
+http://feeds.feedburner.com/TheEnvelope/
+http://herocomplex.latimes.com/feed/
+http://feeds.feedburner.com/Latimes/hotlist/
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/latimes/MinistryofGossip/
+http://feeds.feedburner.com/latimes/entertainment/news/movies/
+http://feeds.feedburner.com/movies/reviews/
+http://feeds.feedburner.com/latimes/entertainment/news/music/
+http://feeds.feedburner.com/pophiss/
+http://feeds.feedburner.com/latimes/live-music-reviews/
+http://feeds.feedburner.com/latimes/pop-album-reviews
+http://feeds.feedburner.com/latimes/restaurant/reviews
+http://feeds.feedburner.com/ShowTracker/
+http://feeds.feedburner.com/latimes/theaterdance
+http://feeds.feedburner.com/latimes/entertainment/news/tv
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/latimes/24frames/
+http://feeds.latimes.com/latimes/sports/
+http://feeds.latimes.com/latimes/sports/motorracing/
+http://feeds.latimes.com/latimes/sports/baseball/mlb/
+http://feeds.latimes.com/latimes/sports/baseball/mlb/angels/
+http://feeds.latimes.com/latimes/sports/baseball/mlb/dodgers/
+http://feeds.latimes.com/latimes/sports/basketball/nba/
+http://feeds.latimes.com/latimes/sports/basketball/nba/clippers
+http://feeds.latimes.com/latimes/sports/basketball/nba/lakers
+http://feeds.latimes.com/latimes/sports/basketball/wnba/sparks/
+http://feeds.latimes.com/latimes/sports/boxing/
+http://feeds.latimes.com/latimes/sports/college/basketball/
+http://feeds.latimes.com/latimes/sports/college/football/
+http://feeds.latimes.com/latimes/sports/golf/
+http://feeds.latimes.com/latimes/sports/highschool/
+http://feeds.latimes.com/latimes/sports/hockey/nhl/
+#http://feeds.latimes.com/latimes/sports/hockey/nhl/ducks/
+http://feeds.latimes.com/latimes/sports/hockey/nhl/kings/
+http://feeds.latimes.com/latimes/sports/horseracing/
+http://feeds.latimes.com/OlympicsBlog
+http://feeds.latimes.com/latimes/sports/football/nfl/
+http://feeds.latimes.com/latimes/sports/soccer/
+http://feeds.latimes.com/latimes/sports/tennis/
+http://feeds.latimes.com/latimes/sports/college/usc/
+http://feeds.latimes.com/latimes/classified/automotive/highway1/
+http://feeds.latimes.com/features/books
+http://feeds.latimes.com/latimes/features/food/
+http://feeds.latimes.com/latimes/features/health/
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/home_blog
+http://feeds.latimes.com/latimes/features/lifestyle
+#http://feeds.latimes.com/latimes/features/lifestyle/green
+http://feeds.latimes.com/latimes/classified/realestate/
+#http://feeds.latimes.com/DailyDealsLosAngelesTimesTravel
+#http://feeds.latimes.com/EuropeStories/
+#http://feeds.latimes.com/HawaiiStories/
+#http://feeds.latimes.com/LasVegasStories/
+#http://feeds.latimes.com/MexicoStories/
+http://feeds.feedburner.com/latimes/afterword
+http://feeds.latimes.com/alltherageblog
+http://feeds.latimes.com/BabylonBeyond
+http://feeds.latimes.com/PatrickGoldstein
+http://feeds.latimes.com/newsandbuzz
+http://feeds.latimes.com/CultureMonster
+http://feeds.latimes.com/latimesdailydish
+http://feeds.latimes.com/TheDailyMirror
+http://feeds.latimes.com/LAT_Sports_Blog
+http://feeds.latimes.com/GreenspaceEnvironmentBlog
+http://projects.latimes.com/homicide/feeds/posts/
+http://feeds.latimes.com/JacketCopy
+http://feeds.latimes.com/lanowblog
+http://feeds.latimes.com/Unleashedblog
+http://feeds.latimes.com/LaPlaza
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.latimes.com/MinistryOfGossip
+http://feeds.latimes.com/MoneyCompany
+http://feeds.latimes.com/OpinionLa
+http://feeds.latimes.com/Outposts
+http://feeds.latimes.com/PopHiss
+http://feeds.latimes.com/readersblog
+http://feeds.latimes.com/ShowTracker
+http://feeds.latimes.com/LATtechblog
+http://feeds.latimes.com/topoftheticket
+http://feeds.latimes.com/VarsityTimesInsider
+
+Site: morningstar
+# Site: http://www.morningstar.com/
+# RSS list: http://news.morningstar.com/rss/rss.html
+http://news.morningstar.com/rss/feed.html?type=latest
+http://news.morningstar.com/rss/feedsan.html
+
+#Site: msnbc
+# Site: http://www.msnbc.msn.com/
+# RSS list: http://www.msnbc.msn.com/id/5216556/
+# Protected against RSS Scraper
+
+Site: fitchratings
+# Site: http://www.fitchratings.com/
+# RSS list: http://www.fitchratings.com/jsp/creditdesk/ToolsAndModels.faces?context=2&detail=57
+http://feeds.feedburner.com/fitchratings/PBvV
+http://feeds.feedburner.com/FitchRatingsHeadlines-Americas
+http://feeds.feedburner.com/FitchRatingsHeadlines-EuropeMiddleEastAfrica
+http://feeds.feedburner.com/FitchRatingsHeadlines-Asia-pacific
+http://feeds.feedburner.com/FitchRatingsHeadlines-Corporates
+http://feeds.feedburner.com/FitchRatingsHeadlines-FinancialInstitutions
+http://feeds.feedburner.com/FitchRatingsHeadlines-StructuredFinance
+http://feeds.feedburner.com/FitchRatingsHeadlines-EuropeanInternationalStructuredFinance
+http://feeds.feedburner.com/FitchRatingsHeadlines-UsStructuredFinance
+http://feeds.feedburner.com/FitchRatingsHeadlines-UsPublicFinance
+
+Site: seekingalpha
+# Site: http://seekingalpha.com/
+# RSS list: http://seekingalpha.com/page/feeds
+#http://seekingalpha.com/javascripts/seeking.xml
+http://seekingalpha.com/tag/cramers-picks.xml
+http://seekingalpha.com/tag/ipo-analysis.xml
+http://seekingalpha.com/tag/long-ideas.xml
+http://seekingalpha.com/tag/short-ideas.xml
+#http://seekingalpha.com/sector/smallcap.xml
+http://seekingalpha.com/sector/transcripts.xml
+http://seekingalpha.com/market_currents.xml
+http://seekingalpha.com/tag/wall-street-breakfast.xml
+http://seekingalpha.com/listing/most-popular-articles.xml
+http://seekingalpha.com/tag/alternative-energy.xml
+http://seekingalpha.com/tag/forex.xml
+http://seekingalpha.com/tag/editors-picks.xml
+http://seekingalpha.com/tag/etf-portfolio-strategy.xml
+http://seekingalpha.com/sector/china-stocks.xml
+http://seekingalpha.com/tag/india.xml
+http://seekingalpha.com/tag/israel.xml
+http://seekingalpha.com/tag/japan.xml
+http://seekingalpha.com/sector/asia.xml
+#http://seekingalpha.com/sector/eastern-europe.xml
+#http://seekingalpha.com/sector/latin-america.xml
+#http://seekingalpha.com/sector/middle-east-and-africa.xml
+http://seekingalpha.com/sector/biotech.xml
+http://seekingalpha.com/sector/energy.xml
+http://seekingalpha.com/sector/financial.xml
+http://seekingalpha.com/sector/healthcare.xml
+http://seekingalpha.com/sector/consumer-electronics.xml
+http://seekingalpha.com/sector/gold-precious.xml
+http://seekingalpha.com/sector/hardware.xml
+#http://seekingalpha.com/sector/homebuilders.xml
+#http://seekingalpha.com/tag/basic-materials-industrials.xml
+http://seekingalpha.com/sector/internet.xml
+http://seekingalpha.com/sector/media.xml
+http://seekingalpha.com/sector/networking.xml
+http://seekingalpha.com/sector/retail.xml
+http://seekingalpha.com/sector/software.xml
+http://seekingalpha.com/sector/semis.xml
+http://seekingalpha.com/sector/telecom.xml
+http://seekingalpha.com/sector/transport.xml
+http://seekingalpha.com/sector/utilities.xml
+#http://seekingalpha.com/page/feeds
+
+Site: worldbank
+# Site: http://www.worldbank.org/news/
+http://feeds.feedburner.com/WorldBankGroupPodcasts
+
+Site: russiabankingnews
+# Site: http://www.russiabankingnews.com
+http://www.russiabankingnews.com/rss.xml
+
+Site: indystar
+# Site: http://www.indystar.com
+# RSS list: http://www.indystar.com/rss
+#http://www.indystar.com/section/HELP02/RSS-Feeds
+#http://www.indystar.com/rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=TOPSTORIES&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL01&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0101&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0102&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0103&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0104&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL02&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0202&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL04&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0402&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0403&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL07&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0703&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL05&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0502&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0503&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0504&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL0505&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL18&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL1801&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL1802&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL1803&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL1804&template=rss
+#http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL27&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL28&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LOCAL30&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS02&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS04&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS05&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS08&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS19&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=NEWS07&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS15&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS03&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS04&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS01&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0107&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0109&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS06&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0601&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0602&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0605&template=rss
+#http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS0615&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS02&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=SPORTS16&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=BUSINESS&template=rss
+#http://www.indystar.com/apps/pbcs.dll/section?Category=BUSINESS03&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=BUSINESS04&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=BUSINESS06&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING01&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING07&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING17&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING02&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING03&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING09&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING20&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING19&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING23&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING25&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING21&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING11&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=LIVING28&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION08&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION01&template=rss
+#http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION13&template=rss
+#http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION12&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION05&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION06&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION07&template=rss
+http://www.indystar.com/apps/pbcs.dll/section?Category=OPINION04&template=rss
+http://blogs.indystar.com/coltsinsider/feed/rss/
+http://blogs.indystar.com/philb/feed/rss/
+http://blogs.indystar.com/pacersinsider/feed/rss/
+http://blogs.indystar.com/hoosiersinsider/feed/rss/
+http://blogs.indystar.com/purdue/feed/rss/
+http://blogs.indystar.com/butler/feed/rss/
+http://blogs.indystar.com/racingexpert/feed/rss/
+http://blogs.indystar.com/recruitingcentral/feed/rss/
+http://blogs.indystar.com/preps/feed/rss/
+http://blogs.indystar.com/ourschools/feed/rss/
+http://blogs.indystar.com/bottomline/feed/rss/
+http://blogs.indystar.com/firstthoughts/feed/rss/
+http://blogs.indystar.com/fitforlife/feed/rss/
+http://blogs.indystar.com/indykitchen/feed/rss/
+http://blogs.indystar.com/upstage/feed/rss/
+http://blogs.indystar.com/geek/feed/rss/
+
+Site: efinancialnews
+# Site: http://www.efinancialnews.com
+# RSS list: http://www.efinancialnews.com/about-us/rss-info
+http://www.penews.com/feeds/top-stories.xml
+http://www.penews.com/feeds/people-moves.xml
+http://www.efinancialnews.com/rss
+http://www.efinancialnews.com/comment/rss
+http://www.efinancialnews.com/blog/rss
+http://www.efinancialnews.com/special-reports/rss
+http://www.efinancialnews.com/us-news/rss
+http://www.efinancialnews.com/paper/rss
+http://www.efinancialnews.com/assetmanagement/rss
+http://www.efinancialnews.com/assetmanagement/pensions/rss
+http://www.efinancialnews.com/assetmanagement/hedge-funds/rss
+http://www.efinancialnews.com/assetmanagement/people/rss
+http://www.efinancialnews.com/assetmanagement/wealth/rss
+http://www.efinancialnews.com/assetmanagement/governance/rss
+http://www.efinancialnews.com/assetmanagement/investor-services/rss
+http://www.efinancialnews.com/assetmanagement/news-in-brief/rss
+http://www.efinancialnews.com/investmentbanking/rss
+http://www.efinancialnews.com/investmentbanking/capital-markets/rss
+http://www.efinancialnews.com/investmentbanking/mergers-and-acquisitions/rss
+http://www.efinancialnews.com/investmentbanking/sales-and-trading/rss
+http://www.efinancialnews.com/investmentbanking/people/rss
+http://www.efinancialnews.com/investmentbanking/news-in-brief/rss
+http://www.efinancialnews.com/privateequity/rss
+http://www.efinancialnews.com/privateequity/deals/rss
+http://www.efinancialnews.com/privateequity/fundraising/rss
+http://www.efinancialnews.com/privateequity/re-structuring/rss
+http://www.efinancialnews.com/privateequity/people/rss
+http://www.efinancialnews.com/tradingandtechnology/rss
+http://www.efinancialnews.com/tradingandtechnology/trading-and-broking/rss
+http://www.efinancialnews.com/tradingandtechnology/market-infrastructure/rss
+http://www.efinancialnews.com/tradingandtechnology/regulation/rss
+http://www.efinancialnews.com/tradingandtechnology/derivatives/rss
+http://www.efinancialnews.com/tradingandtechnology/people/rss
+http://www.efinancialnews.com/tradingandtechnology/news-in-brief/rss
+#http://www.efinancialnews.com/about-us/rss-info
+#http://www.efinancialnews.com/about-us/feedback/W3siYWN0aW9uIjoicnNzLWluZm8ifSwiYWJvdXQtdXMiXQ==
+
+Site: gfmag
+# Site: http://www.gfmag.com/
+# RSS list: http://www.gfmag.com/rss-feeds.html
+#http://www.gfmag.com/rss-feeds.html
+http://feeds.feedburner.com/gfmag/GlobalFinanceMagazineLatestEdition
+http://feeds.feedburner.com/gfmag/BestBanksAndFinancialRankings
+http://feeds.feedburner.com/~r/gfmag/GlobalFinanceMagazineLatestEdition/~6/1
+#http://feedburner.google.com/fb/a/headlineanimator/install?id=ht8cmvfth7g252ckqp7h1ai08k&w=1
+http://feeds.feedburner.com/~r/gfmag/BestBanksAndFinancialRankings/~6/1
+#http://feedburner.google.com/fb/a/headlineanimator/install?id=6if52lan1tnpe3uefu55jggmdk&w=1
+
+Site: banknoise
+# Site: http://www.banknoise.com/en/
+http://feeds.feedburner.com/banknoise?format=xml
+
+Site: ansa
+# Site: http://www.ansa.it/web/notizie/rubriche/english/english.shtml
+http://www.ansa.it/web/notizie/rubriche/english/english_rss.xml
+
+Site: theaustralian
+# Site: http://www.theaustralian.com.au
+# RSS list: http://www.theaustralian.com.au/help/rss
+http://feeds.news.com.au/public/rss/2.0/ausit_itnews_tech_374.xml
+http://feeds.news.com.au/public/rss/2.0/aus_arts_51.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_commodities_702.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_811.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_legal_716.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_mining_704.xml
+http://feeds.news.com.au/public/rss/2.0/aus_businessnews_691.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_small_705.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_wealth_695.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_worldnews_698.xml
+http://feeds.news.com.au/public/rss/2.0/aus_climate_809.xml
+http://feeds.news.com.au/public/rss/2.0/aus_business_exec_lifestyle_696.xml
+http://feeds.news.com.au/public/rss/2.0/aus_exec_life_foodwine_2392.xml
+http://feeds.news.com.au/public/rss/2.0/aus_higher_education_56.xml
+http://feeds.news.com.au/public/rss/2.0/aus_media_57.xml
+http://feeds.news.com.au/public/rss/2.0/aus_news_807.xml
+http://feeds.news.com.au/public/rss/2.0/aus_opinion_58.xml
+http://feeds.news.com.au/public/rss/2.0/aus_property_59.xml
+http://feeds.news.com.au/public/rss/2.0/aus_sport_61.xml
+http://feeds.news.com.au/public/rss/2.0/aus_the_nation_62.xml
+http://feeds.news.com.au/public/rss/2.0/aus_world_808.xml
+http://feeds.news.com.au/public/rss/2.0/aus_travel_and_indulgence_63.xml
+http://feeds.news.com.au/public/rss/2.0/ausit_exec_topstories_385.xml
+http://feeds.news.com.au/public/rss/2.0/ausit_bus_topstories_375.xml
+http://feeds.news.com.au/public/rss/2.0/ausit_itnews_topstories_367.xml
+#http://www.theaustralian.com.au/help/rss
+#http://www.theaustralian.com.au/help/rss/bloggers
+#http://www.theaustralian.com.au/help/rss/webmanagers
+#http://www.newsfirerss.com/
+#http://office.microsoft.com/en-au/help/results.aspx?qu=Microsoft+Outlook+RSS+how+to+add+a+feed&amp;sc=9
+#http://www.news.com.au/help/rss/terms
+http://feeds.news.com.au/public/rss/2.0/aus_business_aviation_706.xml
+#http://www.theaustralian.com.au/help/rss/network
+http://blogs.news.com.au/theaustralian/coverington/index.php/xml/rss_latest
+http://blogs.news.com.au/theaustralian/letters/index.php/xml/rss_latest
+http://blogs.theaustralian.news.com.au/alr/index.php/xml/rss_popular/21
+#http://blogs.news.com.au/theaustralian/markday/index.php/xml/rss_popular
+http://blogs.news.com.au/theaustralian/markday/index.php/xml/rss_latest
+#http://blogs.news.com.au/theaustralian/coverington/index.php/xml/rss_popular
+http://blogs.theaustralian.news.com.au/samanthamaiden/index.php/xml/rss_2.0/
+http://blogs.theaustralian.news.com.au/jacktheinsider/index.php/xml/rss_2.0/
+http://blogs.theaustralian.news.com.au/meganomics/index.php/xml/rss_2.0/
+#http://www.theaustralian.com.au/help/rss#Feed-reader
+#http://www.dmoz.org/Computers/Software/Internet/Clients/WWW/Feed_Readers/
+#http://www.newsonfeeds.com/faq/aggregators
+#http://en.wikipedia.org/wiki/List_of_feed_aggregators
+
+Site: fin24
+# Site: http://www.fin24.com/
+# RSS list: http://www.fin24.com/About/Rss-Feeds
+#http://www.fin24.com/registration/Login.aspx?surl=/About/Rss-Feeds
+#http://www.rssbandit.org/
+http://feeds.fin24.com/articles/Fin24/News/rss
+http://feeds.fin24.com/articles/Fin24/Markets/rss
+http://feeds.fin24.com/articles/Fin24/Money/rss
+http://feeds.fin24.com/articles/Fin24/AdReview/rss
+http://feeds.fin24.com/articles/Fin24/Money/Property/rss
+http://feeds.fin24.com/articles/Fin24/Money/My-Business/rss
+http://feeds.fin24.com/articles/Fin24/Money/Money-Clinic/rss
+http://feeds.fin24.com/articles/Fin24/AdReview/News-that-Matters/rss
+http://feeds.fin24.com/articles/Fin24/Money/Investments/rss
+http://feeds.fin24.com/articles/Fin24/Money/Home/rss
+http://feeds.fin24.com/articles/Fin24/Business/rss
+http://feeds.fin24.com/articles/Fin24/Opinion/Columnists/rss
+http://feeds.fin24.com/articles/Fin24/Companies/rss
+http://feeds.fin24.com/articles/Fin24/Economy/rss
+#http://feeds.fin24.com/articles/Fin24/Podcasts/AM-Stock-Take/rssmusic
+http://feeds.fin24.com/articles/Fin24/Podcasts/Home/rssmusic
+http://feeds.fin24.com/articles/Fin24/Podcasts/MetalHeads/rssmusic
+http://feeds.fin24.com/articles/Fin24/Podcasts/Newsday/rssmusic
+http://feeds.fin24.com/articles/Fin24/Podcasts/Off-The-Record/rssmusic
+http://feeds.fin24.com/articles/Fin24/Podcasts/Unzipped/rssmusic
+http://feeds.fin24.com/articles/Fin24/International/rss
+http://feeds.fin24.com/articles/Fin24/Multimedia/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Investment-Series/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Investment-Series/Unit-Trusts/rss
+http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/Unit-Trusts/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Top-200/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Top-200/Measuring-Performance/rss
+http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Top-200/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Investment-Series/ETFs/rss
+http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/ETFs/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Investment-Series/Alternative-Investments/rss
+http://feeds.fin24.com/articles/Fin24/Special-Reports/Investment-Series/Money-Market-Funds/rss
+http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/Alternative-Investments/rss
+http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/Money-Market-Funds/rss
+#http://www.fin24.com/About/Rss-Feeds
+#http://www.bradsoft.com/feeddemon/index.asp

@@ -14,7 +14,7 @@ namespace RssScraper
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmRssScraper());
+            Application.Run(new RssScraperForm());
         }
     }
 }
