@@ -2796,7 +2796,7 @@ http://www.independent.co.uk/money/tax/rss
 #http://www.independent.co.uk/service/rss-feeds-775086.html
 #http://www.independent.co.uk/service/list-of-rss-feeds-775086.html
 
-Site: https://www.theice.com/homepage.jhtml
+Site: theice
 # Site: https://www.theice.com/homepage.jhtml
 # RSS list: https://www.theice.com/rss.jhtml
 https://www.theice.com/notices/FuturesCanadaMemberNoticesRSS.shtml
