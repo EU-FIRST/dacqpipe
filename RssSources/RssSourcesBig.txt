@@ -659,14 +659,14 @@ http://www.mirror.co.uk/rss.xml
 Site: spiegel
 # Site: http://www.spiegel.de/international/
 # RSS list: http://www.spiegel.de/international/0,1518,643192,00.html
-http://www.spiegel.de/schlagzeilen/index.rss
+#http://www.spiegel.de/schlagzeilen/index.rss # Removed Oct-2011
 http://www.spiegel.de/international/index.rss
 http://www.spiegel.de/international/germany/index.rss
 http://www.spiegel.de/international/europe/index.rss
 http://www.spiegel.de/international/world/index.rss
 http://www.spiegel.de/international/business/index.rss
 http://www.spiegel.de/international/zeitgeist/index.rss
-http://www.spiegel.de/schlagzeilen/tops/index.rss
+#http://www.spiegel.de/schlagzeilen/tops/index.rss # Removed Oct-2011
 #http://www.feedreader.com/
 #http://feeds.nytimes.com/click.phdo?i=4e6f151df47c87f7a4fcfc31c8b9a444
 #http://feeds.nytimes.com/click.phdo?i=80d02deed219a1246a47bb8903d89f04
@@ -1028,9 +1028,9 @@ Site: nhc.noaa
 # RSS list: http://www.nhc.noaa.gov/aboutrss.shtml
 http://www.nhc.noaa.gov/gtwo.xml
 http://www.nhc.noaa.gov/audio/index_podcast.xml
-http://www.nhc.noaa.gov/audio/index_podcast_sp.xml
+#http://www.nhc.noaa.gov/audio/index_podcast_sp.xml # Removed Oct-2011
 http://www.nhc.noaa.gov/index-at.xml
-http://www.nhc.noaa.gov/index-at-sp.xml
+#http://www.nhc.noaa.gov/index-at-sp.xml # Removed Oct-2011
 http://www.nhc.noaa.gov/index-ep.xml
 http://www.nhc.noaa.gov/nhc_at1.xml
 http://www.nhc.noaa.gov/nhc_at2.xml
@@ -1545,29 +1545,29 @@ http://www.prime-tass.com/rss/engnews_rss.xml
 
 # *** RSS Scraper modified (relaxed regular expressions to find even more links) ***
 
-Site: ouest-france
+#Site: ouest-france # Removed Oct-2011
 # Site: http://www.ouest-france.fr
 # RSS list: http://www.ouest-france.fr, http://www.ouest-france.fr/actu/bourse.php
-http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-RSS_6346--fils-tous_filDMA.Htm#xtor=RSS-3003
-http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-bre-RSS_40771--pere-bre_filDMA.Htm#xtor=RSS-3003
-http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-bno-RSS_40771--pere-bno_filDMA.Htm#xtor=RSS-3003
-http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-pdl-RSS_40771--pere-pdl_filDMA.Htm#xtor=RSS-3003
-http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-RSS_44096--fils-tous_filDMA.Htm#xtor=RSS-3003
-http://www.ouest-france.fr/actu/actualite-RSS.php
-http://www.ouest-france.fr/actu/faitDuJour-RSS.php
-http://www.ouest-france.fr/actu/editorial-RSS.php
-http://www.ouest-france.fr/actu/point-de-vue-RSS.php
-http://www.ouest-france.fr/actu/politique-RSS.php
-http://www.ouest-france.fr/actu/etranger-RSS.php
-http://www.ouest-france.fr/actu/economique-social-RSS.php
-http://www.ouest-france.fr/actu/infos-generales-RSS.php
-http://www.ouest-france.fr/actu/agriculture-RSS.php
-http://www.ouest-france.fr/actu/sports-RSS.php
-http://www.ouest-france.fr/actu/magazine-RSS.php
-http://www.ouest-france.fr/actu/bretagne-RSS.php
-http://www.ouest-france.fr/actu/paysDeLaLoire-RSS.php
-http://www.ouest-france.fr/actu/basseNormandie-RSS.php
-http://www.ouest-france.fr/flux/toutesbkn_rss.php
+#http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-RSS_6346--fils-tous_filDMA.Htm#xtor=RSS-3003
+#http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-bre-RSS_40771--pere-bre_filDMA.Htm#xtor=RSS-3003
+#http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-bno-RSS_40771--pere-bno_filDMA.Htm#xtor=RSS-3003
+#http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-pdl-RSS_40771--pere-pdl_filDMA.Htm#xtor=RSS-3003
+#http://www.ouest-france.fr/dma-rss_-Toutes-les-DMA-RSS_44096--fils-tous_filDMA.Htm#xtor=RSS-3003
+#http://www.ouest-france.fr/actu/actualite-RSS.php
+#http://www.ouest-france.fr/actu/faitDuJour-RSS.php
+#http://www.ouest-france.fr/actu/editorial-RSS.php
+#http://www.ouest-france.fr/actu/point-de-vue-RSS.php
+#http://www.ouest-france.fr/actu/politique-RSS.php
+#http://www.ouest-france.fr/actu/etranger-RSS.php
+#http://www.ouest-france.fr/actu/economique-social-RSS.php
+#http://www.ouest-france.fr/actu/infos-generales-RSS.php
+#http://www.ouest-france.fr/actu/agriculture-RSS.php
+#http://www.ouest-france.fr/actu/sports-RSS.php
+#http://www.ouest-france.fr/actu/magazine-RSS.php
+#http://www.ouest-france.fr/actu/bretagne-RSS.php
+#http://www.ouest-france.fr/actu/paysDeLaLoire-RSS.php
+#http://www.ouest-france.fr/actu/basseNormandie-RSS.php
+#http://www.ouest-france.fr/flux/toutesbkn_rss.php
 
 Site: reuters
 # Site: http://www.reuters.com
@@ -2063,6 +2063,50 @@ http://feeds.wsjonline.com/wsj/video/special_reports
 #http://www.marketwatch.com/feeds/podcast/podcast.asp?count=10&amp;doctype=109&amp;column=Take+on+Tech
 #http://www.marketwatch.com/feeds/podcast/podcast.asp?count=10&amp;doctype=109&amp;column=Money+Markets+and+More
 #http://www.marketwatch.com/feeds/podcast/podcast.asp?count=10&amp;doctype=109&amp;column=Your+Money+with+Chuck+Jaffe
+# Blog feeds added Oct-2011 
+http://blogs.wsj.com/bankruptcy/feed/
+http://blogs.wsj.com/capitaljournal/feed/
+http://blogs.wsj.com/chinarealtime/feed/
+http://blogs.wsj.com/corruption-currents/feed/
+http://feeds.wsjonline.com/wsj/dailyfix/feed/
+http://feeds.wsjonline.com/wsj/deals/feed
+http://feeds.wsjonline.com/wsj/developments/feed
+http://feeds.wsjonline.com/wsj/biztech/feed
+http://blogs.wsj.com/dispatch/feed/
+http://blogs.wsj.com/drivers-seat/feed/
+http://blogs.wsj.com/exchange/feed/
+http://blogs.wsj.com/financial-adviser/feed/
+http://blogs.wsj.com/management/feed/
+http://blogs.wsj.com/health/feed/
+http://blogs.wsj.com/runway/feed/
+http://blogs.wsj.com/hire-education/feed/
+http://blogs.wsj.com/hong-kong/feed/
+http://blogs.wsj.com/iainmartin/feed/
+http://blogs.wsj.com/ideas-market/feed/
+http://blogs.wsj.com/indiarealtime/feed/
+http://blogs.wsj.com/japanrealtime/feed/
+http://blogs.wsj.com/juggle/feed/
+http://blogs.wsj.com/korearealtime/feed/
+http://blogs.wsj.com/law/feed/
+http://blogs.wsj.com/marketbeat/feed/
+http://blogs.wsj.com/metropolis/feed/
+http://blogs.wsj.com/middleseat/feed/
+http://blogs.wsj.com/emergingeurope/feed/
+http://feeds.wsjonline.com/wsj/numbersguy/feed
+http://blogs.wsj.com/wine/feed/
+http://blogs.wsj.com/photojournal/feed/
+http://blogs.wsj.com/privateequity/feed/
+http://blogs.wsj.com/brussels/feed/
+http://feeds.wsjonline.com/wsj/economics/feed
+http://blogs.wsj.com/scene/feed/
+http://blogs.wsj.com/simonnixon/feed/
+http://feeds2.feedburner.com/wsj/speakeasy/feed/
+http://blogs.wsj.com/source/feed/
+http://blogs.wsj.com/tech-europe/feed/
+http://blogs.wsj.com/venturecapital/feed/
+http://blogs.wsj.com/washwire/feed/
+http://blogs.wsj.com/wealth/feed/
+http://blogs.wsj.com/puzzle/feed/
 
 Site: indiatimes
 # Site: http://timesofindia.indiatimes.com/business/bizarticlelist/1898055.cms
@@ -3302,3 +3346,471 @@ http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/Alt
 http://feeds.fin24.com/articles/Fin24/Vote/Special-Reports/Investment-Series/Money-Market-Funds/rss
 #http://www.fin24.com/About/Rss-Feeds
 #http://www.bradsoft.com/feeddemon/index.asp
+
+#############################
+#   Sites added 3.10.2011   #
+#############################
+
+Site: dailyfinance
+# Site: http://www.dailyfinance.com/ # Redirect from www.bloggingstocks.com
+# RSS list: http://www.dailyfinance.com/to-go/#rss-feeds
+http://www.dailyfinance.com/rss.xml
+http://www.dailyfinance.com/tag/bonds/rss.xml
+http://www.dailyfinance.com/tag/futures/rss.xml
+http://www.dailyfinance.com/category/earnings/rss.xml
+http://www.dailyfinance.com/category/investing/rss.xml
+http://www.dailyfinance.com/tag/currency/rss.xml
+http://www.dailyfinance.com/category/one-year-later/rss.xml
+http://www.dailyfinance.com/category/energy/rss.xml
+http://www.dailyfinance.com/tag/international/rss.xml
+http://www.dailyfinance.com/category/stock-picks/rss.xml
+http://www.dailyfinance.com/category/technology/rss.xml
+
+Site: mymoneylife
+# Site: http://mymoneylife.blogspot.com/
+http://mymoneylife.blogspot.com/feeds/posts/default?alt=rss
+
+Site: smallcapstocks
+# Site: http://www.smallcapstocksblog.com/
+http://feeds.feedburner.com/SmallCapStocksBlog
+
+Site: cnbcblog
+# Site: http://www.cnbc.com/id/21114826
+http://www.cnbc.com/id/21114821/device/rss/rss.xml
+
+Site: barrons
+# Site: http://online.barrons.com/home-page
+# RSS list: http://online.barrons.com/public/page/rssfeed.html
+http://online.barrons.com/xml/rss/3_7533.xml
+http://online.barrons.com/xml/rss/3_7534.xml
+http://online.barrons.com/xml/rss/3_7535.xml
+http://online.barrons.com/xml/rss/3_7544.xml
+http://online.barrons.com/xml/rss/3_7541.xml
+http://online.barrons.com/xml/rss/3_7539.xml
+http://online.barrons.com/xml/rss/3_7551.xml
+http://online.barrons.com/xml/rss/3_7601.xml
+http://online.barrons.com/xml/rss/3_7536.xml
+http://online.barrons.com/xml/rss/3_7625.xml
+http://online.barrons.com/xml/rss/3_7543.xml
+http://online.barrons.com/xml/rss/3_7542.xml
+http://online.barrons.com/xml/rss/3_7630.xml
+http://online.barrons.com/xml/rss/3_7609.xml
+http://online.barrons.com/xml/rss/3_7549.xml
+http://online.barrons.com/xml/rss/3_7546.xml
+http://online.barrons.com/xml/rss/3_7545.xml
+http://online.barrons.com/xml/rss/3_7540.xml
+http://online.barrons.com/xml/rss/3_7525.xml
+http://online.barrons.com/xml/rss/3_7522.xml
+http://online.barrons.com/xml/rss/3_7523.xml
+http://online.barrons.com/xml/rss/3_7524.xml
+http://online.barrons.com/xml/rss/3_7527.xml
+http://online.barrons.com/xml/rss/3_7526.xml
+http://online.barrons.com/xml/rss/3_7531.xml
+http://online.barrons.com/xml/rss/3_7580.xml
+http://online.barrons.com/xml/rss/3_7528.xml
+http://online.barrons.com/xml/rss/3_7530.xml
+http://online.barrons.com/xml/rss/3_7529.xml
+http://online.barrons.com/xml/rss/3_7510.xml
+http://online.barrons.com/xml/rss/3_7515.xml
+http://online.barrons.com/xml/rss/3_7519.xml
+http://online.barrons.com/xml/rss/3_7560.xml
+http://online.barrons.com/xml/rss/3_7561.xml
+http://online.barrons.com/xml/rss/3_7562.xml
+http://online.barrons.com/xml/rss/3_7563.xml
+http://online.barrons.com/xml/rss/3_7564.xml
+http://online.barrons.com/xml/rss/3_7565.xml
+http://blogs.barrons.com/stockstowatchtoday/feed/
+http://blogs.barrons.com/techtraderdaily/feed/
+http://blogs.barrons.com/focusonfunds/feed/
+http://www.marketwatch.com/feeds/podcast/podcast.asp?count=10&doctype=109&column=This+Week+in+Barrons
+
+Site: interactiveinvestor
+# Site: http://www.iii.co.uk/
+http://www.iii.co.uk/rss.xml
+
+Site: motleyfool
+# Site: http://boards.fool.co.uk/
+# RSS list: http://www.fool.co.uk/help/headlines/headlines.aspx
+http://rss.feedsportal.com/feed/foolcouk/headlines
+http://feeds.feedburner.com/MoneyTalkPodcast
+
+Site: stockopedia
+# Site: http://www.stockopedia.co.uk/
+http://www.stockopedia.co.uk/feed/activity.rss/
+
+Site: derekhernquist
+# Site: http://derekhernquist.com/
+http://derekhernquist.com/feed/
+
+Site: thebasispoint
+# Site: http://thebasispoint.com/
+http://thebasispoint.com/feed/
+
+Site: insidermonkey
+# Site: http://www.insidermonkey.com/blog/
+http://feeds.feedburner.com/insidermonkey
+
+Site: jutiagroup
+# Site: http://jutiagroup.com/
+http://jutiagroup.com/categories/market-updates/feed/
+
+Site: kevinsmarketblog
+# Site: http://kevinsmarketblog.blogspot.com/
+# *** Converted from Atom to RSS  
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/TIUlk
+
+Site: afraidtotrade
+# Site: http://afraidtotrade.com/
+http://afraidtotrade.com/index.php?format=feed&type=rss
+
+Site: pennysleuth
+# Site: http://pennysleuth.com/
+http://feeds.feedburner.com/pennysleuth
+
+Site: controlledgreed
+# Site: http://www.controlledgreed.com/
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/controlledgreed/ucXV
+
+Site: sinletter
+# Site: http://sinletter.com/
+http://www.sinletter.com/feed/
+
+Site: fundmymutualfund
+# Site: http://www.fundmymutualfund.com/
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/FundMyMutualFund
+
+Site: intelligentspeculator
+# Site: http://www.intelligentspeculator.net/
+http://feeds.feedburner.com/intelligentspeculator
+http://www.intelligentspeculator.net/comments/feed/
+
+Site: dailyreckoning
+# Site: http://dailyreckoning.com/
+http://feeds.feedburner.com/dailyreckoning
+
+Site: momentum-trader
+# Site: http://www.momentum-trader.com/
+http://feeds.feedburner.com/Momentum-tradercom
+
+Site: investorslive
+# Site: http://www.investorslive.com/
+http://feeds.feedburner.com/investorslive/feed
+
+Site: 247wallst
+# Site: http://247wallst.com/
+http://feeds.feedburner.com/typepad/RyNm
+http://247wallst.com/comments/feed/
+
+Site: hedgefundmgr
+# Site: http://hedgefundmgr.blogspot.com/
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/RgFy
+
+Site: howardlindzon
+# Site: http://howardlindzon.com/
+http://howardlindzon.com/feed/
+
+Site: etf-central
+# Site: http://etf-central.com/
+http://etf-central.com/feed/
+
+Site: businessinsider
+# Site: http://www.businessinsider.com/
+http://feeds2.feedburner.com/businessinsider
+
+Site: cotstimer
+# Site: http://cotstimer.blogspot.com/
+http://cotstimer.blogspot.com/feeds/posts/default?alt=rss
+
+Site: etfexpert
+# Site: http://etfexpert.com
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/EtfExpert?format=xml
+
+Site: verysmartinvesting
+# Site: http://verysmartinvesting.blogspot.com
+http://feeds.feedburner.com/Verysmartinvesting
+
+Site: economistsview
+# Site: http://economistsview.typepad.com
+http://feeds.feedburner.com/EconomistsView
+http://economistsview.typepad.com/economistsview/fedwatch.rdf
+
+Site: baselinescenario
+# Site: http://baselinescenario.com
+http://baselinescenario.com/feed/
+http://baselinescenario.com/comments/feed/
+
+Site: dshort.com
+# Site: http://dshort.com
+http://www.feed43.com/dshort.xml
+
+Site: creditwritedowns
+# Site: http://www.creditwritedowns.com
+http://feeds.creditwritedowns.com/creditwritedowns
+
+Site: bearishnews
+# Site: http://www.bearishnews.com
+http://feeds.feedburner.com/BearishNews?format=xml
+
+Site: gregormacdonald
+# Site: http://gregor.us
+http://feeds.feedburner.com/gregorus
+
+Site: rortybomb
+# Site: http://rortybomb.wordpress.com
+http://rortybomb.wordpress.com/feed/
+http://rortybomb.wordpress.com/comments/feed/
+
+Site: bonddad
+# Site: http://bonddad.blogspot.com
+http://bonddad.blogspot.com/feeds/posts/default?alt=rss
+
+Site: smbcapital
+# Site: http://www.smbtraining.com/blog/
+http://www.smbtraining.com/blog/feed
+
+Site: tradingwallstreet
+# Site: http://www.twsinvestments.com/
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/TradingWallStreet?alt=rss
+
+Site: dragonflycapital
+# Site: http://dragonflycap.com
+http://feeds.feedburner.com/DragonflyCapital?alt=rss
+
+Site: chessnwine
+# Site: http://ibankcoin.com/chessnwine/
+http://ibankcoin.com/chessnwine/feed/?alt=rss
+http://ibankcoin.com/chessnwine/comments/feed/
+
+Site: mercenarytrader
+# Site: http://mercenarytrader.com
+http://www.mercenarytrader.com/feed/?alt=rss
+
+Site: investingwithoptions
+# Site: http://www.investingwithoptions.com
+http://feeds2.feedburner.com/InvestingWithOptions?alt=rss
+
+Site: attitrade
+# Site: http://www.attitrade.com
+http://feeds.feedburner.com/Attitrade
+
+Site: evilspeculator
+# Site: http://evilspeculator.com
+http://evilspeculator.com/?feed=rss2
+
+Site: breakoutperformance
+# Site: http://breakoutperformance.blogspot.com
+http://feeds.feedburner.com/BreakoutPerformance
+
+Site: dividendgrowthinvestor
+# Site: http://www.dividendgrowthinvestor.com
+http://feeds.feedburner.com/DividendGrowthInvestor
+
+Site: thepragmaticcapitalist
+# Site: http://pragcap.com
+http://pragcap.com/feed
+http://pragcap.com/wp-content/plugins/mingle-forum/feed.php?topic=all
+
+Site: contrarianedge
+# Site: http://contrarianedge.com
+http://feeds.feedburner.com/contrarianedge
+
+Site: humblestudentofthemarkets
+# Site: http://humblestudentofthemarkets.blogspot.com
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/SeoDJ
+
+### Borut ###
+
+Site: stocktradingtogo
+# Site: http://www.stocktradingtogo.com/
+http://feeds.feedburner.com/Stocktrading101
+http://www.stocktradingtogo.com/comments/feed/
+
+Site: adashofinsight
+# Site: http://oldprof.typepad.com/
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/WuQQ?alt=rss
+
+Site: grindstonefinancial
+# Site: http://www.grindstonefinancial.com
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/GrindstoneFinancial
+
+Site: zacksblogs
+# Site: http://www.zacks.com/blog/
+# RSS list: http://www.zacks.com/external/index_feeds.php
+http://feed.zacks.com/commentary/AllStories/rss
+http://feed.zacks.com/commentary/AggressiveGrowth/rss
+http://feed.zacks.com/commentary/GrowthAndIncome/rss
+http://feed.zacks.com/commentary/Momentum/rss
+http://feed.zacks.com/commentary/Value/rss
+http://feed.zacks.com/commentary/Zacks1RankTopPerformers/rss
+http://feed.zacks.com/commentary/ZacksNo5Rank/rss
+http://feed.zacks.com/commentary/IndustryRankAnalysis/rss
+http://feed.zacks.com/commentary/AnalystBlog/rss
+http://feed.zacks.com/commentary/BearOfTheDay/rss
+http://feed.zacks.com/commentary/BullOfTheDay/rss
+http://feed.zacks.com/commentary/EarningsPreview/rss
+http://feed.zacks.com/commentary/EarningsTrends/rss
+http://feed.zacks.com/commentary/IndustryOutlook/rss
+http://feed.zacks.com/commentary/InvestmentIdeas/rss
+http://feed.zacks.com/commentary/MutualFundCommentary/rss
+http://feed.zacks.com/commentary/CorporateSummary/rss
+http://feed.zacks.com/commentary/EconomicHighlights/rss
+http://feed.zacks.com/commentary/KnowYourOptions/rss
+http://feed.zacks.com/commentary/MarketNews/rss
+http://feed.zacks.com/commentary/ProfitTracks/rss
+http://feed.zacks.com/commentary/ScreenOfTheWeek/rss
+http://feed.zacks.com/commentary/TaleOfTheTape/rss
+http://feed.zacks.com/commentary/VoiceOfThePeople/rss
+
+Site: calculatedrisk
+# Site: http://www.calculatedriskblog.com
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/CalculatedRisk
+
+Site: theslopeofhope
+# Site: http://slopeofhope.com
+# *** Converted from Atom to RSS
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/tradeblogs/the_slope_of_hope_with_ti?alt=rss
+
+Site: bristlemouth
+# Site: http://www.iifunds.com.au/bristlemouth
+http://feeds.feedburner.com/BristlemouthAValueInvestingBlog?format=xml
+
+Site: tradersnarrative
+# Site: http://tradersnarrative.com/
+http://feeds.feedburner.com/tradersnarrative
+
+Site: investmentpostcards
+# Site: http://www.investmentpostcards.com/
+http://www.investmentpostcards.com/feed/
+
+Site: vixandmore
+# Site: http://vixandmore.blogspot.com/
+http://vixandmore.blogspot.com/feeds/posts/default?alt=rss
+
+Site: thereformedbroker
+# Site: http://www.thereformedbroker.com/
+http://www.thereformedbroker.com/feed/
+
+Site: philstockworld
+# Site: http://www.philstockworld.com/
+http://www.philstockworld.com/feed/
+
+Site: thestockmasters
+# Site: http://www.thestockmasters.com/
+http://www.thestockmasters.com/rss.xml
+
+Site: dailyoptionsreport
+# Site: http://dailyoptionsreport.com/
+http://dailyoptionsreport.com/feed/
+
+Site: wallstnation
+# Site: http://wallstnation.com/
+http://feeds.feedburner.com/WallStNationFeed?format=xml
+
+Site: quantifiableedges
+# Site: http://quantifiableedges.blogspot.com/
+http://feeds.feedburner.com/quantifiableedges
+
+Site: mdwoptions
+# Site: http://blog.mdwoptions.com
+http://blog.mdwoptions.com/feed/
+
+Site: randomroger
+# Site: http://randomroger.blogspot.com/
+http://randomroger.blogspot.com/feeds/posts/default?alt=rss
+
+Site: topforeignstocks
+# Site: http://topforeignstocks.com/wp/index.php
+http://feeds2.feedburner.com/tfs
+
+Site: microcapspeculator
+# Site: http://microcapspeculator.net/
+http://microcapspeculator.net/feed
+
+Site: themarketguardian
+# Site: http://www.themarketguardian.com/
+http://www.themarketguardian.com/feed/
+
+Site: mytradersjournal
+# Site: http://mytradersjournal.com/stock-options/
+http://mytradersjournal.com/stock-options/feed/
+
+Site: thetechnicaltakedotcom
+# Site: http://thetechnicaltakedotcom.blogspot.com/
+http://www.thetechnicaltake.com/feed/
+
+Site: tischendorf
+# Site: http://www.tischendorf.com/
+http://feeds2.feedburner.com/Tischendorf
+
+Site: tradergav
+# Site: http://www.tradergav.com/
+http://feeds2.feedburner.com/Tradergavcom
+
+Site: carlfutia
+# Site: http://carlfutia.blogspot.com/
+http://carlfutia.blogspot.com/feeds/posts/default?alt=rss
+
+Site: peridotcapitalist
+# Site: http://www.peridotcapitalist.com/
+http://feeds.feedburner.com/PeridotCapitalist
+
+Site: alphatrends
+# Site: http://www.alphatrends.net/
+http://www.alphatrends.net/feed/
+
+Site: abnormalreturns
+# Site: http://www.abnormalreturns.com/
+http://feeds2.feedburner.com/abnormalreturns
+
+Site: businessinsiderclusterstock
+# Site: http://www.businessinsider.com/clusterstock
+http://feeds.feedburner.com/clusterstock?format=xml
+
+Site: ritholtz
+# Site: http://www.ritholtz.com/blog/
+http://www.ritholtz.com/blog/feed/
+
+Site: bespokeinvest
+# Site: http://www.bespokeinvest.com/
+http://www.bespokeinvest.com/thinkbig/rss.xml
+
+Site: globaleconomicanalysis
+# Site: http://globaleconomicanalysis.blogspot.com/
+http://feeds2.feedburner.com/MishsGlobalEconomicTrendAnalysis
+
+Site: stockchartist
+# Site: http://www.stockchartist.blogspot.com/
+http://stockchartist.blogspot.com/feeds/posts/default?alt=rss
+
+Site: gicharts
+# Site: http://www.gicharts.blogspot.com/
+http://gicharts.blogspot.com/feeds/posts/default?alt=rss
+
+Site: chartswingtrader
+# Site: http://www.chartswingtrader.com/
+http://feeds.feedburner.com/ChartSwingTrader
+
+Site: bigwavetrading
+# Site: http://www.bigwavetrading.net/
+http://feeds.feedburner.com/TradingBestInvestments
+
+Site: traderjamie
+# Site: http://traderjamie.blogspot.com/
+http://traderjamie.blogspot.com/feeds/posts/default?alt=rss
+
+Site: tradermike
+# Site: http://tradermike.net/
+http://feeds.feedburner.com/TraderMike
+
+Site: marketsfallondpicks
+# Site: http://www.markets.fallondpicks.com/
+http://www.markets.fallondpicks.com/feeds/posts/default?alt=rss
