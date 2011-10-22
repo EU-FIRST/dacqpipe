@@ -2584,23 +2584,16 @@ http://rss.news.yahoo.com/rss/mostviewed
 Site: economistsview
 # Site: http://economistsview.typepad.com/
 http://feeds.feedburner.com/EconomistsView
+http://economistsview.typepad.com/economistsview/fedwatch.rdf
 
 #############################
 #   Sites added 27.6.2011   #
 #############################
 
-Site: investmentpostcards
-# Site: http://www.investmentpostcards.com/
-http://feeds.feedburner.com/wordpress/VYxj?format=xml
-
 Site: calculatedriskblog
 # Site: http://www.calculatedriskblog.com/
-# *** Converted from Atom to RSS  
+# *** Converted to RSS from Atom  
 http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2ffeeds.feedburner.com%2fCalculatedRisk
-
-Site: baselinescenario
-# Site: http://baselinescenario.com/
-http://feeds.feedburner.com/BaselineScenario?format=xml
 
 Site: jessescrossroadscafe
 # Site: http://jessescrossroadscafe.blogspot.com/
@@ -2608,12 +2601,8 @@ http://feeds.feedburner.com/JessesCafeAmericain?format=xml
 
 Site: brontecapital
 # Site: http://brontecapital.blogspot.com
-# *** Converted from Atom to RSS  
+# *** Converted to RSS from Atom  
 http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2ffeeds.feedburner.com%2fbrontecapital
-
-Site: abnormalreturns
-# Site: http://www.abnormalreturns.com/
-http://feeds2.feedburner.com/abnormalreturns
 
 Site: mishsglobaleconomictrendanalysis
 # Site: http://globaleconomicanalysis.blogspot.com/
@@ -2661,7 +2650,7 @@ http://www.capitalspectator.com/index.xml
 
 Site: financialarmageddon
 # Site: http://www.financialarmageddon.com/
-# *** Converted from Atom to RSS 
+# *** Converted to RSS from Atom 
 http://www.devtacular.com/utilities/atomtorss/?url=http%3a%2f%2fwww.financialarmageddon.com%2fatom.xml
 
 Site: telegraph
@@ -3456,7 +3445,7 @@ http://jutiagroup.com/categories/market-updates/feed/
 
 Site: kevinsmarketblog
 # Site: http://kevinsmarketblog.blogspot.com/
-# *** Converted from Atom to RSS  
+# *** Converted to RSS from Atom  
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/TIUlk
 
 Site: afraidtotrade
@@ -3469,7 +3458,7 @@ http://feeds.feedburner.com/pennysleuth
 
 Site: controlledgreed
 # Site: http://www.controlledgreed.com/
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/controlledgreed/ucXV
 
 Site: sinletter
@@ -3478,7 +3467,7 @@ http://www.sinletter.com/feed/
 
 Site: fundmymutualfund
 # Site: http://www.fundmymutualfund.com/
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/FundMyMutualFund
 
 Site: intelligentspeculator
@@ -3505,7 +3494,7 @@ http://247wallst.com/comments/feed/
 
 Site: hedgefundmgr
 # Site: http://hedgefundmgr.blogspot.com/
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/RgFy
 
 Site: howardlindzon
@@ -3526,17 +3515,12 @@ http://cotstimer.blogspot.com/feeds/posts/default?alt=rss
 
 Site: etfexpert
 # Site: http://etfexpert.com
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/EtfExpert?format=xml
 
 Site: verysmartinvesting
 # Site: http://verysmartinvesting.blogspot.com
 http://feeds.feedburner.com/Verysmartinvesting
-
-Site: economistsview
-# Site: http://economistsview.typepad.com
-http://feeds.feedburner.com/EconomistsView
-http://economistsview.typepad.com/economistsview/fedwatch.rdf
 
 Site: baselinescenario
 # Site: http://baselinescenario.com
@@ -3574,7 +3558,7 @@ http://www.smbtraining.com/blog/feed
 
 Site: tradingwallstreet
 # Site: http://www.twsinvestments.com/
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/TradingWallStreet?alt=rss
 
 Site: dragonflycapital
@@ -3621,7 +3605,7 @@ http://feeds.feedburner.com/contrarianedge
 
 Site: humblestudentofthemarkets
 # Site: http://humblestudentofthemarkets.blogspot.com
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/SeoDJ
 
 ### Borut ###
@@ -3633,12 +3617,12 @@ http://www.stocktradingtogo.com/comments/feed/
 
 Site: adashofinsight
 # Site: http://oldprof.typepad.com/
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/WuQQ?alt=rss
 
 Site: grindstonefinancial
 # Site: http://www.grindstonefinancial.com
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/GrindstoneFinancial
 
 Site: zacksblogs
@@ -3671,12 +3655,12 @@ http://feed.zacks.com/commentary/VoiceOfThePeople/rss
 
 Site: calculatedrisk
 # Site: http://www.calculatedriskblog.com
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/CalculatedRisk
 
 Site: theslopeofhope
 # Site: http://slopeofhope.com
-# *** Converted from Atom to RSS
+# *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/tradeblogs/the_slope_of_hope_with_ti?alt=rss
 
 Site: bristlemouth
@@ -3814,3 +3798,37 @@ http://feeds.feedburner.com/TraderMike
 Site: marketsfallondpicks
 # Site: http://www.markets.fallondpicks.com/
 http://www.markets.fallondpicks.com/feeds/posts/default?alt=rss
+
+### Igor ###
+
+Site: thebigpicture
+http://feeds.feedburner.com/TheBigPicture
+
+Site: zerohedge
+http://feeds.feedburner.com/zerohedge/feed
+
+Site: mises
+http://feeds.mises.org/MisesBlog
+
+Site: minyanville
+http://www.minyanville.com/rss/dailyfeed.rss
+
+Site: epicureandealmaker 
+http://feeds.feedburner.com/blogspot/epicureandealmaker
+
+Site: dealbreaker
+http://feeds.feedburner.com/dealbreaker/
+
+Site: mpettis 
+http://mpettis.com/feed/
+
+Site: maxkeiser
+http://maxkeiser.com/feed/
+
+Site: angrybearblog
+# *** Converted to RSS from Atom
+http://www.devtacular.com/utilities/atomtorss/?url=http://www.angrybearblog.com/feeds/posts/default
+
+Site: jrdeputyaccountant
+# *** Converted to RSS from Atom
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/OVWr
