@@ -3559,24 +3559,24 @@ http://www.smbtraining.com/blog/feed
 Site: tradingwallstreet
 # Site: http://www.twsinvestments.com/
 # *** Converted to RSS from Atom
-http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/TradingWallStreet?alt=rss
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/TradingWallStreet
 
 Site: dragonflycapital
 # Site: http://dragonflycap.com
-http://feeds.feedburner.com/DragonflyCapital?alt=rss
+http://feeds.feedburner.com/DragonflyCapital
 
 Site: chessnwine
 # Site: http://ibankcoin.com/chessnwine/
-http://ibankcoin.com/chessnwine/feed/?alt=rss
+http://ibankcoin.com/chessnwine/feed/
 http://ibankcoin.com/chessnwine/comments/feed/
 
 Site: mercenarytrader
 # Site: http://mercenarytrader.com
-http://www.mercenarytrader.com/feed/?alt=rss
+http://www.mercenarytrader.com/feed/
 
 Site: investingwithoptions
 # Site: http://www.investingwithoptions.com
-http://feeds2.feedburner.com/InvestingWithOptions?alt=rss
+http://feeds2.feedburner.com/InvestingWithOptions
 
 Site: attitrade
 # Site: http://www.attitrade.com
@@ -3618,7 +3618,7 @@ http://www.stocktradingtogo.com/comments/feed/
 Site: adashofinsight
 # Site: http://oldprof.typepad.com/
 # *** Converted to RSS from Atom
-http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/WuQQ?alt=rss
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/WuQQ
 
 Site: grindstonefinancial
 # Site: http://www.grindstonefinancial.com
@@ -3661,7 +3661,7 @@ http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/C
 Site: theslopeofhope
 # Site: http://slopeofhope.com
 # *** Converted to RSS from Atom
-http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/tradeblogs/the_slope_of_hope_with_ti?alt=rss
+http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/typepad/tradeblogs/the_slope_of_hope_with_ti
 
 Site: bristlemouth
 # Site: http://www.iifunds.com.au/bristlemouth
