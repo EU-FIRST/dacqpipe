@@ -3832,3 +3832,12 @@ http://www.devtacular.com/utilities/atomtorss/?url=http://www.angrybearblog.com/
 Site: jrdeputyaccountant
 # *** Converted to RSS from Atom
 http://www.devtacular.com/utilities/atomtorss/?url=http://feeds.feedburner.com/blogspot/OVWr
+
+#############################
+#   Sites added 2.11.2011   #
+#############################
+
+Site: digitopoly
+# Site: http://www.digitopoly.org/
+http://feeds.feedburner.com/digitopoly
+http://www.digitopoly.org/comments/feed/
