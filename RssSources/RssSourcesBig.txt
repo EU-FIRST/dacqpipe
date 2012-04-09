@@ -1718,16 +1718,6 @@ http://www.straitstimes.com/STI/STIFILES/rss/sun_lifestyle.xml
 
 Site: economist
 # Site: http://www.economist.com/business-finance
-# RSS list: http://www.economist.com/rss/
-http://www.economist.com/rss/daily_news_and_views_rss.xml
-http://www.economist.com/rss/news_analysis_rss.xml
-http://www.economist.com/rss/daily_columns_rss.xml
-http://www.economist.com/rss/correspondents_diary_rss.xml
-http://www.economist.com/rss/daily_chart_rss.xml
-http://www.economist.com/blogs/democracyinamerica/index.xml
-http://www.economist.com/blogs/freeexchange/index.xml
-http://www.economist.com/blogs/gulliver/index.xml
-http://www.economist.com/rss/full_print_edition_rss.xml
 http://www.economist.com/rss/the_world_this_week_rss.xml
 http://www.economist.com/rss/letters_rss.xml
 http://www.economist.com/rss/leaders_rss.xml
@@ -1739,6 +1729,7 @@ http://www.economist.com/rss/united_states_rss.xml
 http://www.economist.com/rss/the_americas_rss.xml
 http://www.economist.com/rss/middle_east_and_africa_rss.xml
 http://www.economist.com/rss/asia_rss.xml
+http://www.economist.com/rss/china_rss.xml
 http://www.economist.com/rss/international_rss.xml
 http://www.economist.com/rss/business_rss.xml
 http://www.economist.com/rss/finance_and_economics_rss.xml
@@ -1746,24 +1737,29 @@ http://www.economist.com/rss/science_and_technology_rss.xml
 http://www.economist.com/rss/books_and_arts_rss.xml
 http://www.economist.com/rss/obituary_rss.xml
 http://www.economist.com/rss/indicators_rss.xml
-http://www.economist.com/rss/banking_rss.xml
-http://www.economist.com/rss/biotechnology_rss.xml
-http://www.economist.com/rss/chinas_economy_rss.xml
-http://www.economist.com/rss/computing_and_software_rss.xml
-http://www.economist.com/rss/corporate_leadership_rss.xml
-http://www.economist.com/rss/economics_rss.xml
-http://www.economist.com/rss/the_environment_rss.xml
-http://www.economist.com/rss/the_european_union_rss.xml
-http://www.economist.com/rss/globalisation_rss.xml
-http://www.economist.com/rss/the_internet_rss.xml
-http://www.economist.com/rss/iraqs_troubles_rss.xml
-http://www.economist.com/rss/mergers_and_acquisitions_rss.xml
-http://www.economist.com/rss/telecommunications_rss.xml
-http://www.economist.com/rss/the_world_bank_and_the_imf_rss.xml
-#http://www.economist.com/rss/
-http://public-xml.feedroom.com/public_rss/economist_podcast_rss.xml?hvar=http://audiovideo.economist.com/
-#http://public-xml.feedroom.com/public_rss/economist_feeds.html?type=podcast&hvar=http://audiovideo.economist.com/
-#http://ad.doubleclick.net/jump/web.economist.com/rss;nav=null;pos=mpu_right;tile=;sz=350x300,336x236,300x250,250x250;ord=518072766?
+http://www.economist.com/topics/banking/index.xml
+http://www.economist.com/topics/biotechnology/index.xml
+http://www.economist.com/topics/chinese-economy/index.xml
+http://www.economist.com/topics/computer-technology/index.xml
+http://www.economist.com/topics/corporate-governance/index.xml
+http://www.economist.com/topics/economics/index.xml
+http://www.economist.com/topics/environmental-problems-and-protection/index.xml
+http://www.economist.com/topics/european-union/index.xml
+http://www.economist.com/blogs/americasview/index.xml
+http://www.economist.com/blogs/babbage/index.xml
+http://www.economist.com/blogs/banyan/index.xml
+http://www.economist.com/blogs/baobab/index.xml
+http://www.economist.com/blogs/blighty/index.xml
+http://www.economist.com/blogs/clausewitz/index.xml
+http://www.economist.com/blogs/democracyinamerica/index.xml
+http://www.economist.com/blogs/freeexchange/index.xml
+http://www.economist.com/blogs/globalleadership/index.xml
+http://www.economist.com/blogs/graphicdetail/index.xml
+http://www.economist.com/blogs/gulliver/index.xml
+http://www.economist.com/blogs/leviathan/index.xml
+http://www.economist.com/blogs/multimedia/index.xml
+http://www.economist.com/blogs/prospero/index.xml
+#http://www.economist.com/rss
 http://feeds2.feedburner.com/BagehotsNotebook?format=xml
 http://feeds2.feedburner.com/ButtonwoodsNotebook?format=xml
 http://feeds2.feedburner.com/CharlemagnesNotebook?format=xml
@@ -1772,7 +1768,6 @@ http://feeds.feedburner.com/economist/SlNh
 http://feeds2.feedburner.com/LexingtonsNotebook?format=xml
 http://feeds.feedburner.com/economist/pJMW
 http://feeds.feedburner.com/economist/Ztnh
-#http://directory.google.com/Top/Computers/Software/Internet/Clients/WWW/Feed_Readers/
 
 Site: wsj
 # Site: http://online.wsj.com/public/page/
