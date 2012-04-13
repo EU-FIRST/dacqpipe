@@ -6,7 +6,7 @@
  *  Desc:    News feed component based on IDMS API
  *  Created: Apr-2010
  *
- *  Authors: Miha Grcar
+ *  Author:  Miha Grcar
  *
  ***************************************************************************/
 
