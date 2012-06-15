@@ -1,0 +1,81 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\Work\FIRSTDatasetService\", ".", "{047B451C-FB46-4639-8991-949329689526}"
+	ProjectSection(WebsiteProperties) = preProject
+		ProjectReferences = "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}|Latino.dll;{EDE88AFF-1053-4175-B91C-4E683426706A}|LatinoWorkflows.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/FIRSTDatasetService"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Work\FIRSTDatasetService\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\FIRSTDatasetService\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/FIRSTDatasetService"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\..\Work\FIRSTDatasetService\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\FIRSTDatasetService\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53873"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\Latino\Latino\Latino.csproj", "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoWorkflows", "..\Latino\LatinoWorkflows\LatinoWorkflows.csproj", "{EDE88AFF-1053-4175-B91C-4E683426706A}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Release|.NET = Release|.NET
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{047B451C-FB46-4639-8991-949329689526}.Debug|.NET.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Debug|.NET.Build.0 = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Debug|Any CPU.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Debug|Mixed Platforms.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Debug|Mixed Platforms.Build.0 = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Release|.NET.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Release|.NET.Build.0 = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Release|Any CPU.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Release|Mixed Platforms.ActiveCfg = Debug|.NET
+		{047B451C-FB46-4639-8991-949329689526}.Release|Mixed Platforms.Build.0 = Debug|.NET
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|.NET.ActiveCfg = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|.NET.ActiveCfg = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|.NET.ActiveCfg = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{EDE88AFF-1053-4175-B91C-4E683426706A}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
