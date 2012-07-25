@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\Work\FIRSTDatasetService\", ".", "{047B451C-FB46-4639-8991-949329689526}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\...\FIRSTDatasetService\", ".", "{047B451C-FB46-4639-8991-949329689526}"
 	ProjectSection(WebsiteProperties) = preProject
 		ProjectReferences = "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}|Latino.dll;{EDE88AFF-1053-4175-B91C-4E683426706A}|LatinoWorkflows.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/FIRSTDatasetService"
@@ -22,13 +22,13 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "C:\Work\FIRSTDatasetService
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\Latino\Latino\Latino.csproj", "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\..\Latino\Latino\Latino.csproj", "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.Debug = "False"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoWorkflows", "..\Latino\LatinoWorkflows\LatinoWorkflows.csproj", "{EDE88AFF-1053-4175-B91C-4E683426706A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LatinoWorkflows", "..\..\Latino\LatinoWorkflows\LatinoWorkflows.csproj", "{EDE88AFF-1053-4175-B91C-4E683426706A}"
 	ProjectSection(WebsiteProperties) = preProject
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.Debug = "False"

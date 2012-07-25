@@ -5,6 +5,8 @@
     string corpusId = Request.Params["corpusId"];
     string format = Request.Params["format"];
     bool rmvRaw = (Request.Params["rmvRaw"] != null) ? new Regex(@"(true)|(yes)|(on)|(1)|(t)|(y)", RegexOptions.IgnoreCase).Match(Request.Params["rmvRaw"]).Success : false;
+    bool changesOnly = (Request.Params["changesOnly"] != null) ? new Regex(@"(true)|(yes)|(on)|(1)|(t)|(y)", RegexOptions.IgnoreCase).Match(Request.Params["changesOnly"]).Success : false;
+    string time = Request.Params["time"];
     if (format == "txt")
     {
         Response.ContentType = "text/plain; charset=utf-8";
@@ -17,5 +19,5 @@
     {
         Response.ContentType = "application/xml; charset=utf-8";
     }
-    Response.Write(new Service().GetDoc(corpusId, docId, format, rmvRaw));
+    Response.Write(new Service().GetDoc(corpusId, docId, format, rmvRaw, changesOnly, time));
 %>

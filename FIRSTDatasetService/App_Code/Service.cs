@@ -18,12 +18,21 @@ public class Service : WebService
     }
 
     [WebMethod]
-    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw)
+    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time)
     {
         string dataPath = Utils.GetConfigValue("DataPath", ".");
-        if (corpusId == null || corpusId.Length != 32) { return "*** Invalid corpus ID."; }
-        if (docId == null || docId.Length != 32) { return "*** Invalid document ID."; }
-        string[] fileNames = Directory.GetFiles(dataPath, "*" + corpusId + ".xml", SearchOption.AllDirectories);
+        if (corpusId == null || corpusId.Replace("-", "").Length != 32) { return "*** Invalid corpus ID."; }
+        corpusId = corpusId.Replace("-", "");
+        if (docId == null || docId.Replace("-", "").Length != 32) { return "*** Invalid document ID."; }
+        docId = docId.Replace("-", "");
+        string[] fileNames = null;
+        try
+        {
+            string prefix = DateTime.Parse(time).ToString("HH_mm_ss_");
+            fileNames = Directory.GetFiles(dataPath, prefix + corpusId + ".xml", SearchOption.AllDirectories);
+        }
+        catch { }
+        if (fileNames == null) { fileNames = Directory.GetFiles(dataPath, "*" + corpusId + ".xml", SearchOption.AllDirectories); }
         if (fileNames.Length == 0) { return "*** Corpus not found."; }
         DocumentCorpus corpus = new DocumentCorpus();
         StreamReader reader = new StreamReader(fileNames[0]);
@@ -49,7 +58,9 @@ public class Service : WebService
         else if (format == "txt")
         {
             StringBuilder txt = new StringBuilder();
-            foreach (TextBlock block in document.GetAnnotatedBlocks("TextBlock/Content"))
+            string selector = "TextBlock/Content";
+            if (changesOnly && document.Features.GetFeatureValue("rev") != "1") { selector = "TextBlock/Content/Unseen"; }
+            foreach (TextBlock block in document.GetAnnotatedBlocks(selector))
             {
                 txt.AppendLine(block.Text);
             }
