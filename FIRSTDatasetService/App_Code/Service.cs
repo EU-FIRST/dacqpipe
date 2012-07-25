@@ -4,8 +4,10 @@ using System.IO;
 using System.Xml;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Data;
 using Latino;
 using Latino.Workflows.TextMining;
+using Latino.Persistance;
 
 [WebService(Namespace = "http://tempuri.org/")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
@@ -15,6 +17,29 @@ public class Service : WebService
     public string Ping() 
     {
         return "Pong!";
+    }
+
+    [WebMethod]
+    public string[][] GetDocRefs(string sourceUrl)
+    {
+        string selectStatement = string.Format(@"select c.timeEnd, d.corpusId, d.id from Corpora c join Documents d on c.id = d.corpusId 
+            where sourceUrl like ? and c.rejected = 0 and d.rejected = 0
+            union
+            select c.timeEnd, d.corpusId, d.id from Sources s join Corpora c on s.siteId = c.siteId join Documents d on s.docId = d.id and c.id = d.corpusId
+            where s.sourceUrl like ? and d.rejected = 0 and c.rejected = 0");
+        DatabaseConnection dbConnection = new DatabaseConnection();
+        dbConnection.ConnectionString = Utils.GetConfigValue("DbConnectionString", 
+            "Provider=SQLNCLI10;Server=(local);Database=DacqPipe;Trusted_Connection=Yes");
+        dbConnection.Connect();
+        DataTable t = dbConnection.ExecuteQuery(selectStatement, sourceUrl, sourceUrl);
+        string[][] resultTable = new string[t.Rows.Count][];
+        int i = 0;
+        foreach (DataRow row in t.Rows)
+        {
+            resultTable[i++] = new string[] { (string)row["timeEnd"], (string)row["corpusId"], (string)row["id"] };
+        }
+        dbConnection.Disconnect();
+        return resultTable;
     }
 
     [WebMethod]
