@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # Visual Studio 2005
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataClient", "DataClient.csproj", "{D1179F8D-B088-4A0F-9BC8-5619B935A5AD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\..\Latino\Latino\Latino.csproj", "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{D1179F8D-B088-4A0F-9BC8-5619B935A5AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1179F8D-B088-4A0F-9BC8-5619B935A5AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1179F8D-B088-4A0F-9BC8-5619B935A5AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B86AAD5-3FEA-487C-A518-4F846AF09E18}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

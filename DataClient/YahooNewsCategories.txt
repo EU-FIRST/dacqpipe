@@ -1,0 +1,672 @@
+﻿U.S.
+	http://rss.news.yahoo.com/rss/us
+	http://news.yahoo.com/rss/us
+	Crime & Trials
+		http://news.yahoo.com/rss/crime-trials
+	Education
+		http://rss.news.yahoo.com/rss/education
+		http://news.yahoo.com/rss/education
+	Religion
+		http://rss.news.yahoo.com/rss/religion
+		http://news.yahoo.com/rss/religion
+Politics
+	http://rss.news.yahoo.com/rss/politics
+	http://news.yahoo.com/rss/politics
+	White House
+		http://rss.news.yahoo.com/rss/obama
+		http://news.yahoo.com/rss/white-house
+	Republican Party
+		http://rss.news.yahoo.com/rss/gop
+	Congress
+		http://news.yahoo.com/rss/congress
+	U.S. Government
+		http://news.yahoo.com/rss/us-government
+	World
+		http://news.yahoo.com/rss/politics-world
+	The Courts
+		http://news.yahoo.com/rss/the-courts
+	Opinion
+		http://news.yahoo.com/rss/opinion
+	Politics Press Release
+		http://news.yahoo.com/rss/politics-press-releases
+	Elections
+		http://news.yahoo.com/rss/elections/
+		http://news.yahoo.com/rss/elections-2012
+World
+	http://rss.news.yahoo.com/rss/world
+	http://news.yahoo.com/rss/world
+	Middle East
+		http://rss.news.yahoo.com/rss/mideast
+		http://news.yahoo.com/rss/middle-east
+	Iraq
+		http://rss.news.yahoo.com/rss/iraq
+	Africa
+		http://rss.news.yahoo.com/rss/africa
+		http://news.yahoo.com/rss/africa
+	Asia
+		http://rss.news.yahoo.com/rss/asia
+		http://news.yahoo.com/rss/asia
+	Europe
+		http://rss.news.yahoo.com/rss/europe
+		http://news.yahoo.com/rss/europe
+	Iran
+		http://rss.news.yahoo.com/rss/iran
+	Latin America
+		http://news.yahoo.com/rss/latin-america
+	Australia & Antarctica
+		http://news.yahoo.com/rss/australia-antarctica
+	Russia
+		http://rss.news.yahoo.com/rss/russia
+	Canada
+		http://news.yahoo.com/rss/canada
+Business
+	http://rss.news.yahoo.com/rss/business
+	http://news.yahoo.com/rss/business
+	Stock Markets
+		http://rss.news.yahoo.com/rss/stocks
+		http://news.yahoo.com/rss/stock-markets
+	Economy
+		http://rss.news.yahoo.com/rss/economy
+		http://news.yahoo.com/rss/economy
+	Earnings
+		http://rss.news.yahoo.com/rss/earnings
+		http://news.yahoo.com/rss/earnings
+	Personal Finance
+		http://news.yahoo.com/rss/personal-finance
+	Business Press Releases
+		http://news.yahoo.com/rss/business-press-releases
+	Taxes
+		http://news.yahoo.com/rss/taxes
+	Marketplace
+		http://news.yahoo.com/rss/marketplace
+	Finance
+		News Topics
+			Stocks
+				http://finance.yahoo.com/rss/usmarkets
+			Economy, Government & Policy
+				http://finance.yahoo.com/rss/economy
+			International Finance News
+				http://finance.yahoo.com/rss/international?format=xml
+			Bonds
+				http://finance.yahoo.com/rss/bonds
+			Commodities
+				http://finance.yahoo.com/rss/commodities
+			Currencies
+				http://finance.yahoo.com/rss/currencies
+			Mutual Funds
+				http://finance.yahoo.com/rss/funds
+			Options
+				http://finance.yahoo.com/rss/options
+			Earnings
+				http://finance.yahoo.com/rss/earnings
+			IPOs
+				http://finance.yahoo.com/rss/IPO
+			Mergers & Acquisitions
+				http://finance.yahoo.com/rss/mergersaquisitions
+			Upgrades & Downgrades
+				http://finance.yahoo.com/rss/upgradesdowngrades
+			Venture Capital
+				http://finance.yahoo.com/rss/venturecapital
+			Investing Ideas & Strategies
+				http://finance.yahoo.com/rss/investingpicks
+				http://finance.yahoo.com/rss/investingstrategies
+				http://finance.yahoo.com/rss/investingideas
+			Banking
+				http://finance.yahoo.com/rss/banking
+			Mortgage
+				http://finance.yahoo.com/rss/mortgages
+			Retirement
+				http://finance.yahoo.com/rss/retirement
+			Tax
+				http://finance.yahoo.com/rss/taxes
+		Basic Materials
+			Agricultural Chemicals
+				http://finance.yahoo.com/rss/AgriculturalChemicals
+			Aluminum
+				http://finance.yahoo.com/rss/Aluminum
+			Chemicals - Major Diversified
+				http://finance.yahoo.com/rss/ChemicalsMajorDiversified
+			Copper
+				http://finance.yahoo.com/rss/Copper
+			Gold
+				http://finance.yahoo.com/rss/Gold
+			Independent Oil & Gas
+				http://finance.yahoo.com/rss/IndependentOilGas
+			Metals & Minerals
+				http://finance.yahoo.com/rss/IndustrialMetalsMinerals
+			Major Integrated Oil & Gas
+				http://finance.yahoo.com/rss/MajorIntegratedOilGas
+			Nonmetallic Mineral Mining
+				http://finance.yahoo.com/rss/NonmetallicMineralMining
+			Oil & Gas Drilling & Exploration
+				http://finance.yahoo.com/rss/OilGasDrillingExploration
+			Oil & Gas Equipment & Services
+				http://finance.yahoo.com/rss/OilGasEquipmentServices
+			Oil & Gas Pipelines
+				http://finance.yahoo.com/rss/OilGasPipelines
+			Oil & Gas Refining & Marketing
+				http://finance.yahoo.com/rss/OilGasRefiningMarketing
+			Silver
+				http://finance.yahoo.com/rss/Silver
+			Specialty Chemicals
+				http://finance.yahoo.com/rss/SpecialtyChemicals
+			Steel & Iron
+				http://finance.yahoo.com/rss/SteelIron
+			Synthetics
+				http://finance.yahoo.com/rss/Synthetics
+		Conglomerates
+			http://finance.yahoo.com/rss/Conglomerates
+		Consumer Goods
+			Appliances
+				http://finance.yahoo.com/rss/Appliances
+			Auto Manufacturers - Major
+				http://finance.yahoo.com/rss/AutoManufacturersMajor
+			Auto Parts
+				http://finance.yahoo.com/rss/AutoParts
+			Beverages - Brewers
+				http://finance.yahoo.com/rss/BeveragesBrewers
+			Beverages - Soft Drinks
+				http://finance.yahoo.com/rss/BeveragesSoftDrinks
+			Beverages - Wineries & Distillers
+				http://finance.yahoo.com/rss/BeveragesWineriesDistillers
+			Business Equipment
+				http://finance.yahoo.com/rss/BusinessEquipment
+			Cigarettes
+				http://finance.yahoo.com/rss/Cigarettes
+			Cleaning Products
+				http://finance.yahoo.com/rss/CleaningProducts
+			Confectioners
+				http://finance.yahoo.com/rss/Confectioners
+			Dairy Products
+				http://finance.yahoo.com/rss/DairyProducts
+			Electronic Equipment
+				http://finance.yahoo.com/rss/ElectronicEquipment
+			Farm Products
+				http://finance.yahoo.com/rss/FarmProducts
+			Food - Major Diversified
+				http://finance.yahoo.com/rss/FoodMajorDiversified
+			Home Furnishing & Fixtures
+				http://finance.yahoo.com/rss/HomeFurnishingsFixtures
+			Housewares & Accessories
+				http://finance.yahoo.com/rss/HousewaresAccessories
+			Meat Products
+				http://finance.yahoo.com/rss/MeatProducts
+			Office Supplies
+				http://finance.yahoo.com/rss/OfficeSupplies
+			Packaging & Containers
+				http://finance.yahoo.com/rss/PackagingContainers
+			Paper & Paper Products
+				http://finance.yahoo.com/rss/PaperPaperProducts
+			Personal Products
+				http://finance.yahoo.com/rss/PersonalProducts
+			Photographic Equipment & Supplies
+				http://finance.yahoo.com/rss/PhotographicEquipmentSupplies
+			Processed & Packaged Goods
+				http://finance.yahoo.com/rss/ProcessedPackagedGoods
+			Recreational Goods - Other
+				http://finance.yahoo.com/rss/RecreationalGoodsOther
+			Recreational Vehicles
+				http://finance.yahoo.com/rss/RecreationalVehicles
+			Rubber & Plastics
+				http://finance.yahoo.com/rss/RubberPlastics
+			Sporting Goods
+				http://finance.yahoo.com/rss/SportingGoods
+			Textile - Apparel Clothing
+				http://finance.yahoo.com/rss/TextileApparelClothing
+			Textile - Apparel Footwear & Accessories
+				http://finance.yahoo.com/rss/TextileApparelFootwearAccessories
+			Tobacco Products - Other
+				http://finance.yahoo.com/rss/TobaccoProductsOther
+			Toys & Games
+				http://finance.yahoo.com/rss/ToysGames
+			Trucks & Other Vehicles
+				http://finance.yahoo.com/rss/TrucksOtherVehicles
+		Financial
+			Accident & Health Insurance
+				http://finance.yahoo.com/rss/AccidentHealthInsurance
+			Asset Management
+				http://finance.yahoo.com/rss/AssetManagement
+			Credit Services
+				http://finance.yahoo.com/rss/CreditServices
+			Diversified Investments
+				http://finance.yahoo.com/rss/DiversifiedInvestments
+			Foreign Money Center Banks
+				http://finance.yahoo.com/rss/ForeignMoneyCenterBanks
+			Foreign Regional Banks
+				http://finance.yahoo.com/rss/ForeignRegionalBanks
+			Insurance Brokers
+				http://finance.yahoo.com/rss/InsuranceBrokers
+			Investment Brokerage - National
+				http://finance.yahoo.com/rss/InvestmentBrokerageNational
+			Investment Brokerage - Regional
+				http://finance.yahoo.com/rss/InvestmentBrokerageRegional
+			Life Insurance
+				http://finance.yahoo.com/rss/LifeInsurance
+			Money Center Banks
+				http://finance.yahoo.com/rss/MoneyCenterBanks
+			Mortgage Investment
+				http://finance.yahoo.com/rss/MortgageInvestment
+			Property & Casualty Insurance
+				http://finance.yahoo.com/rss/PropertyCasualtyInsurance
+			Property Management
+				http://finance.yahoo.com/rss/PropertyManagement
+			REIT - Diversified
+				http://finance.yahoo.com/rss/REITDiversified
+			REIT - Healthcare Facilities
+				http://finance.yahoo.com/rss/REITHealthcareFacilities
+			REIT - Hotel & Motel
+				http://finance.yahoo.com/rss/REITHotelMotel
+			REIT - Industrial
+				http://finance.yahoo.com/rss/REITIndustrial
+			REIT - Office
+				http://finance.yahoo.com/rss/REITOffice
+			REIT - Residential
+				http://finance.yahoo.com/rss/REITResidential
+			REIT - Retail
+				http://finance.yahoo.com/rss/REITRetail
+			Real Estate Development
+				http://finance.yahoo.com/rss/RealEstateDevelopment
+			Regional - Mid-Atlantic Banks
+				http://finance.yahoo.com/rss/RegionalMidAtlanticBanks
+			Regional - Midwest Banks
+				http://finance.yahoo.com/rss/RegionalMidwestBanks
+			Regional - Northeast Banks
+				http://finance.yahoo.com/rss/RegionalNortheastBanks
+			Regional - Pacific Banks
+				http://finance.yahoo.com/rss/RegionalPacificBanks
+			Regional - Southeast Banks
+				http://finance.yahoo.com/rss/RegionalSoutheastBanks
+			Regional - Southwest Banks
+				http://finance.yahoo.com/rss/RegionalSouthwestBanks
+			Savings & Loans
+				http://finance.yahoo.com/rss/SavingsLoans
+			Surety & Title Insurance
+				http://finance.yahoo.com/rss/SuretyTitleInsurance
+		Healthcare
+			Biotechnology
+				http://finance.yahoo.com/rss/Biotechnology
+			Diagnostic Substances
+				http://finance.yahoo.com/rss/DiagnosticSubstances
+			Drug Delivery
+				http://finance.yahoo.com/rss/DrugDelivery
+			Drug Manufacturers - Major
+				http://finance.yahoo.com/rss/DrugManufacturersMajor
+			Drug Manufacturers - Other
+				http://finance.yahoo.com/rss/DrugManufacturersOther
+			Drug Related Products
+				http://finance.yahoo.com/rss/DrugRelatedProducts
+			Drugs - Generic
+				http://finance.yahoo.com/rss/DrugsGeneric
+			Health Care Plans
+				http://finance.yahoo.com/rss/HealthCarePlans
+			Home Health Care
+				http://finance.yahoo.com/rss/HomeHealthCare
+			Hospitals
+				http://finance.yahoo.com/rss/Hospitals
+			Long-Term Care Facilities
+				http://finance.yahoo.com/rss/LongTermCareFacilities
+			Medical Appliances & Equipment
+				http://finance.yahoo.com/rss/MedicalAppliancesEquipment
+			Medical Instruments & Supplies
+				http://finance.yahoo.com/rss/MedicalInstrumentsSupplies
+			Medical Laboratories & Research
+				http://finance.yahoo.com/rss/MedicalLaboratoriesResearch
+			Medical Practitioners
+				http://finance.yahoo.com/rss/MedicalPractitioners
+			Specialized Health Services
+				http://finance.yahoo.com/rss/SpecializedHealthServices
+		Industrial Goods
+			Lumber & Wood Production
+				http://finance.yahoo.com/rss/LumberWoodProduction
+			Aerospace & Defense - Major Diversified
+				http://finance.yahoo.com/rss/AerospaceDefenseMajorDiversified
+			Cement
+				http://finance.yahoo.com/rss/Cement
+			Diversified Machinery
+				http://finance.yahoo.com/rss/DiversifiedMachinery
+			Farm & Construction Machinery
+				http://finance.yahoo.com/rss/FarmConstructionMachinery
+			General Building Materials
+				http://finance.yahoo.com/rss/GeneralBuildingMaterials
+			General Contractors
+				http://finance.yahoo.com/rss/GeneralContractors
+			Heavy Construction
+				http://finance.yahoo.com/rss/HeavyConstruction
+			Industrial Electrical Equipment
+				http://finance.yahoo.com/rss/IndustrialElectricalEquipment
+			Industrial Equipment & Components
+				http://finance.yahoo.com/rss/IndustrialEquipmentComponents
+			Machine Tools & Accessories
+				http://finance.yahoo.com/rss/MachineToolsAccessories
+			Manufactured Housing
+				http://finance.yahoo.com/rss/ManufacturedHousing
+			Metal Fabrication
+				http://finance.yahoo.com/rss/MetalFabrication
+			Pollution & Treatment Controls
+				http://finance.yahoo.com/rss/PollutionTreatmentControls
+			Residential Construction
+				http://finance.yahoo.com/rss/ResidentialConstruction
+			Small Tools & Accessories
+				http://finance.yahoo.com/rss/SmallToolsAccessories
+			Textile Industrial
+				http://finance.yahoo.com/rss/TextileIndustrial
+			Waste Management
+				http://finance.yahoo.com/rss/WasteManagement
+		Services
+			Advertising Agencies
+				http://finance.yahoo.com/rss/AdvertisingAgencies
+			Air Delivery & Freight Services
+				http://finance.yahoo.com/rss/AirDeliveryFreightServices
+			Air Services - Other
+				http://finance.yahoo.com/rss/AirServicesOther
+			Apparel Stores
+				http://finance.yahoo.com/rss/ApparelStores
+			Auto Dealerships
+				http://finance.yahoo.com/rss/AutoDealerships
+			Auto Parts Stores
+				http://finance.yahoo.com/rss/AutoPartsStores
+			Auto Parts Wholesale
+				http://finance.yahoo.com/rss/AutoPartsWholesale
+			Basic Materials Wholesale
+				http://finance.yahoo.com/rss/BasicMaterialsWholesale
+			Broadcasting - Radio
+				http://finance.yahoo.com/rss/BroadcastingRadio
+			Broadcasting - TV
+				http://finance.yahoo.com/rss/BroadcastingTV
+			Building Materials Wholesale
+				http://finance.yahoo.com/rss/BuildingMaterialsWholesale
+			Business Services
+				http://finance.yahoo.com/rss/BusinessServices
+			Catalog & Mail Order Houses
+				http://finance.yahoo.com/rss/CatalogMailOrderHouses
+			CATV Systems
+				http://finance.yahoo.com/rss/CATVSystems
+			Computers Wholesale
+				http://finance.yahoo.com/rss/ComputersWholesale
+			Consumer Services
+				http://finance.yahoo.com/rss/ConsumerServices
+			Department Stores
+				http://finance.yahoo.com/rss/DepartmentStores
+			Discount & Variety Stores
+				http://finance.yahoo.com/rss/DiscountVarietyStores
+			Drug Stores
+				http://finance.yahoo.com/rss/DrugStores
+			Drugs Wholesales
+				http://finance.yahoo.com/rss/DrugsWholesale
+			Education & Training Services
+				http://finance.yahoo.com/rss/EducationTrainingServices
+			Electronics Stores
+				http://finance.yahoo.com/rss/ElectronicsStores
+			Electronics Wholesale
+				http://finance.yahoo.com/rss/ElectronicsWholesale
+			Entertainment - Diversified
+				http://finance.yahoo.com/rss/EntertainmentDiversified
+			Food Wholesale
+				http://finance.yahoo.com/rss/FoodWholesale
+			Gaming Activities
+				http://finance.yahoo.com/rss/GamingActivities
+			General Entertainment
+				http://finance.yahoo.com/rss/GeneralEntertainment
+			Grocery Stores
+				http://finance.yahoo.com/rss/GroceryStores
+			Home Furnishing Stores
+				http://finance.yahoo.com/rss/HomeFurnishingStores
+			Home Improvement Stores
+				http://finance.yahoo.com/rss/HomeImprovementStores
+			Industrial Equipment Wholesale
+				http://finance.yahoo.com/rss/IndustrialEquipmentWholesale
+			Jewelry Stores
+				http://finance.yahoo.com/rss/JewelryStores
+			Lodging
+				http://finance.yahoo.com/rss/Lodging
+			Major Airlines
+				http://finance.yahoo.com/rss/MajorAirlines
+			Management Services
+				http://finance.yahoo.com/rss/ManagementServices
+			Marketing Services
+				http://finance.yahoo.com/rss/MarketingServices
+			Medical Equipment Wholesale
+				http://finance.yahoo.com/rss/MedicalEquipmentWholesale
+			Movie Production & Theaters
+				http://finance.yahoo.com/rss/MovieProductionTheaters
+			Music & Video Stores
+				http://finance.yahoo.com/rss/MusicVideoStores
+			Personal Services
+				http://finance.yahoo.com/rss/PersonalServices
+			Publishing - Books
+				http://finance.yahoo.com/rss/PublishingBooks
+			Publishing - Newspapers
+				http://finance.yahoo.com/rss/PublishingNewspapers
+			Publishing - Periodicals
+				http://finance.yahoo.com/rss/PublishingPeriodicals
+			Railroads
+				http://finance.yahoo.com/rss/Railroads
+			Regional Airlines
+				http://finance.yahoo.com/rss/RegionalAirlines
+			Rental & Leasing Services
+				http://finance.yahoo.com/rss/RentalLeasingServices
+			Research Services
+				http://finance.yahoo.com/rss/ResearchServices
+			Resorts & Casinos
+				http://finance.yahoo.com/rss/ResortsCasinos
+			Restaurants
+				http://finance.yahoo.com/rss/Restaurants
+			Security & Protection Services
+				http://finance.yahoo.com/rss/SecurityProtectionServices
+			Shipping
+				http://finance.yahoo.com/rss/Shipping
+			Specialty Eateries
+				http://finance.yahoo.com/rss/SpecialtyEateries
+			Specialty Retail - Other
+				http://finance.yahoo.com/rss/SpecialtyRetailOther
+			Sporting Activities
+				http://finance.yahoo.com/rss/SportingActivities
+			Sporting Goods Stores
+				http://finance.yahoo.com/rss/SportingGoodsStores
+			Staffing & Outsourcing Services
+				http://finance.yahoo.com/rss/StaffingOutsourcingServices
+			Technical Services
+				http://finance.yahoo.com/rss/TechnicalServices
+			Toy & Hobby Stores
+				http://finance.yahoo.com/rss/ToyHobbyStores
+			Trucking
+				http://finance.yahoo.com/rss/Trucking
+			Wholesale - Other
+				http://finance.yahoo.com/rss/WholesaleOther
+		Technology
+			Application Software
+				http://finance.yahoo.com/rss/ApplicationSoftware
+			Business Software & Services
+				http://finance.yahoo.com/rss/BusinessSoftwareServices
+			Communication Equipment
+				http://finance.yahoo.com/rss/CommunicationEquipment
+			Computer Based Systems
+				http://finance.yahoo.com/rss/ComputerBasedSystems
+			Computer Peripherals
+				http://finance.yahoo.com/rss/ComputerPeripherals
+			Data Storage Devices
+				http://finance.yahoo.com/rss/DataStorageDevices
+			Diversified Communication Services
+				http://finance.yahoo.com/rss/DiversifiedCommunicationServices
+			Diversified Computer Systems
+				http://finance.yahoo.com/rss/DiversifiedComputerSystems
+			Diversified Electronics
+				http://finance.yahoo.com/rss/DiversifiedElectronics
+			Healthcare Information Services
+				http://finance.yahoo.com/rss/HealthcareInformationServices
+			Information & Delivery Services
+				http://finance.yahoo.com/rss/InformationDeliveryServices
+			Information Technology Services
+				http://finance.yahoo.com/rss/InformationTechnologyServices
+			Internet Information Providers
+				http://finance.yahoo.com/rss/InternetInformationProviders
+			Internet Service Providers
+				http://finance.yahoo.com/rss/InternetServiceProviders
+			Internet Software & Services
+				http://finance.yahoo.com/rss/InternetSoftwareServices
+			Long Distance Carriers
+				http://finance.yahoo.com/rss/LongDistanceCarriers
+			Multimedia & Graphics Software
+				http://finance.yahoo.com/rss/MultimediaGraphicsSoftware
+			Networking & Communication Devices
+				http://finance.yahoo.com/rss/NetworkingCommunicationDevices
+			Personal Computers
+				http://finance.yahoo.com/rss/PersonalComputers
+			Printed Circuit Boards
+				http://finance.yahoo.com/rss/PrintedCircuitBoards
+			Processing Systems & Products
+				http://finance.yahoo.com/rss/ProcessingSystemsProducts
+			Scientific & Technical Instruments
+				http://finance.yahoo.com/rss/ScientificTechnicalInstruments
+			Security Software & Services
+				http://finance.yahoo.com/rss/SecuritySoftwareServices
+			Semiconductor - Broad Line
+				http://finance.yahoo.com/rss/SemiconductorBroadLine
+			Semiconductor - Integrated Circuits
+				http://finance.yahoo.com/rss/SemiconductorIntegratedCircuits
+			Semiconductor - Specialized
+				http://finance.yahoo.com/rss/SemiconductorSpecialized
+			Semiconductor Equipment & Materials
+				http://finance.yahoo.com/rss/SemiconductorEquipmentMaterials
+			Semiconductor - Memory Chips
+				http://finance.yahoo.com/rss/SemiconductorMemoryChips
+			Technical & System Software
+				http://finance.yahoo.com/rss/TechnicalSystemSoftware
+			Telecom Services - Domestic
+				http://finance.yahoo.com/rss/TelecomServicesDomestic
+			Telecom Services - Foreign
+				http://finance.yahoo.com/rss/TelecomServicesForeign
+			Wireless Communications
+				http://finance.yahoo.com/rss/WirelessCommunications
+		Utilities
+			Diversified Utilities
+				http://finance.yahoo.com/rss/DiversifiedUtilities
+			Electric Utilities
+				http://finance.yahoo.com/rss/ElectricUtilities
+			Foreign Utilities
+				http://finance.yahoo.com/rss/ForeignUtilities
+			Gas Utilities
+				http://finance.yahoo.com/rss/GasUtilities
+			Water Utilities
+				http://finance.yahoo.com/rss/WaterUtilities
+Entertainment
+	http://rss.news.yahoo.com/rss/entertainment
+	http://news.yahoo.com/rss/entertainment
+	Celebrity
+		http://rss.news.yahoo.com/rss/celebrity
+		http://news.yahoo.com/rss/celebrity
+	Movies
+		http://rss.news.yahoo.com/rss/movies
+		http://news.yahoo.com/rss/movies
+	TV
+		http://rss.news.yahoo.com/rss/tv
+		http://news.yahoo.com/rss/tv
+	Music
+		http://rss.news.yahoo.com/rss/music
+		http://news.yahoo.com/rss/music
+	Reviews
+		http://news.yahoo.com/rss/reviews
+	Fashion
+		http://rss.news.yahoo.com/rss/fashion
+		http://news.yahoo.com/rss/fashion
+	Books
+		http://news.yahoo.com/rss/books
+	Arts
+		http://rss.news.yahoo.com/rss/arts
+		http://news.yahoo.com/rss/arts
+	Dear Abby
+		http://news.yahoo.com/rss/dear-abby
+	Theater
+		http://news.yahoo.com/rss/theater
+	Odd News
+		http://news.yahoo.com/rss/odd
+		http://rss.news.yahoo.com/rss/oddlyenough
+Sports
+	http://rss.news.yahoo.com/rss/sports
+	http://news.yahoo.com/rss/sports
+	Football
+		http://news.yahoo.com/rss/football
+	Baseball
+		http://news.yahoo.com/rss/baseball
+	Basketball
+		http://news.yahoo.com/rss/basketball
+	College
+		http://news.yahoo.com/rss/college-sports
+	Soccer
+		http://news.yahoo.com/rss/soccer
+	Cycling
+		http://news.yahoo.com/rss/cycling
+	Hockey
+		http://news.yahoo.com/rss/hockey
+	Tennis
+		http://news.yahoo.com/rss/tennis
+	Golf
+		http://news.yahoo.com/rss/golf
+	World Cup
+		http://news.yahoo.com/rss/world-cup
+	Boxing
+		http://news.yahoo.com/rss/boxing
+	Motorsports
+		http://news.yahoo.com/rss/motorsports
+	Extreme Sports
+		http://news.yahoo.com/rss/extreme-sports
+Tech
+	http://rss.news.yahoo.com/rss/tech
+	http://news.yahoo.com/rss/tech
+	Internet
+		http://rss.news.yahoo.com/rss/internet
+		http://news.yahoo.com/rss/internet
+	Gadgets
+		http://news.yahoo.com/rss/gadgets
+	Open Source
+		http://news.yahoo.com/rss/open-source
+	Wireless
+		http://rss.news.yahoo.com/rss/wireless
+		http://news.yahoo.com/rss/wireless
+	Social Media
+		http://news.yahoo.com/rss/social-media
+	Apple
+		http://news.yahoo.com/rss/apple-macintosh
+	Security
+		http://rss.news.yahoo.com/rss/security
+		http://news.yahoo.com/rss/security
+	Gaming
+		http://news.yahoo.com/rss/gaming
+Science
+	http://rss.news.yahoo.com/rss/science
+	http://news.yahoo.com/rss/science
+	Weather News
+		http://rss.news.yahoo.com/rss/weather
+		http://news.yahoo.com/rss/weather
+	Space & Astronomy
+		http://news.yahoo.com/rss/astronomy
+	Animal & Pets
+		http://rss.news.yahoo.com/rss/pets
+		http://news.yahoo.com/rss/animal-pets
+	Dinosaurs & Fossils
+		http://news.yahoo.com/rss/dinosaurs-fossils
+	Biotech
+		http://rss.news.yahoo.com/rss/biotech
+		http://news.yahoo.com/rss/biotech
+	Energy
+		http://rss.news.yahoo.com/rss/energy
+		http://news.yahoo.com/rss/energy
+	Green
+		http://news.yahoo.com/rss/green
+Health
+	http://rss.news.yahoo.com/rss/health
+	http://news.yahoo.com/rss/health
+	Sexual Health
+		http://news.yahoo.com/rss/sexual-health
+	Medications & Drugs
+		http://news.yahoo.com/rss/medications-drugs
+	Parenting & Kids
+		http://news.yahoo.com/rss/parenting-kids
+	Seniors & Aging
+		http://news.yahoo.com/rss/seniors-aging
+	Diseases & Conditions
+		http://rss.news.yahoo.com/rss/diseases
+		http://rss.news.yahoo.com/rss/cancer
+		http://news.yahoo.com/rss/diseases-conditions
+	Vitality
+		http://news.yahoo.com/rss/vitality
