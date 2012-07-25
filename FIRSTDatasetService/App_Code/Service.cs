@@ -28,8 +28,12 @@ public class Service : WebService
         string[] fileNames = null;
         try
         {
-            string prefix = DateTime.Parse(time).ToString("HH_mm_ss_");
-            fileNames = Directory.GetFiles(dataPath, prefix + corpusId + ".xml", SearchOption.AllDirectories);
+            DateTime dt = DateTime.Parse(time);
+            string prefix = dt.ToString("HH_mm_ss_");
+            string path = "\\" + dt.Year + "\\" + dt.Month + "\\" + dt.Day + "\\";
+            string fileName = dataPath.TrimEnd('\\') + path + prefix + corpusId + ".xml";
+            if (!Utils.VerifyFileNameOpen(fileName)) { return "*** Corpus not found."; }
+            fileNames = new string[] { fileName };
         }
         catch { }
         if (fileNames == null) { fileNames = Directory.GetFiles(dataPath, "*" + corpusId + ".xml", SearchOption.AllDirectories); }
