@@ -89,16 +89,20 @@ public partial class DataService : System.Web.Services.Protocols.SoapHttpClientP
     [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetDocRefs", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
     [return: System.Xml.Serialization.XmlArrayItemAttribute("ArrayOfString")]
     [return: System.Xml.Serialization.XmlArrayItemAttribute(NestingLevel=1)]
-    public string[][] GetDocRefs(string sourceUrl) {
+    public string[][] GetDocRefs(string sourceUrl, string timeStart, string timeEnd) {
         object[] results = this.Invoke("GetDocRefs", new object[] {
-                    sourceUrl});
+                    sourceUrl,
+                    timeStart,
+                    timeEnd});
         return ((string[][])(results[0]));
     }
     
     /// <remarks/>
-    public System.IAsyncResult BeginGetDocRefs(string sourceUrl, System.AsyncCallback callback, object asyncState) {
+    public System.IAsyncResult BeginGetDocRefs(string sourceUrl, string timeStart, string timeEnd, System.AsyncCallback callback, object asyncState) {
         return this.BeginInvoke("GetDocRefs", new object[] {
-                    sourceUrl}, callback, asyncState);
+                    sourceUrl,
+                    timeStart,
+                    timeEnd}, callback, asyncState);
     }
     
     /// <remarks/>
@@ -108,17 +112,19 @@ public partial class DataService : System.Web.Services.Protocols.SoapHttpClientP
     }
     
     /// <remarks/>
-    public void GetDocRefsAsync(string sourceUrl) {
-        this.GetDocRefsAsync(sourceUrl, null);
+    public void GetDocRefsAsync(string sourceUrl, string timeStart, string timeEnd) {
+        this.GetDocRefsAsync(sourceUrl, timeStart, timeEnd, null);
     }
     
     /// <remarks/>
-    public void GetDocRefsAsync(string sourceUrl, object userState) {
+    public void GetDocRefsAsync(string sourceUrl, string timeStart, string timeEnd, object userState) {
         if ((this.GetDocRefsOperationCompleted == null)) {
             this.GetDocRefsOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetDocRefsOperationCompleted);
         }
         this.InvokeAsync("GetDocRefs", new object[] {
-                    sourceUrl}, this.GetDocRefsOperationCompleted, userState);
+                    sourceUrl,
+                    timeStart,
+                    timeEnd}, this.GetDocRefsOperationCompleted, userState);
     }
     
     private void OnGetDocRefsOperationCompleted(object arg) {
@@ -130,26 +136,26 @@ public partial class DataService : System.Web.Services.Protocols.SoapHttpClientP
     
     /// <remarks/>
     [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/GetDoc", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time) {
+    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string corpusTime) {
         object[] results = this.Invoke("GetDoc", new object[] {
                     corpusId,
                     docId,
                     format,
                     rmvRaw,
                     changesOnly,
-                    time});
+                    corpusTime});
         return ((string)(results[0]));
     }
     
     /// <remarks/>
-    public System.IAsyncResult BeginGetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time, System.AsyncCallback callback, object asyncState) {
+    public System.IAsyncResult BeginGetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string corpusTime, System.AsyncCallback callback, object asyncState) {
         return this.BeginInvoke("GetDoc", new object[] {
                     corpusId,
                     docId,
                     format,
                     rmvRaw,
                     changesOnly,
-                    time}, callback, asyncState);
+                    corpusTime}, callback, asyncState);
     }
     
     /// <remarks/>
@@ -159,12 +165,12 @@ public partial class DataService : System.Web.Services.Protocols.SoapHttpClientP
     }
     
     /// <remarks/>
-    public void GetDocAsync(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time) {
-        this.GetDocAsync(corpusId, docId, format, rmvRaw, changesOnly, time, null);
+    public void GetDocAsync(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string corpusTime) {
+        this.GetDocAsync(corpusId, docId, format, rmvRaw, changesOnly, corpusTime, null);
     }
     
     /// <remarks/>
-    public void GetDocAsync(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time, object userState) {
+    public void GetDocAsync(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string corpusTime, object userState) {
         if ((this.GetDocOperationCompleted == null)) {
             this.GetDocOperationCompleted = new System.Threading.SendOrPostCallback(this.OnGetDocOperationCompleted);
         }
@@ -174,7 +180,7 @@ public partial class DataService : System.Web.Services.Protocols.SoapHttpClientP
                     format,
                     rmvRaw,
                     changesOnly,
-                    time}, this.GetDocOperationCompleted, userState);
+                    corpusTime}, this.GetDocOperationCompleted, userState);
     }
     
     private void OnGetDocOperationCompleted(object arg) {

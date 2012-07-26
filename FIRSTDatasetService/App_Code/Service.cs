@@ -20,33 +20,38 @@ public class Service : WebService
     }
 
     [WebMethod]
-    public string[][] GetDocRefs(string sourceUrl)
+    public string[][] GetDocRefs(string sourceUrl, string timeStart, string timeEnd)
     {
-        string selectStatement = @"select timeEnd, corpusId, id from
-            (select *, row_number() over (partition by urlKey order by time desc, rev desc) rn from
-            (select d.urlKey, d.rev, d.corpusId, d.id, d.time, c.timeEnd from Corpora c join Documents d on c.id = d.corpusId 
-            where sourceUrl like ? and c.rejected = 0 and d.rejected = 0
-            union
-            select d.urlKey, d.rev, d.corpusId, d.id, d.time, c.timeEnd from Sources s join Corpora c on s.siteId = c.siteId join Documents d on s.docId = d.id and c.id = d.corpusId
-            where s.sourceUrl like ? and c.rejected = 0 and d.rejected = 0) as a) as b
+        string selectStatement =
+          @"select timeEnd, corpusId, id, time from
+            (
+                select *, row_number() over (partition by urlKey order by time desc, rev desc) rn from
+                (
+                    select d.urlKey, d.rev, d.corpusId, d.id, d.time, c.timeEnd from Corpora c join Documents d on c.id = d.corpusId 
+                    where sourceUrl like ? and c.rejected = 0 and d.rejected = 0 and d.time >= ? and d.time <= ?
+                    union
+                    select d.urlKey, d.rev, d.corpusId, d.id, d.time, c.timeEnd from Sources s join Corpora c on s.siteId = c.siteId join Documents d on s.docId = d.id and c.id = d.corpusId
+                    where s.sourceUrl like ? and c.rejected = 0 and d.rejected = 0 and d.time >= ? and d.time <= ?
+                ) a
+            ) b
             where rn = 1";
         DatabaseConnection dbConnection = new DatabaseConnection();
         dbConnection.ConnectionString = Utils.GetConfigValue("DbConnectionString", 
             "Provider=SQLNCLI10;Server=(local);Database=DacqPipe;Trusted_Connection=Yes");
         dbConnection.Connect();
-        DataTable t = dbConnection.ExecuteQuery(selectStatement, sourceUrl, sourceUrl);
+        DataTable t = dbConnection.ExecuteQuery(selectStatement, sourceUrl, timeStart, timeEnd, sourceUrl, timeStart, timeEnd);
         string[][] resultTable = new string[t.Rows.Count][];
         int i = 0;
         foreach (DataRow row in t.Rows)
         {
-            resultTable[i++] = new string[] { (string)row["timeEnd"], (string)row["corpusId"], (string)row["id"] };
+            resultTable[i++] = new string[] { (string)row["timeEnd"], (string)row["corpusId"], (string)row["id"], (string)row["time"] };
         }
         dbConnection.Disconnect();
         return resultTable;
     }
 
     [WebMethod]
-    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string time)
+    public string GetDoc(string corpusId, string docId, string format, bool rmvRaw, bool changesOnly, string corpusTime)
     {
         string dataPath = Utils.GetConfigValue("DataPath", ".");
         if (corpusId == null || corpusId.Replace("-", "").Length != 32) { return "*** Invalid corpus ID."; }
@@ -54,11 +59,11 @@ public class Service : WebService
         if (docId == null || docId.Replace("-", "").Length != 32) { return "*** Invalid document ID."; }
         docId = docId.Replace("-", "");
         string[] fileNames = null;
-        if (!string.IsNullOrEmpty(time))
+        if (!string.IsNullOrEmpty(corpusTime))
         {
             try
             {
-                DateTime dt = DateTime.Parse(time);
+                DateTime dt = DateTime.Parse(corpusTime);
                 string prefix = dt.ToString("HH_mm_ss_");
                 string path = "\\" + dt.Year + "\\" + dt.Month + "\\" + dt.Day + "\\";
                 string fileName = dataPath.TrimEnd('\\') + path + prefix + corpusId + ".xml";

@@ -32,7 +32,7 @@ namespace DataClient
             StreamWriter cache = new StreamWriter(cacheFileOut, /*append=*/Utils.VerifyFileNameOpen(cacheFileOut));
             DataService service = new DataService();
             Console.WriteLine("Retrieving document references ...");
-            string[][] docRefs = service.GetDocRefs("http://finance.yahoo.com/rss/%");
+            string[][] docRefs = service.GetDocRefs("http://finance.yahoo.com/rss/%", "2012-07-01", "2012-07-05");
             int i = 0;
             foreach (string[] row in docRefs)
             {
@@ -69,7 +69,7 @@ namespace DataClient
 
         static void Main(string[] args)
         {
-            LoadFromCache(@"C:\Work\DacqPipe\DataClient\YahooFinance_cache.txt");
+            //LoadFromCache(@"C:\Work\DacqPipe\DataClient\YahooFinance_cache.txt");
             RetrieveDocuments("http://finance.yahoo.com/rss/%", @"C:\Work\DacqPipe\DataClient\YahooFinance.txt", @"C:\Work\DacqPipe\DataClient\YahooFinance_cache.txt");
         }
     }
