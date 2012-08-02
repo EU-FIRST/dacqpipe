@@ -18,11 +18,7 @@ namespace DataClient
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                string[] parsed = line.Split('\t');
-                if (parsed.Length >= 2)
-                {
-                    mCache.Add(parsed[0] + " " + parsed[1]);
-                }
+                mCache.Add(line);
             }
             reader.Close();
         }
@@ -42,22 +38,31 @@ namespace DataClient
                 string corpusId = row[1];
                 string docId = row[2];
                 i++;
-                if (!mCache.Contains(corpusId + " " + docId))
+                string cacheKey = corpusId + "\t" + docId + "\t" + lbl;
+                if (!mCache.Contains(cacheKey))
                 {
                     Console.WriteLine("Retrieving document # {0} / {1} ...", i, docRefs.Length);
-                    string txt = service.GetDoc(corpusId, docId, "txt", false/*ignored*/, /*changesOnly=*/false, time);
-                    if (!txt.StartsWith("*** "))
+                    try
                     {
-                        txt = Utils.ToOneLine(txt, /*compact=*/true).Replace('\t', ' ');
-                        corpus.WriteLine(lbl + "\t" + txt);
-                        corpus.Flush();
-                        cache.WriteLine("{0:N}\t{1:N}", corpusId, docId);
-                        cache.Flush();
-                        mCache.Add(corpusId + " " + docId);
+                        string txt = service.GetDoc(corpusId, docId, "txt", false/*ignored*/, /*changesOnly=*/false, time);
+                        if (!txt.StartsWith("*** "))
+                        {
+                            txt = Utils.ToOneLine(txt, /*compact=*/true).Replace('\t', ' ');
+                            corpus.WriteLine(lbl + "\t" + txt);
+                            corpus.Flush();
+                            cache.WriteLine(cacheKey);
+                            cache.Flush();
+                            mCache.Add(cacheKey);
+                        }
+                        else
+                        {
+                            Console.WriteLine(txt); // error message from the service
+                        }
                     }
-                    else
+                    catch (Exception e)
                     {
-                        Console.WriteLine(txt); // error message from the service
+                        Console.WriteLine(e.Message);
+                        Console.WriteLine(e.StackTrace);
                     }
                 }
                 else
@@ -123,6 +128,7 @@ namespace DataClient
 
         static void Main(string[] args)
         {
+            LoadFromCache(@"C:\Work\DacqPipe\DataClient\YahooRssTx_cache.txt");
             ArrayList<Pair<string, string>> tax = LoadTaxonomy(@"C:\Work\DacqPipe\DataClient\YahooNewsCategories.txt");
             GroundTaxonomy(tax,
                 @"C:\Work\DacqPipe\DataClient\YahooRssTx.txt", 
