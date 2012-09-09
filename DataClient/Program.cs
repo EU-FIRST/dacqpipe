@@ -30,12 +30,10 @@ namespace DataClient
             string[] lblParsed = lbl.Split('/');
             string partLbl = lblParsed[0];
             keys.Add(corpusId + "\t" + docId + "\t" + partLbl);
-            //Console.WriteLine("caching " + partLbl);
             for (int i = 1; i < lblParsed.Length; i++)
             {
                 partLbl += '/' + lblParsed[i];
                 keys.Add(corpusId + "\t" + docId + "\t" + partLbl);
-                //Console.WriteLine("caching " + partLbl);
             }
             return keys;
         }
@@ -151,7 +149,7 @@ namespace DataClient
 
         static void Main(string[] args)
         {
-            //LoadFromCache(@"C:\Work\DacqPipe\DataClient\YahooRssTx_cache_2.txt");
+            LoadFromCache(@"C:\Work\DacqPipe\DataClient\YahooRssTx_cache_2.txt");
             ArrayList<Pair<string, string>> tax = LoadTaxonomy(@"C:\Work\DacqPipe\DataClient\YahooNewsCategories_2.txt");
             GroundTaxonomy(tax,
                 @"C:\Work\DacqPipe\DataClient\YahooRssTx_2.txt", 
