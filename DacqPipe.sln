@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 9.00
-# Visual Studio 2005
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DacqPipe", "DacqPipe\DacqPipe.csproj", "{EC6E2B59-1529-4E0A-B695-2CFB40138EF7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Latino", "..\Latino\Latino\Latino.csproj", "{5B86AAD5-3FEA-487C-A518-4F846AF09E18}"
