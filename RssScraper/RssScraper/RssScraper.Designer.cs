@@ -51,6 +51,7 @@ namespace RssScraper
             this.miExclude7 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude8 = new System.Windows.Forms.ToolStripMenuItem();
             this.miExclude9 = new System.Windows.Forms.ToolStripMenuItem();
+            this.miExclude10 = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep0 = new System.Windows.Forms.ToolStripSeparator();
             this.miConvertAtomToRss = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep1 = new System.Windows.Forms.ToolStripSeparator();
@@ -61,7 +62,6 @@ namespace RssScraper
             this.miFeedburnerFormat = new System.Windows.Forms.ToolStripMenuItem();
             this.miSep2 = new System.Windows.Forms.ToolStripSeparator();
             this.miExit = new System.Windows.Forms.ToolStripMenuItem();
-            this.miExclude10 = new System.Windows.Forms.ToolStripMenuItem();
             this.MainMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -284,6 +284,14 @@ namespace RssScraper
             this.miExclude9.Size = new System.Drawing.Size(290, 24);
             this.miExclude9.Text = "Exclude www.live.com";
             // 
+            // miExclude10
+            // 
+            this.miExclude10.Checked = true;
+            this.miExclude10.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.miExclude10.Name = "miExclude10";
+            this.miExclude10.Size = new System.Drawing.Size(290, 24);
+            this.miExclude10.Text = "Exclude www.addthis.com";
+            // 
             // miSep0
             // 
             this.miSep0.Name = "miSep0";
@@ -319,6 +327,8 @@ namespace RssScraper
             // 
             // miOutputTestResult
             // 
+            this.miOutputTestResult.Checked = true;
+            this.miOutputTestResult.CheckState = System.Windows.Forms.CheckState.Checked;
             this.miOutputTestResult.Name = "miOutputTestResult";
             this.miOutputTestResult.Size = new System.Drawing.Size(221, 24);
             this.miOutputTestResult.Text = "Output Test Result";
@@ -358,15 +368,7 @@ namespace RssScraper
             this.miExit.Text = "Exit";
             this.miExit.Click += new System.EventHandler(this.miExit_Click);
             // 
-            // miExclude10
-            // 
-            this.miExclude10.Checked = true;
-            this.miExclude10.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.miExclude10.Name = "miExclude10";
-            this.miExclude10.Size = new System.Drawing.Size(290, 24);
-            this.miExclude10.Text = "Exclude www.addthis.com";
-            // 
-            // frmRssScraper
+            // RssScraperForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -377,7 +379,7 @@ namespace RssScraper
             this.Controls.Add(this.MainMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.MainMenu;
-            this.Name = "frmRssScraper";
+            this.Name = "RssScraperForm";
             this.Text = "RSS Scraper";
             this.MainMenu.ResumeLayout(false);
             this.MainMenu.PerformLayout();

@@ -52,17 +52,21 @@ namespace RssScraper
             try { Invoke(method); } catch { }
         }
 
+        private void Invoke(ThreadStart method)
+        {
+            base.Invoke(method);
+        }
+
         private void btnGo_Click(object sender, EventArgs args)
         {
             btnGo.Enabled = false;
             miSettings.Enabled = false;
             txtUrl.Enabled = false;
             txtLinks.Clear();
-            new Thread(new ThreadStart(delegate() 
+            new Thread(delegate() 
             {
                 try
                 {
-                    bool first = true;
                     ArrayList<string> includeList = new ArrayList<string>();
                     int i = 0;
                     foreach (ToolStripMenuItem item in miInclude.DropDownItems)
@@ -99,7 +103,6 @@ namespace RssScraper
                             if (ok && !links.Contains(urlLower))
                             {
                                 // test RSS file
-                                bool removed = false;
                                 if (miTestLinks.Checked)
                                 {
                                     string xml = null;
@@ -130,33 +133,32 @@ namespace RssScraper
                                             }
                                         }
                                     }
-                                    if (miRemoveNonRss.Checked && !rssXmlFound) { Invoke(new ThreadStart(delegate() { txtLinks.Text += "#"; removed = true; })); } 
-                                    Invoke(new ThreadStart(delegate() { txtLinks.Text += url + "\r\n"; }));    
+                                    if (miRemoveNonRss.Checked && !rssXmlFound) { Invoke(delegate() { txtLinks.Text += "#"; }); } 
+                                    Invoke(delegate() { txtLinks.Text += url + "\r\n"; });  
                                     if (miOutputTestResult.Checked)
                                     {
-                                        Invoke(new ThreadStart(delegate() { txtLinks.Text += "# " + message + "\r\n"; }));                                           
+                                        Invoke(delegate() { txtLinks.Text += "# " + message + "\r\n"; });
                                     }
                                 }
                                 else
                                 {
-                                    Invoke(new ThreadStart(delegate() { txtLinks.Text += url + "\r\n"; })); 
+                                    Invoke(delegate() { txtLinks.Text += url + "\r\n"; }); 
                                 }
-                                if (!removed) { first = false; }
                                 links.Add(urlLower);
                             }
                             m = m.NextMatch();
-                        }
+                        } // m.Success
                     }
                 }
                 catch (Exception e)
                 {
-                    TryInvoke(new ThreadStart(delegate() { txtLinks.Text += e.Message + "\r\n" + e.StackTrace; })); 
+                    TryInvoke(delegate() { txtLinks.Text += e.Message + "\r\n" + e.StackTrace; }); 
                 }
                 finally
                 {
-                    TryInvoke(new ThreadStart(delegate() { btnGo.Enabled = txtUrl.Enabled = miSettings.Enabled = true; }));
+                    TryInvoke(delegate() { btnGo.Enabled = txtUrl.Enabled = miSettings.Enabled = true; });
                 }
-            })).Start();
+            }).Start();
         }   
 
         private void MenuItem_Click(object sender, EventArgs e)
