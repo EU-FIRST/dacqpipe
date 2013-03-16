@@ -1,0 +1,87 @@
+﻿Site: dnevnik
+# P # RSS list: http://www.dnevnik.si/rss/kaj_je_rss
+#http://www.dnevnik.si/rss/kaj_je_rss
+http://www.dnevnik.si/rss
+http://www.dnevnik.si/rss/slovenija
+http://www.dnevnik.si/rss/ljubljana
+http://www.dnevnik.si/rss/svet
+http://www.dnevnik.si/rss/poslovni/novice
+http://www.dnevnik.si/rss/sport
+http://www.dnevnik.si/rss/mnenja
+http://www.dnevnik.si/rss/magazin
+http://www.dnevnik.si/rss/kronika
+http://www.dnevnik.si/rss/kultura
+http://www.dnevnik.si/rss/zdravje
+http://www.dnevnik.si/rss/nedeljski
+http://www.dnevnik.si/rss/magazin/svet-vozil
+
+Site: 24ur
+# P # RSS list: http://www.24ur.com/
+#http://www.24ur.com/static/slo/main/xml/opensearch.xml
+http://www.24ur.com/rss
+http://24ur.com/rss/novice/slovenija/
+http://24ur.com/rss/novice/crna-kronika/
+http://24ur.com/rss/novice/svet/
+http://24ur.com/rss/novice/gospodarstvo/
+http://24ur.com/rss/novice/it/
+http://24ur.com/rss
+http://24ur.com/rss/sport/motogp/
+http://24ur.com/rss/sport/nogomet/
+http://24ur.com/rss/sport/ostalo/
+http://24ur.com/rss/ekskluziv/domaca-scena/
+http://24ur.com/rss/ekskluziv/tuja-scena/
+http://24ur.com/rss/ekskluziv/zanimivosti/
+http://24ur.com/rss/ekskluziv/glasba/
+http://24ur.com/rss/ekskluziv/film_tv/
+http://24ur.com/rss/ekskluziv/erotika/
+
+Site: delo
+http://www.delo.si/rss/
+
+Site: times.si
+http://www.times.si/rss.xml
+http://www.times.si/slovenija/rss.xml
+http://www.times.si/gospodarstvo/rss.xml
+http://www.times.si/svet/rss.xml
+http://www.times.si/sport/rss.xml
+http://www.times.si/kronika/rss.xml
+http://www.times.si/kultura/rss.xml
+http://www.times.si/tehnologija/rss.xml
+http://www.times.si/zanimivosti/rss.xml
+
+Site: cekin
+http://cekin.si/rss/
+
+Site: drugisvet
+http://www.drugisvet.com/feed
+http://www.drugisvet.com/category/novice/feed
+http://www.drugisvet.com/category/posel-in-stroka/feed
+http://www.drugisvet.com/category/in-blog-veritas/feed
+http://www.drugisvet.com/category/sport-in-prosti-cas/feed
+http://www.drugisvet.com/category/it/feed
+http://www.drugisvet.com/category/kultura-in-umetnost/feed
+http://www.drugisvet.com/category/mozgani-na-off/feed
+http://www.drugisvet.com/category/blog-urednistva/feed
+
+Site: mobile.si
+http://www.mobile.si/rss/articles.xml
+http://www.mobile.si/rss/gsm.xml
+
+Site: playboy
+http://feeds.feedburner.com/playboy-si?format=xml
+
+Site: razgledi.net
+http://razgledi.net/feed/
+http://razgledi.net/comments/feed/
+
+Site: skladi
+http://www.skladi.com/splosno?format=feed&type=rss
+http://www.skladi.com/vzajemni-skladi?format=feed&type=rss
+http://www.skladi.com/skladi-v-nalozbenih-policah?format=feed&type=rss
+http://www.skladi.com/ostale-nalozbe?format=feed&type=rss
+
+Site: tocnoto
+http://www.tocnoto.si/?mod=aktualno&action=rss
+
+Site: Zenska
+http://www.zenska.si/feed/
