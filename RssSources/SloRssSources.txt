@@ -36,18 +36,18 @@ http://24ur.com/rss/ekskluziv/film_tv/
 http://24ur.com/rss/ekskluziv/erotika/
 
 Site: delo
-http://www.delo.si/rss/
+http://www.delo.si/rss/	
 
-Site: times.si
-http://www.times.si/rss.xml
-http://www.times.si/slovenija/rss.xml
-http://www.times.si/gospodarstvo/rss.xml
-http://www.times.si/svet/rss.xml
-http://www.times.si/sport/rss.xml
-http://www.times.si/kronika/rss.xml
-http://www.times.si/kultura/rss.xml
-http://www.times.si/tehnologija/rss.xml
-http://www.times.si/zanimivosti/rss.xml
+#Site: times.si
+#http://www.times.si/rss.xml
+#http://www.times.si/slovenija/rss.xml
+#http://www.times.si/gospodarstvo/rss.xml
+#http://www.times.si/svet/rss.xml
+#http://www.times.si/sport/rss.xml
+#http://www.times.si/kronika/rss.xml
+#http://www.times.si/kultura/rss.xml
+#http://www.times.si/tehnologija/rss.xml
+#http://www.times.si/zanimivosti/rss.xml
 
 Site: cekin
 http://cekin.si/rss/
@@ -83,5 +83,101 @@ http://www.skladi.com/ostale-nalozbe?format=feed&type=rss
 Site: tocnoto
 http://www.tocnoto.si/?mod=aktualno&action=rss
 
-Site: Zenska
+Site: zenska
 http://www.zenska.si/feed/
+
+Site: finance
+http://www.finance.si/xml-servis/finance.rss
+
+Site: mobinet
+http://mobinet.si/index.php?format=feed&type=rss
+
+Site: politiks
+http://www.politikis.si/?feed=rss2
+http://www.politikis.si/?feed=rss2&cat=70
+http://www.politikis.si/?feed=rss2&cat=34
+http://www.politikis.si/?feed=rss2&cat=38
+http://www.politikis.si/?feed=rss2&cat=55
+http://www.politikis.si/?feed=rss2&cat=56
+http://www.politikis.si/?feed=rss2&cat=44
+http://www.politikis.si/?feed=rss2&cat=50
+http://www.politikis.si/?feed=rss2&cat=74
+http://www.politikis.si/?feed=rss2&cat=33
+http://www.politikis.si/?feed=rss2&cat=57
+http://www.politikis.si/?feed=rss2&cat=61
+http://www.politikis.si/?feed=rss2&cat=68
+http://www.politikis.si/?feed=rss2&cat=31
+http://www.politikis.si/?feed=rss2&cat=36
+http://www.politikis.si/?feed=rss2&cat=41
+http://www.politikis.si/?feed=rss2&cat=71
+http://www.politikis.si/?feed=rss2&cat=73
+http://www.politikis.si/?feed=rss2&cat=59
+http://www.politikis.si/?feed=rss2&cat=60
+http://www.politikis.si/?feed=rss2&cat=62
+http://www.politikis.si/?feed=rss2&cat=63
+http://www.politikis.si/?feed=rss2&cat=64
+http://www.politikis.si/?feed=rss2&cat=65
+http://www.politikis.si/?feed=rss2&cat=66
+http://www.politikis.si/?feed=rss2&cat=67
+http://www.politikis.si/?feed=rss2&cat=76
+http://www.politikis.si/?feed=rss2&cat=69
+http://www.politikis.si/?feed=rss2&cat=32
+http://www.politikis.si/?feed=rss2&cat=49
+http://www.politikis.si/?feed=rss2&cat=30
+http://www.politikis.si/?feed=rss2&cat=43
+http://www.politikis.si/?feed=rss2&cat=39
+http://www.politikis.si/?feed=rss2&cat=3
+http://www.politikis.si/?feed=rss2&cat=72
+http://www.politikis.si/?feed=rss2&cat=75
+
+Site: razkrito
+http://razkrito.net/feed/
+http://razkrito.net/kategorija/aktualno/feed/
+http://razkrito.net/kategorija/dizajner-2/feed/
+http://razkrito.net/kategorija/moda/feed/
+http://razkrito.net/kategorija/potovanja/feed/
+http://razkrito.net/kategorija/spolnost/feed/
+http://razkrito.net/kategorija/zabava-2/feed/
+http://razkrito.net/kategorija/zdravje/feed/
+
+Site: slotech
+http://feeds.slo-tech.com/ST-novice
+
+Site: vecer
+# P # RSS list: http://web.vecer.com/portali/vecer/v1/default.asp
+http://www.vecer.com/rss
+http://www.vecer.com/rss/maribor
+http://www.vecer.com/rss/slovenija
+http://www.vecer.com/rss/svet
+http://www.vecer.com/rss/gospodarstvo
+http://www.vecer.com/rss/sport
+
+Site: zurnal24
+http://www.zurnal24.si/index.php?ctl=show_rss
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=slovenija
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=crna-kronika
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=e-life
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=junak-slovenije
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=svet
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=sport
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=nogomet
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=kosarka
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=drugi-sporti
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=zimski-sporti
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=moto-sporti
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=magazin
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=vip
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=film-in-glasba
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=eroticno
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=bizarno
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=horoskop-in-numerologija
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=zame
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=sanjskaporoka
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=trebuscki
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=moda-in-lepota
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=zdravje
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=potovanja
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=dom-in-ljubljencki
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=recepti
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=avto
+http://www.zurnal24.si/index.php?ctl=show_rss&url_alias=jaz-porocam
