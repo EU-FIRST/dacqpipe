@@ -66,6 +66,11 @@ namespace Dacq
             string XML_DATA_ROOT_DUMP = ConfigurationManager.AppSettings["xmlDataRootDump"];
             string HTML_DATA_ROOT = ConfigurationManager.AppSettings["htmlDataRoot"];
             string HTML_DATA_ROOT_DUMP = ConfigurationManager.AppSettings["htmlDataRootDump"];
+            string XML_DATA_ROOT_NEW = XML_DATA_ROOT == null ? null : (XML_DATA_ROOT.TrimEnd('\\') + "\\" + "New");
+            string HTML_DATA_ROOT_NEW = HTML_DATA_ROOT == null ? null : (HTML_DATA_ROOT.TrimEnd('\\') + "\\" + "New");
+            string XML_DATA_ROOT_DUMP_NEW = XML_DATA_ROOT_DUMP == null ? null : (XML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
+            string HTML_DATA_ROOT_DUMP_NEW = HTML_DATA_ROOT_DUMP == null ? null : (HTML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
+            string DB_CONNECTION_STRING_NEW = ConfigurationManager.AppSettings["SqlDbConnectionStringNew"];
             string tmp = ConfigurationManager.AppSettings["enableZeroMQ"];
             bool ENABLE_ZEROMQ = tmp != null && new List<string>(new string[] { "true", "1", "yes", "on" }).Contains(tmp.ToLower());
             const int NUM_WRITERS = 8;
@@ -191,9 +196,11 @@ namespace Dacq
             for (int i = 0; i < NUM_WRITERS; i++)
             {
                 DocumentCorpusWriterComponent dcw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING_DUMP, XML_DATA_ROOT_DUMP, HTML_DATA_ROOT_DUMP);
+                DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, XML_DATA_ROOT_DUMP_NEW, HTML_DATA_ROOT_DUMP_NEW);
                 dcw.IsDumpWriter = true;
                 UrlTreeBoilerplateRemoverComponent bpr = new UrlTreeBoilerplateRemoverComponent(DB_CONNECTION_STRING);
                 DocumentCorpusWriterComponent cw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING, XML_DATA_ROOT, HTML_DATA_ROOT);
+                DocumentWriterComponent dw = new DocumentWriterComponent(DB_CONNECTION_STRING_NEW, XML_DATA_ROOT_NEW, HTML_DATA_ROOT_NEW);
                 HtmlTokenizerComponent htc = new HtmlTokenizerComponent();
                 SentenceSplitterComponent ssc = new SentenceSplitterComponent();
                 EnglishTokenizerComponent tok = new EnglishTokenizerComponent();
@@ -242,6 +249,7 @@ namespace Dacq
                 });
                 ld.BlockSelector = "TextBlock/Content"; // due to problems with itar-tass.com
                 df.SubscribeDumpConsumer(dcw);
+                df.SubscribeDumpConsumer(dwc);
 
                 lb.Subscribe(htc);
                 htc.Subscribe(bpr);
@@ -254,9 +262,10 @@ namespace Dacq
                 lem.Subscribe(pt);
 
                 pt.Subscribe(cw);
+                pt.Subscribe(dw);
                 if (ENABLE_ZEROMQ) { pt.Subscribe(zmq); }
                                                                                       
-                dataConsumers.AddRange(new StreamDataConsumer[] { dcw, df, ld, htc, ssc, tok, pt, cw, lem, bpr });         
+                dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, ssc, tok, pt, cw, dw, lem, bpr });         
             }
             // initialize stream simulator
             string offlineSource = ConfigurationManager.AppSettings["offlineSource"];
