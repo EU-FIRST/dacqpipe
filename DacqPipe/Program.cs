@@ -196,11 +196,11 @@ namespace Dacq
             for (int i = 0; i < NUM_WRITERS; i++)
             {
                 DocumentCorpusWriterComponent dcw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING_DUMP, /*xmlDataRoot=*/null);
-                DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, XML_DATA_ROOT_DUMP_NEW, HTML_DATA_ROOT_DUMP_NEW);
+                DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, /*cmdTimeout=*/0, XML_DATA_ROOT_DUMP_NEW, HTML_DATA_ROOT_DUMP_NEW);
                 dcw.IsDumpWriter = true;
                 UrlTreeBoilerplateRemoverComponent bpr = new UrlTreeBoilerplateRemoverComponent(DB_CONNECTION_STRING);
                 DocumentCorpusWriterComponent cw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING, XML_DATA_ROOT);
-                DocumentWriterComponent dw = new DocumentWriterComponent(DB_CONNECTION_STRING_NEW, XML_DATA_ROOT_NEW, HTML_DATA_ROOT_NEW);
+                DocumentWriterComponent dw = new DocumentWriterComponent(DB_CONNECTION_STRING_NEW, /*cmdTimeout=*/0, XML_DATA_ROOT_NEW, HTML_DATA_ROOT_NEW);
                 HtmlTokenizerComponent htc = new HtmlTokenizerComponent();
                 SentenceSplitterComponent ssc = new SentenceSplitterComponent();
                 EnglishTokenizerComponent tok = new EnglishTokenizerComponent();
