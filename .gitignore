@@ -1,0 +1,10 @@
+*.suo
+*.bak
+*.old
+DacqPipe/bin/*
+DacqPipe/obj/*
+Data/*
+DataHtml/*
+RssScraper/RssScraper/bin/*
+RssScraper/RssScraper/obj/*
+log.txt

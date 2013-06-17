@@ -49,33 +49,12 @@ namespace Dacq
             DateTime startTime = DateTime.MinValue;
             Logger rootLogger = Logger.GetRootLogger();
             rootLogger.LocalLevel = Logger.Level.Debug; 
-            string LOG_FILE_NAME = ConfigurationManager.AppSettings["logFileName"];
             rootLogger.LocalOutputType = Logger.OutputType.Console;
-            if (LOG_FILE_NAME != null)
+            if (Config.LogFileName != null)
             {
-                rootLogger.LocalOutputWriter = new StreamWriter(LOG_FILE_NAME, /*append=*/true);
+                rootLogger.LocalOutputWriter = new StreamWriter(Config.LogFileName, /*append=*/true);
                 rootLogger.LocalOutputType |= Logger.OutputType.Writer;
             }
-            string SOURCES_FILE_NAME = ConfigurationManager.AppSettings["dataSourcesFileName"];
-            string WEB_SITE_ID = Utils.GetConfigValue("webSiteId", "dacq");
-            string DB_CONNECTION_STRING = ConfigurationManager.AppSettings["dbConnectionString"];
-            string SQL_DB_CONNECTION_STRING = ConfigurationManager.AppSettings["SqlDbConnectionString"];
-            string DB_CONNECTION_STRING_DUMP = ConfigurationManager.AppSettings["dbConnectionStringDump"];
-            string CLIENT_IP = ConfigurationManager.AppSettings["clientIp"];
-            string XML_DATA_ROOT = ConfigurationManager.AppSettings["xmlDataRoot"];
-            string XML_DATA_ROOT_DUMP = ConfigurationManager.AppSettings["xmlDataRootDump"];
-            string HTML_DATA_ROOT = ConfigurationManager.AppSettings["htmlDataRoot"];
-            string HTML_DATA_ROOT_DUMP = ConfigurationManager.AppSettings["htmlDataRootDump"];
-            string XML_DATA_ROOT_NEW = XML_DATA_ROOT == null ? null : (XML_DATA_ROOT.TrimEnd('\\') + "\\" + "New");
-            string HTML_DATA_ROOT_NEW = HTML_DATA_ROOT == null ? null : (HTML_DATA_ROOT.TrimEnd('\\') + "\\" + "New");
-            string XML_DATA_ROOT_DUMP_NEW = XML_DATA_ROOT_DUMP == null ? null : (XML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
-            string HTML_DATA_ROOT_DUMP_NEW = HTML_DATA_ROOT_DUMP == null ? null : (HTML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
-            string DB_CONNECTION_STRING_NEW = ConfigurationManager.AppSettings["SqlDbConnectionStringNew"];
-            string LANGUAGE = Utils.GetConfigValue<string>("Language", "English");
-            string tmp = ConfigurationManager.AppSettings["enableZeroMQ"];
-            bool ENABLE_ZEROMQ = tmp != null && new List<string>(new string[] { "true", "1", "yes", "on" }).Contains(tmp.ToLower());
-            const int NUM_WRITERS = 8;
-            const int SLEEP_BETWEEN_POLLS = 15 * 60000; // 15 minutes
             ArrayList<StreamDataProducerPoll> dataReaders = new ArrayList<StreamDataProducerPoll>();
             ArrayList<StreamDataConsumer> dataConsumers = new ArrayList<StreamDataConsumer>();
             Dictionary<IWorkflowComponent, Guid> components = new Dictionary<IWorkflowComponent, Guid>();
@@ -84,14 +63,14 @@ namespace Dacq
             // start HTTP server
             bool exit = false;
             bool httpServerRunning = false;
-            if (CLIENT_IP != null)
+            if (Config.ClientIp != null)
             {
                 new Thread(new ThreadStart(delegate()
                 {
                     HttpListener listener = new HttpListener();
                     listener.AuthenticationSchemes = AuthenticationSchemes.Anonymous;
-                    listener.Prefixes.Add(string.Format("http://localhost/{0}/", WEB_SITE_ID));
-                    listener.Prefixes.Add(string.Format("http://first.ijs.si/{0}/", WEB_SITE_ID));
+                    listener.Prefixes.Add(string.Format("http://localhost/{0}/", Config.WebSiteId));
+                    listener.Prefixes.Add(string.Format("http://first.ijs.si/{0}/", Config.WebSiteId));
                     listener.Start();
                     logger.Info("Main.HttpServer", "HTTP server started.");
                     httpServerRunning = true;
@@ -180,34 +159,34 @@ namespace Dacq
             lb.DispatchPolicy = DispatchPolicy.BalanceLoadMax;
             dataConsumers.Add(lb);
             ZeroMqEmitterComponent zmq = null;
-            if (ENABLE_ZEROMQ)
+            if (Config.EnableZmq)
             {
                 zmq = new ZeroMqEmitterComponent();
                 dataConsumers.Add(zmq);
             }
             DatabaseConnection dbConnection = new DatabaseConnection();
-            if (DB_CONNECTION_STRING != null)
+            if (Config.DbConnectionString != null)
             {
-                dbConnection.ConnectionString = DB_CONNECTION_STRING;
+                dbConnection.ConnectionString = Config.DbConnectionString;
                 dbConnection.Connect();
                 UrlTreeBoilerplateRemoverComponent.InitializeHistory(dbConnection);
                 dbConnection.Disconnect();
-                RssFeedComponent.DatabaseConnectionString = SQL_DB_CONNECTION_STRING;
+                RssFeedComponent.DatabaseConnectionString = Config.SqlDbConnectionString;
             }
-            for (int i = 0; i < NUM_WRITERS; i++)
+            for (int i = 0; i < Config.NumWriters; i++)
             {
-                DocumentCorpusWriterComponent dcw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING_DUMP, /*xmlDataRoot=*/null);
-                DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, /*cmdTimeout=*/0, XML_DATA_ROOT_DUMP_NEW, HTML_DATA_ROOT_DUMP_NEW);
+                DocumentCorpusWriterComponent dcw = new DocumentCorpusWriterComponent(Config.DbConnectionStringDump, /*xmlDataRoot=*/null);
+                DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, /*cmdTimeout=*/0, Config.XmlDataRootDumpNew, Config.HtmlDataRootDumpNew);
                 dcw.IsDumpWriter = true;
-                UrlTreeBoilerplateRemoverComponent bpr = new UrlTreeBoilerplateRemoverComponent(DB_CONNECTION_STRING);
-                DocumentCorpusWriterComponent cw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING, XML_DATA_ROOT);
-                DocumentWriterComponent dw = new DocumentWriterComponent(DB_CONNECTION_STRING_NEW, /*cmdTimeout=*/0, XML_DATA_ROOT_NEW, HTML_DATA_ROOT_NEW);
+                UrlTreeBoilerplateRemoverComponent bpr = new UrlTreeBoilerplateRemoverComponent(Config.DbConnectionString);
+                DocumentCorpusWriterComponent cw = new DocumentCorpusWriterComponent(Config.DbConnectionString, Config.XmlDataRoot);
+                DocumentWriterComponent dw = new DocumentWriterComponent(Config.SqlDbConnectionStringNew, /*cmdTimeout=*/0, Config.XmlDataRootNew, Config.HtmlDataRootNew);
                 HtmlTokenizerComponent htc = new HtmlTokenizerComponent();
                 SentenceSplitterComponent ssc = null;
                 EnglishTokenizerComponent tok = null;
                 EnglishLemmatizerComponent lem = null;
                 EnglishPosTaggerComponent pt = null;
-                if (LANGUAGE == "English")
+                if (Config.Language == "English")
                 {
                     ssc = new SentenceSplitterComponent();
                     tok = new EnglishTokenizerComponent();
@@ -242,9 +221,9 @@ namespace Dacq
                         dfLogger.Info("OnFilterDocument", "Document rejected: detectedCharRange not Basic Latin (id={0}).", docId);
                         return false;
                     }
-                    if (document.Features.GetFeatureValue("detectedLanguage") != LANGUAGE)
+                    if (document.Features.GetFeatureValue("detectedLanguage") != Config.Language)
                     {
-                        dfLogger.Info("OnFilterDocument", "Document rejected: detectedLanguage not {1} (id={0}).", docId, LANGUAGE);
+                        dfLogger.Info("OnFilterDocument", "Document rejected: detectedLanguage not {1} (id={0}).", docId, Config.Language);
                         return false;
                     }
                     // remove exact duplicates
@@ -264,7 +243,7 @@ namespace Dacq
                 bpr.Subscribe(ld);
                 ld.Subscribe(df);
 
-                if (LANGUAGE == "English")
+                if (Config.Language == "English")
                 {
                     df.Subscribe(ssc);
                     ssc.Subscribe(tok);
@@ -272,14 +251,14 @@ namespace Dacq
                     lem.Subscribe(pt);
                     pt.Subscribe(cw);
                     pt.Subscribe(dw);
-                    if (ENABLE_ZEROMQ) { pt.Subscribe(zmq); }
+                    if (Config.EnableZmq) { pt.Subscribe(zmq); }
                     dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, ssc, tok, pt, cw, dw, lem, bpr });
                 }
                 else
                 {
                     df.Subscribe(cw);
                     df.Subscribe(dw);
-                    if (ENABLE_ZEROMQ) { df.Subscribe(zmq); }
+                    if (Config.EnableZmq) { df.Subscribe(zmq); }
                     dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, cw, dw, bpr });
                 }
             }
@@ -296,9 +275,9 @@ namespace Dacq
             int j = 0;
             RssFeedComponent rssComp = null;
             Set<string> sites = new Set<string>();
-            if (SOURCES_FILE_NAME != null)
+            if (Config.DataSourcesFileName != null)
             {
-                string[] sources = File.ReadAllLines(SOURCES_FILE_NAME);
+                string[] sources = File.ReadAllLines(Config.DataSourcesFileName);
                 foreach (string _url in sources)
                 {
                     string url = _url.Trim();
@@ -315,11 +294,11 @@ namespace Dacq
                             rssComp.RandomDelayAtStart = new ArrayList<string>("yes,on,true,1,y".Split(','))
                                 .Contains(Utils.GetConfigValue("RandomDelayAtStart", "true").ToLower());
                             rssComp.Name = siteId;
-                            rssComp.TimeBetweenPolls = SLEEP_BETWEEN_POLLS;
+                            rssComp.TimeBetweenPolls = Config.SleepBetweenPolls;
                             rssComp.IncludeRssXml = true;
-                            if (SQL_DB_CONNECTION_STRING != null)
+                            if (Config.SqlDbConnectionString != null)
                             {
-                                rssComp.Initialize(SQL_DB_CONNECTION_STRING);
+                                rssComp.Initialize(Config.SqlDbConnectionString);
                             }
                             rssComp.IncludeRawData = true;
                             rssComp.Subscribe(lb);

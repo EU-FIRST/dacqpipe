@@ -52,6 +52,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="IdmsNewsFeedComponent.cs" />
     <Compile Include="Messenger.cs" />
     <Compile Include="Program.cs" />
