@@ -173,7 +173,7 @@ namespace Dacq
                 dbConnection.Disconnect();
                 RssFeedComponent.DatabaseConnectionString = Config.SqlDbConnectionString;
             }
-            for (int i = 0; i < Config.NumWriters; i++)
+            for (int i = 0; i < Config.NumPipes; i++)
             {
                 DocumentCorpusWriterComponent dcw = new DocumentCorpusWriterComponent(Config.DbConnectionStringDump, /*xmlDataRoot=*/null);
                 DocumentWriterComponent dwc = new DocumentWriterComponent(/*connectionString=*/null, /*cmdTimeout=*/0, Config.XmlDataRootDumpNew, Config.HtmlDataRootDumpNew);
