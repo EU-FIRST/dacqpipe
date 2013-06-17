@@ -71,6 +71,7 @@ namespace Dacq
             string XML_DATA_ROOT_DUMP_NEW = XML_DATA_ROOT_DUMP == null ? null : (XML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
             string HTML_DATA_ROOT_DUMP_NEW = HTML_DATA_ROOT_DUMP == null ? null : (HTML_DATA_ROOT_DUMP.TrimEnd('\\') + "\\" + "New");
             string DB_CONNECTION_STRING_NEW = ConfigurationManager.AppSettings["SqlDbConnectionStringNew"];
+            string LANGUAGE = Utils.GetConfigValue<string>("Language", "English");
             string tmp = ConfigurationManager.AppSettings["enableZeroMQ"];
             bool ENABLE_ZEROMQ = tmp != null && new List<string>(new string[] { "true", "1", "yes", "on" }).Contains(tmp.ToLower());
             const int NUM_WRITERS = 8;
@@ -202,10 +203,17 @@ namespace Dacq
                 DocumentCorpusWriterComponent cw = new DocumentCorpusWriterComponent(DB_CONNECTION_STRING, XML_DATA_ROOT);
                 DocumentWriterComponent dw = new DocumentWriterComponent(DB_CONNECTION_STRING_NEW, /*cmdTimeout=*/0, XML_DATA_ROOT_NEW, HTML_DATA_ROOT_NEW);
                 HtmlTokenizerComponent htc = new HtmlTokenizerComponent();
-                SentenceSplitterComponent ssc = new SentenceSplitterComponent();
-                EnglishTokenizerComponent tok = new EnglishTokenizerComponent();
-                EnglishLemmatizerComponent lem = new EnglishLemmatizerComponent(EnglishLemmatizerComponent.Type.Both);
-                EnglishPosTaggerComponent pt = new EnglishPosTaggerComponent();
+                SentenceSplitterComponent ssc = null;
+                EnglishTokenizerComponent tok = null;
+                EnglishLemmatizerComponent lem = null;
+                EnglishPosTaggerComponent pt = null;
+                if (LANGUAGE == "English")
+                {
+                    ssc = new SentenceSplitterComponent();
+                    tok = new EnglishTokenizerComponent();
+                    lem = new EnglishLemmatizerComponent(EnglishLemmatizerComponent.Type.Both);
+                    pt = new EnglishPosTaggerComponent();                
+                }
                 LanguageDetectorComponent ld = new LanguageDetectorComponent();
                 DocumentFilterComponent df = new DocumentFilterComponent();
                 df.OnFilterDocument += new DocumentFilterComponent.FilterDocumentHandler(delegate(Document document, Logger dfLogger) {
@@ -228,15 +236,15 @@ namespace Dacq
                         dfLogger.Info("OnFilterDocument", "Document rejected: bprContentCharCount < 100 (id={0}).", docId);
                         return false;
                     }
-                    // remove non-English items
+                    // remove unsupported languages
                     if (document.Features.GetFeatureValue("detectedCharRange") != "Basic Latin")
                     {
                         dfLogger.Info("OnFilterDocument", "Document rejected: detectedCharRange not Basic Latin (id={0}).", docId);
                         return false;
                     }
-                    if (document.Features.GetFeatureValue("detectedLanguage") != "English")
+                    if (document.Features.GetFeatureValue("detectedLanguage") != LANGUAGE)
                     {
-                        dfLogger.Info("OnFilterDocument", "Document rejected: detectedLanguage not English (id={0}).", docId);
+                        dfLogger.Info("OnFilterDocument", "Document rejected: detectedLanguage not {1} (id={0}).", docId, LANGUAGE);
                         return false;
                     }
                     // remove exact duplicates
@@ -256,16 +264,24 @@ namespace Dacq
                 bpr.Subscribe(ld);
                 ld.Subscribe(df);
 
-                df.Subscribe(ssc);
-                ssc.Subscribe(tok);
-                tok.Subscribe(lem);
-                lem.Subscribe(pt);
-
-                pt.Subscribe(cw);
-                pt.Subscribe(dw);
-                if (ENABLE_ZEROMQ) { pt.Subscribe(zmq); }
-                                                                                      
-                dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, ssc, tok, pt, cw, dw, lem, bpr });         
+                if (LANGUAGE == "English")
+                {
+                    df.Subscribe(ssc);
+                    ssc.Subscribe(tok);
+                    tok.Subscribe(lem);
+                    lem.Subscribe(pt);
+                    pt.Subscribe(cw);
+                    pt.Subscribe(dw);
+                    if (ENABLE_ZEROMQ) { pt.Subscribe(zmq); }
+                    dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, ssc, tok, pt, cw, dw, lem, bpr });
+                }
+                else
+                {
+                    df.Subscribe(cw);
+                    df.Subscribe(dw);
+                    if (ENABLE_ZEROMQ) { df.Subscribe(zmq); }
+                    dataConsumers.AddRange(new StreamDataConsumer[] { dcw, dwc, df, ld, htc, cw, dw, bpr });
+                }
             }
             // initialize stream simulator
             string offlineSource = ConfigurationManager.AppSettings["offlineSource"];

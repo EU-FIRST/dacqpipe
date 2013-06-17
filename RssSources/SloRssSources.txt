@@ -36,7 +36,7 @@ http://24ur.com/rss/ekskluziv/film_tv/
 http://24ur.com/rss/ekskluziv/erotika/
 
 Site: delo
-http://www.delo.si/rss/	
+http://www.delo.si/rss/
 
 #Site: times.si
 #http://www.times.si/rss.xml
@@ -296,3 +296,35 @@ http://vizita.si/rss/
 
 Site: zvpl
 http://www.zvpl.com/rss/
+
+Site: bambino
+http://www.bambino.si/novice?feed
+
+Site: dnevnik
+# P # RSS list: http://www.dnevnik.si/rss/kaj_je_rss
+#http://www.dnevnik.si/rss/kaj_je_rss
+http://www.dnevnik.si/rss
+http://www.dnevnik.si/rss/slovenija
+http://www.dnevnik.si/rss/ljubljana
+http://www.dnevnik.si/rss/svet
+http://www.dnevnik.si/rss/poslovni/novice
+http://www.dnevnik.si/rss/sport
+http://www.dnevnik.si/rss/mnenja
+http://www.dnevnik.si/rss/magazin
+http://www.dnevnik.si/rss/kronika
+http://www.dnevnik.si/rss/kultura
+http://www.dnevnik.si/rss/zdravje
+http://www.dnevnik.si/rss/nedeljski
+http://www.dnevnik.si/rss/magazin/svet-vozil
+
+Site: HBO
+http://www.hbo.si/rss/news.xml
+
+Site: primorskainfo
+http://www.primorska.info/rss
+
+Site: reporter
+http://reporter.si/novice.xml
+
+Site: viva
+http://www.viva.si/Rss/
